@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -53,27 +54,21 @@ const faqs = [
 export default function Page() {
   return (
     <main className="text-[var(--color-ink)]">
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
+        <HeroBackdrop src="/images/stock/compare-outpatient-vs-inpatient-neuro-rehabilitation.jpg" alt="A physical therapist supports a man's arms as he lifts dumbbells in a clinic." />
+        <div className="relative max-w-4xl mx-auto px-6">
           <nav className="text-sm text-white/70 mb-6">
             <Link href="/" className="hover:text-white transition-colors">Home</Link> › Resources › Comparison
           </nav>
-          <h1 className="font-[Cormorant,serif] text-5xl font-light">Outpatient vs Inpatient Neuro Rehabilitation: What to Consider</h1>
+          <h1 className="font-cormorant text-5xl font-light">Outpatient vs Inpatient Neuro Rehabilitation: What to Consider</h1>
           <p className="mt-6 text-lg text-white/80 max-w-2xl mx-auto">Choosing a rehabilitation setting shapes your recovery. Here is a clear look at how the two options differ.</p>
         </div>
       </section>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/compare-outpatient-vs-inpatient-neuro-rehabilitation.jpg"} alt={"A healthcare worker drawing blood from a patient's arm in a clinical environment."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl mb-12 text-[var(--color-primary)]">Side-by-Side Comparison</h2>
+          <h2 className="font-cormorant text-4xl mb-12 text-[var(--color-primary)]">Side-by-Side Comparison</h2>
           <div className="rounded-2xl overflow-hidden border border-[var(--color-border)] animate-fade-up">
             <div className="grid grid-cols-3 bg-[var(--color-primary)] text-white font-medium">
               <div className="p-4"> </div>
@@ -93,12 +88,12 @@ export default function Page() {
 
       <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl mb-6 text-[var(--color-primary)]">Outpatient Neuro Rehabilitation</h2>
+          <h2 className="font-cormorant text-4xl mb-6 text-[var(--color-primary)]">Outpatient Neuro Rehabilitation</h2>
           <p className="mb-4 leading-relaxed">Outpatient rehabilitation means you live at home and travel to scheduled therapy sessions. It is common for people recovering from stroke, concussion or traumatic brain injury, and for those managing conditions such as Parkinson's disease or multiple sclerosis.</p>
           <p className="mb-4 leading-relaxed">Research on rehabilitation consistently shows that repeated, task-specific practice supports recovery, and outpatient care lets you apply new skills in your own kitchen, bathroom and neighborhood. Typical patients are medically stable, able to participate in sessions, and have a safe home setting.</p>
           <p className="mb-12 leading-relaxed">Expect an evaluation, goal setting, hands-on sessions and a home program. Therapy may address daily activities, speech and communication, cognition, and emotional well-being.</p>
 
-          <h2 className="font-[Cormorant,serif] text-4xl mb-6 text-[var(--color-primary)]">Inpatient Neuro Rehabilitation</h2>
+          <h2 className="font-cormorant text-4xl mb-6 text-[var(--color-primary)]">Inpatient Neuro Rehabilitation</h2>
           <p className="mb-4 leading-relaxed">Inpatient rehabilitation takes place in a hospital unit or dedicated facility where you stay overnight. It offers daily, intensive therapy from multiple disciplines alongside round-the-clock medical and nursing care.</p>
           <p className="mb-4 leading-relaxed">It is often recommended soon after a major neurological event, when needs are complex and close monitoring matters. Typical patients cannot yet safely manage daily care at home or need several therapies coordinated each day.</p>
           <p className="leading-relaxed">Expect a structured daily schedule, frequent team reviews and discharge planning that often leads into outpatient therapy.</p>
@@ -106,7 +101,7 @@ export default function Page() {
       </section>
 
       <section className="bg-[var(--color-light)] rounded-2xl p-12 max-w-3xl mx-auto my-20 animate-fade-up">
-        <h2 className="font-[Cormorant,serif] text-4xl mb-8 text-[var(--color-primary)]">How to Decide</h2>
+        <h2 className="font-cormorant text-4xl mb-8 text-[var(--color-primary)]">How to Decide</h2>
         <h3 className="text-xl font-semibold mb-4">Choose outpatient if...</h3>
         <ul className="space-y-3 mb-10">
           {aList.map((t) => (
@@ -129,7 +124,7 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-20">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl mb-8 text-[var(--color-primary)]">Frequently Asked Questions</h2>
+          <h2 className="font-cormorant text-4xl mb-8 text-[var(--color-primary)]">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <details key={f.q} className="bg-white border border-[var(--color-border)] rounded-xl p-5 animate-fade-up">
@@ -143,7 +138,7 @@ export default function Page() {
 
       <section className="bg-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl font-light mb-4">Ready to Talk Through Your Next Step?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Talk Through Your Next Step?</h2>
           <p className="text-white/80 mb-8">Reach out to Irvine Neuro Rehabilitation in Southfield, MI, or call (248) 415-2500.</p>
           <Link href="/contact" className="inline-block bg-[var(--color-accent)] border border-white/40 hover:bg-[var(--color-accent-dark)] transition-colors text-white px-8 py-3 rounded-full">Discuss Your Options</Link>
         </div>

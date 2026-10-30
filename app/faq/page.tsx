@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -21,12 +22,32 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
+    q: 'Are you accepting new patients?',
+    a: 'Yes, we are accepting new patients. Based upon your availability, we should be able to see you within 7 days. Call (248) 415-2500 or send us a message.',
+  },
+  {
+    q: 'Do you offer transportation?',
+    a: 'Yes, we provide transportation within 5 miles.',
+  },
+  {
+    q: 'How do I send a referral?',
+    a: 'Please fax referrals to (248) 415-2510, or email them to Gloria Jackson, our Office Manager, at gloria@irvineneurorehab.com.',
+  },
+  {
+    q: 'Can I tour the campus?',
+    a: 'Yes. Call (248) 415-2500 or use the contact form to schedule a tour of our Lahser Road campus in Southfield.',
+  },
+  {
+    q: 'Is Irvine accredited?',
+    a: 'Yes. Our program is licensed by the State of Michigan and accredited by CARF, the Commission on Accreditation of Rehabilitation Facilities.',
+  },
+  {
     q: 'What is neuro rehabilitation?',
     a: 'Neuro rehabilitation is a form of care that helps people recover function after an injury or illness affecting the brain or nervous system. It can address movement, daily living skills, communication, thinking, mood and confidence. At Irvine Neuro Rehabilitation, programs are shaped around your needs, your physical condition and your personal goals rather than a one-size-fits-all plan.',
   },
   {
     q: 'What services does Irvine Neuro Rehabilitation offer?',
-    a: 'Our programs include occupational therapy, physical therapy, recreational therapy and head injury rehabilitation. We also offer a free consultation so you can talk through your goals and concerns before beginning. Our team includes an occupational therapist, a speech therapist, a psychiatrist who serves as medical director, and licensed counselors providing case management and support.',
+    a: 'We offer 17 programs, including residential rehabilitation, physical therapy, occupational therapy, speech and language pathology, recreational and pool (aquatic) therapy, nursing care, counseling, case management, a cognitive day group, respite care and semi-independent apartment living. We treat most of our clients on an in-patient basis on our Southfield campus, and we also see outpatients. There is no charge for a consultation.',
   },
   {
     q: 'What does the free consultation involve?',
@@ -101,14 +122,15 @@ const faqs = [
 export default function FAQPage() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
+        <HeroBackdrop src="/images/stock/hub-faq.jpg" alt="An older man talking with a clinician in a bright office" />
+        <div className="relative max-w-4xl mx-auto px-6">
           <nav className="text-sm text-white/70 mb-6 flex justify-center gap-2">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>›</span>
             <span className="text-white">FAQ</span>
           </nav>
-          <h1 className="font-[Cormorant_Garamond,serif] text-5xl font-light mb-4">Frequently Asked Questions</h1>
+          <h1 className="font-cormorant text-5xl font-light mb-4">Frequently Asked Questions</h1>
           <p className="text-lg text-white/80">Everything you need to know about our practice and services</p>
         </div>
       </section>
@@ -117,7 +139,7 @@ export default function FAQPage() {
         <div className="max-w-4xl mx-auto px-6">
           {faqs.map((f) => (
             <details key={f.q} className="animate-fade-up group border border-[var(--color-border)] rounded-xl mb-3 bg-white">
-              <summary className="cursor-pointer p-6 font-semibold text-[var(--color-ink)] font-[Cormorant_Garamond,serif] text-xl list-none flex justify-between items-center gap-4">
+              <summary className="cursor-pointer p-6 font-semibold text-[var(--color-ink)] font-cormorant text-xl list-none flex justify-between items-center gap-4">
                 <span>{f.q}</span>
                 <svg className="w-5 h-5 shrink-0 text-[var(--color-accent)] transition-transform group-open:rotate-180" stroke="currentColor" strokeWidth={1.5} fill="none" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
@@ -131,7 +153,7 @@ export default function FAQPage() {
 
       <section className="bg-[var(--color-ink)] text-white py-20 text-center">
         <div className="max-w-3xl mx-auto px-6 animate-fade-up">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl font-light mb-4">Still Have Questions?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Still Have Questions?</h2>
           <p className="text-white/80 mb-8">Call (248) 415-2500 or send us a message. We are glad to talk through your goals and concerns.</p>
           <Link href="/contact" className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] border border-white/40 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
             Request a Free Consultation

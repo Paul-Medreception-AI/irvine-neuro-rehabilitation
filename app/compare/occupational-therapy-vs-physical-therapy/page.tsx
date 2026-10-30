@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 
 export const metadata: Metadata = {
   title: 'Occupational Therapy vs Physical Therapy | Compare',
@@ -58,27 +59,21 @@ export default function Page() {
   ]
   return (
     <main className="text-[var(--color-ink)]">
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
+        <HeroBackdrop src="/images/stock/compare-occupational-therapy-vs-physical-therapy.jpg" alt="Crop anonymous chiropractor in uniform and wristwatch examining shoulder of smiling faceless woman in casual clothes in doctor office in clinic" />
+        <div className="relative max-w-4xl mx-auto px-6">
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white transition-colors">Home</a> › <span>Resources</span> › <span>Comparison</span>
           </nav>
-          <h1 className="font-[Cormorant,serif] text-5xl font-light">Occupational Therapy vs Physical Therapy: Which Is Right for You?</h1>
+          <h1 className="font-cormorant text-5xl font-light">Occupational Therapy vs Physical Therapy: Which Is Right for You?</h1>
           <p className="mt-6 text-lg text-white/80 max-w-2xl mx-auto">Both help you recover and function better, but they focus on different goals. Here is how to tell them apart.</p>
         </div>
       </section>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/compare-occupational-therapy-vs-physical-therapy.jpg"} alt={"Crop anonymous chiropractor in uniform and wristwatch examining shoulder of smiling faceless woman in casual clothes in doctor office in clinic"} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl mb-12 text-[var(--color-primary)]">Side-by-Side Comparison</h2>
+          <h2 className="font-cormorant text-4xl mb-12 text-[var(--color-primary)]">Side-by-Side Comparison</h2>
           <div className="rounded-2xl overflow-hidden border border-[var(--color-border)] animate-fade-up">
             <div className="grid grid-cols-3 bg-[var(--color-primary)] text-white font-semibold">
               <div className="p-4">Factor</div>
@@ -99,13 +94,13 @@ export default function Page() {
       <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-6">
           <div className="animate-fade-up">
-            <h2 className="font-[Cormorant,serif] text-4xl mb-6 text-[var(--color-primary)]">Occupational Therapy</h2>
+            <h2 className="font-cormorant text-4xl mb-6 text-[var(--color-primary)]">Occupational Therapy</h2>
             <p className="mb-4 leading-relaxed">Occupational therapy helps people do the activities that make up their day, from self-care and household tasks to work and hobbies. Therapists assess what is getting in the way, whether physical, cognitive or sensory, and build a plan to close the gap.</p>
             <p className="mb-4 leading-relaxed">Research supports occupational therapy for stroke recovery, brain injury, hand conditions, and difficulties with attention, memory and sensory processing. Typical patients include adults recovering from neurological events and anyone whose condition limits independence.</p>
             <p className="mb-12 leading-relaxed">Expect an initial evaluation, goals tied to real-life tasks, practice of techniques, advice on adaptive tools or environment changes, and activities to continue between visits.</p>
           </div>
           <div className="animate-fade-up">
-            <h2 className="font-[Cormorant,serif] text-4xl mb-6 text-[var(--color-primary)]">Physical Therapy</h2>
+            <h2 className="font-cormorant text-4xl mb-6 text-[var(--color-primary)]">Physical Therapy</h2>
             <p className="mb-4 leading-relaxed">Physical therapy focuses on restoring movement and physical function. Treatment commonly includes targeted exercise, manual techniques, gait and balance training, and education on posture and body mechanics.</p>
             <p className="mb-4 leading-relaxed">Evidence is strong for back and joint pain, post-surgical rehabilitation, balance problems and mobility loss from neurological conditions. Typical patients include people with sports or orthopedic injuries, older adults at risk of falls, and those regaining walking ability.</p>
             <p className="leading-relaxed">Expect a movement assessment, a graded exercise plan, hands-on guidance in sessions and a home program. Progress depends on consistency outside the clinic.</p>
@@ -114,7 +109,7 @@ export default function Page() {
       </section>
 
       <section className="bg-[var(--color-light)] rounded-2xl p-12 max-w-3xl mx-auto my-20 animate-fade-up">
-        <h2 className="font-[Cormorant,serif] text-4xl mb-8 text-[var(--color-primary)]">How to Decide</h2>
+        <h2 className="font-cormorant text-4xl mb-8 text-[var(--color-primary)]">How to Decide</h2>
         <h3 className="text-xl font-semibold mb-4">Choose occupational therapy if...</h3>
         <ul className="space-y-3 mb-10">
           {aList.map((t) => (<li key={t} className="flex gap-3"><Check /><span>{t}</span></li>))}
@@ -128,7 +123,7 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-20">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl mb-10 text-[var(--color-primary)]">Frequently Asked Questions</h2>
+          <h2 className="font-cormorant text-4xl mb-10 text-[var(--color-primary)]">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <details key={f.q} className="animate-fade-up bg-white border border-[var(--color-border)] rounded-xl p-5 group">
@@ -142,7 +137,7 @@ export default function Page() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-2xl mx-auto px-6 animate-fade-up">
-          <h2 className="font-[Cormorant,serif] text-4xl font-light mb-4">Ready to Choose the Right Path?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Choose the Right Path?</h2>
           <p className="mb-8 text-white/80">Talk with Irvine Neuro Rehabilitation in Southfield, MI at (248) 415-2500 or send us a message.</p>
           <a href="/contact" className="inline-block rounded-full bg-white text-[var(--color-accent)] px-8 py-3 font-semibold hover:bg-[var(--color-light)] transition-colors">Discuss Your Options</a>
         </div>

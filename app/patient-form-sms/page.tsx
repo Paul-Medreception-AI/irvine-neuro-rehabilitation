@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 import Link from 'next/link'
 import SmsConsentForm from '@/components/SmsConsentForm'
 import { SITE } from '@/lib/site'
@@ -32,8 +33,9 @@ export const metadata: Metadata = {
 export default function PatientFormSmsPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-16 lg:py-20 text-white text-center">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white text-center">
+        <HeroBackdrop src="/images/stock/hub-sms.jpg" alt="An older woman reading a message on her smartphone outdoors" />
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="font-cormorant text-4xl sm:text-5xl font-light mb-4">Text Message Sign-Up</h1>
           <p className="text-lg text-white/90 leading-relaxed">
             {SITE.name} can text you about your appointments and your care.

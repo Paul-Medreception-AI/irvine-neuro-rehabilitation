@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 
 export const metadata: Metadata = {
   title: 'Balance and Fall Prevention After Neurological Conditions',
@@ -44,33 +45,27 @@ function Check() {
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white">
+        <HeroBackdrop src="/images/stock/blog-balance-and-fall-prevention-after-neurological-conditions.jpg" alt="An older woman holds her arms out for balance during a group exercise class." />
+        <div className="relative max-w-4xl mx-auto px-6 text-center">
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white transition-colors">Home</a> › <a href="/blog" className="hover:text-white transition-colors">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
-          <h1 className="font-[Cormorant] text-5xl font-light leading-tight max-w-3xl mx-auto text-center">
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl mx-auto text-center">
             Balance and Fall Prevention After Neurological Conditions
           </h1>
           <p className="mt-6 text-white/70 text-sm">Published October 2026 · 6 min read</p>
         </div>
       </section>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/blog-balance-and-fall-prevention-after-neurological-conditions.jpg"} alt={"Close-up of a child's leg with an orthopedic cast and a pink shoe on concrete floor."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6">
         <p className="text-[var(--color-ink)] leading-loose text-base">
           For many people, the first time they truly feel the impact of a neurological condition is a stumble in the hallway or a moment of dizziness on the stairs. Afterward, even familiar rooms can feel uncertain, and the fear of falling again can quietly shrink a person&apos;s world. If that sounds familiar, you are not alone, and there is a lot that can be done.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Why Balance Changes After a Neurological Condition</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Why Balance Changes After a Neurological Condition</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base mb-4">
           Staying upright is a team effort. The brain combines information from the eyes, the inner ear, and sensors in the muscles and joints, then sends precise commands to keep the body steady. Conditions that affect the brain, spinal cord or nerves can disrupt any part of that loop.
         </p>
@@ -78,25 +73,25 @@ export default function Page() {
           Stroke may cause weakness or reduced awareness on one side of the body. Traumatic brain injury can affect dizziness, vision and reaction time. Parkinson&apos;s disease can alter posture and walking rhythm. Multiple sclerosis and peripheral neuropathy may reduce sensation in the feet or cause fatigue and weakness. Each person&apos;s pattern is different.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Is at Risk</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Is at Risk</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Anyone living with a neurological condition may have a higher chance of falling, and risk often rises with age. Other contributors include certain medications that cause drowsiness or lightheadedness, vision changes, poor sleep, low blood pressure on standing, and cognitive changes that affect attention or judgment. Because several factors often overlap, a fall is rarely caused by just one thing.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Why Prevention Matters</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Why Prevention Matters</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base mb-4">
           Falls can lead to fractures, head injuries and hospital stays. Just as important is the emotional effect. Fear of falling often leads people to move less, which weakens muscles and worsens balance, raising the real risk of falling. Breaking that cycle is one of the most valuable goals in rehabilitation.
         </p>
-        <blockquote className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-[Cormorant]">
+        <blockquote className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-cormorant">
           Fear of falling often leads people to move less, which weakens muscles and worsens balance, raising the real risk of falling.
         </blockquote>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">What the Research Shows</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What the Research Shows</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Studies of older adults and people with conditions such as Parkinson&apos;s disease and stroke have found that exercise programs focused on balance, leg strength and walking can reduce falls. Programs that challenge balance in a safe, progressive way tend to work best, and the benefits are strongest when exercise is continued over time. Evidence also supports reviewing medications, checking vision, and making home changes as part of a broader plan.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Ways to Reduce Fall Risk at Home</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Ways to Reduce Fall Risk at Home</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base mb-4">
           Small environmental changes can make a meaningful difference. Consider these steps:
         </p>
@@ -109,7 +104,7 @@ export default function Page() {
           ))}
         </ul>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">How Rehabilitation Can Help</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">How Rehabilitation Can Help</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base mb-4">
           Rehabilitation looks at the whole picture. Occupational therapy can help you adapt daily routines, evaluate your living space, and practice safer ways to dress, bathe and move through the home. Speech therapy can address thinking, attention and communication difficulties that influence safety, such as remembering to use a walker or following multi-step instructions. Mental health support can also help when worry, low mood or loss of confidence get in the way of staying active.
         </p>
@@ -117,7 +112,7 @@ export default function Page() {
           Goals are individual, so a plan should reflect what matters to you, whether that is walking to the mailbox, caring for grandchildren or returning to a favorite activity.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">When to Seek Professional Help</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">When to Seek Professional Help</h2>
         <ul className="space-y-3 mb-4">
           {[
             'You have fallen, or have had near-falls, in recent months',
@@ -150,7 +145,7 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h3 className="font-[Cormorant] text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
+          <h3 className="font-cormorant text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {related.map((r) => (
               <a key={r.href} href={r.href} className="animate-fade-up block bg-white rounded-2xl p-6 border border-[var(--color-border)] hover:shadow-lg transition-shadow">
@@ -158,7 +153,7 @@ export default function Page() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.75v10.5m-5.25-5.25h10.5" />
                 </svg>
                 <p className="text-xs uppercase tracking-widest text-[var(--color-muted)] mb-2">{r.label}</p>
-                <p className="font-[Cormorant] text-2xl text-[var(--color-ink)]">{r.title}</p>
+                <p className="font-cormorant text-2xl text-[var(--color-ink)]">{r.title}</p>
               </a>
             ))}
           </div>
@@ -167,7 +162,7 @@ export default function Page() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant] text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
           <p className="mb-8 text-white/80">We are here to help.</p>
           <a href="/contact" className="inline-block bg-white text-[var(--color-accent)] px-8 py-3 rounded-full font-medium hover:bg-[var(--color-light)] transition-colors">Contact Us</a>
         </div>

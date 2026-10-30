@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 
 export const metadata: Metadata = {
   title: 'Understanding Traumatic Brain Injury Recovery',
@@ -36,35 +37,29 @@ const related = [
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white">
+        <HeroBackdrop src="/images/stock/blog-understanding-traumatic-brain-injury-recovery.jpg" alt="A man does an arm stretch while a therapist watches in a rehabilitation studio." />
+        <div className="relative max-w-4xl mx-auto px-6">
           <nav className="text-sm text-white/70 mb-6 text-center">
             <a href="/" className="hover:text-white transition-colors">Home</a> › <a href="/blog" className="hover:text-white transition-colors">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4 text-center">Patient Education</p>
-          <h1 className="font-[Cormorant,serif] text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Understanding Traumatic Brain Injury Recovery</h1>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Understanding Traumatic Brain Injury Recovery</h1>
           <p className="text-center text-white/70 text-sm mt-6">Published October 2026 · 6 min read</p>
         </div>
       </section>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/blog-understanding-traumatic-brain-injury-recovery.jpg"} alt={"Woman with a head bandage being checked with a digital thermometer indoors, showcasing care and medical attention."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6">
         <p className="text-[var(--color-ink)] leading-loose text-base">One moment can change everything. A fall, a car accident, a sports collision: and suddenly a person who once managed work, family and daily life with ease is struggling to find words, remember appointments or tolerate bright lights. If you or someone you love is facing a traumatic brain injury (TBI), the road ahead can feel uncertain. Understanding how recovery works is a powerful first step.</p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">What Is a Traumatic Brain Injury?</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What Is a Traumatic Brain Injury?</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">A traumatic brain injury occurs when an external force, such as a blow, jolt or penetrating wound, disrupts normal brain function. TBIs are commonly grouped as mild, moderate or severe based on factors like loss of consciousness, memory loss around the event, and scores on standardized assessments. A concussion is a form of mild TBI. Even a &quot;mild&quot; injury can cause symptoms that significantly affect daily life.</p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Is Affected?</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Is Affected?</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">TBI can happen to anyone. Falls are a leading cause, particularly in young children and older adults. Motor vehicle crashes, sports injuries, workplace accidents and assaults also contribute. Military service members and athletes in contact sports face added risk. Because the brain controls movement, thinking, speech and emotion, the effects can reach nearly every part of a person&apos;s life.</p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Common Effects After a Brain Injury</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Common Effects After a Brain Injury</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">Symptoms vary widely depending on which areas of the brain were affected. They often fall into several categories:</p>
         <ul className="my-6 space-y-3 text-[var(--color-ink)] leading-loose text-base list-disc pl-6">
           <li><strong>Physical:</strong> headaches, fatigue, dizziness, balance problems, sensitivity to light and noise, and changes in sleep.</li>
@@ -73,15 +68,15 @@ export default function Page() {
           <li><strong>Emotional:</strong> irritability, anxiety, depression, mood swings and frustration.</li>
         </ul>
 
-        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-[Cormorant,serif]">
+        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-cormorant">
           Recovery from a brain injury is rarely a straight line, and progress often comes in small steps.
         </div>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">What Does the Recovery Process Look Like?</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What Does the Recovery Process Look Like?</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">Recovery is highly individual. Many people with mild TBI improve substantially within weeks to months, though some have symptoms that linger. Moderate and severe injuries often require longer, more structured rehabilitation. Research on neuroplasticity, the brain&apos;s ability to form new connections, shows that targeted, repeated practice can help people regain skills or develop new ways to accomplish tasks. Recovery is influenced by the severity of injury, age, overall health, and the quality of support available.</p>
         <p className="text-[var(--color-ink)] leading-loose text-base mt-4">Recovery is rarely a straight line. Good days and difficult days are common, and setbacks do not mean failure. Recovery is often most effective when care addresses the whole person.</p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">The Role of a Rehabilitation Team</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">The Role of a Rehabilitation Team</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">Because TBI affects many areas of function, a coordinated approach is generally recommended. Different professionals contribute in different ways:</p>
         <ul className="my-6 space-y-3 text-[var(--color-ink)] leading-loose text-base list-disc pl-6">
           <li><strong>Occupational therapy</strong> helps people rebuild daily living skills, routines and independence.</li>
@@ -91,7 +86,7 @@ export default function Page() {
         </ul>
         <p className="text-[var(--color-ink)] leading-loose text-base">Family members matter too. Caregivers often carry significant stress, and support for them is part of healthy recovery.</p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Tips for Everyday Recovery</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Tips for Everyday Recovery</h2>
         <ul className="my-6 space-y-4">
           {tips.map((t) => (
             <li key={t} className="flex gap-3 items-start text-[var(--color-ink)] leading-loose text-base">
@@ -101,7 +96,7 @@ export default function Page() {
           ))}
         </ul>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">When to Seek Professional Help</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">When to Seek Professional Help</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">Seek emergency care right away for worsening headache, repeated vomiting, seizures, confusion, weakness, or loss of consciousness after a head injury. For symptoms that persist or interfere with work, school, relationships or mood, a professional evaluation can clarify what is happening and what support may help.</p>
         <p className="text-[var(--color-ink)] leading-loose text-base mt-4">You do not have to navigate recovery alone. To talk with Irvine Neuro Rehabilitation in Southfield, MI, call (248) 415-2500 or reach out through our contact page.</p>
       </article>
@@ -118,11 +113,11 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h3 className="font-[Cormorant,serif] text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
+          <h3 className="font-cormorant text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {related.map((r) => (
               <a key={r.href} href={r.href} className="animate-fade-up block bg-white rounded-2xl p-6 border border-[var(--color-border)] hover:shadow-lg transition-shadow">
-                <h4 className="font-[Cormorant,serif] text-2xl text-[var(--color-primary)] mb-2">{r.title}</h4>
+                <h4 className="font-cormorant text-2xl text-[var(--color-primary)] mb-2">{r.title}</h4>
                 <p className="text-[var(--color-muted)] text-base">{r.text}</p>
               </a>
             ))}
@@ -132,7 +127,7 @@ export default function Page() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
           <p className="text-white/80 mb-8">We are here to help.</p>
           <a href="/contact" className="inline-block bg-[var(--color-accent)] border border-white/40 hover:bg-[var(--color-accent-dark)] transition-colors text-white px-8 py-3 rounded-full">Contact Us</a>
         </div>

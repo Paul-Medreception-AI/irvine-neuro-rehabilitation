@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 
 export const metadata: Metadata = {
   title: 'Physical Therapy and Movement After Neurological Injury',
@@ -36,31 +37,25 @@ const related = [
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white">
+        <HeroBackdrop src="/images/stock/blog-how-physical-therapy-supports-movement-after-neurological-in.jpg" alt="Side view of professional orthopedist in uniform and eyewear helping fit woman reaching arm with dumbbell in doctor office on blurred background" />
+        <div className="relative max-w-4xl mx-auto px-6 text-center">
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white transition-colors">Home</a> › <a href="/blog" className="hover:text-white transition-colors">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
-          <h1 className="font-[Cormorant,serif] text-5xl font-light leading-tight max-w-3xl mx-auto text-center">How Physical Therapy Supports Movement After Neurological Injury</h1>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl mx-auto text-center">How Physical Therapy Supports Movement After Neurological Injury</h1>
           <p className="mt-6 text-sm text-white/70">Published October 2026 · 6 min read</p>
         </div>
       </section>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/blog-how-physical-therapy-supports-movement-after-neurological-in.jpg"} alt={"Side view of professional orthopedist in uniform and eyewear helping fit woman reaching arm with dumbbell in doctor office on blurred background"} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6">
         <p className="text-[var(--color-ink)] leading-loose text-base">
           One day you could walk across a room, button a shirt or climb a flight of stairs without thinking about it. After a stroke, brain injury or spinal cord injury, those simple actions can suddenly feel out of reach. If that is where you or someone you love finds themselves, it is natural to feel frightened, frustrated and unsure what comes next. The encouraging truth is that the nervous system can adapt, and physical therapy is one of the most important ways to guide that adaptation.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">What Neurological Injury Does to Movement</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What Neurological Injury Does to Movement</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Movement begins in the brain, travels down the spinal cord and reaches the muscles through nerves. Damage anywhere along that pathway can disrupt the message. Depending on the location and severity of the injury, people may experience weakness on one side of the body, stiff or tight muscles, poor balance, tremor, numbness, trouble coordinating the arms and legs, or difficulty walking safely.
         </p>
@@ -68,18 +63,18 @@ export default function Page() {
           These changes can follow stroke, traumatic brain injury, spinal cord injury, and conditions such as multiple sclerosis or Parkinson disease. Each person&apos;s pattern is different, which is why a one-size-fits-all exercise plan rarely works well.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">How the Brain Relearns Movement</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">How the Brain Relearns Movement</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           The key concept behind rehabilitation is neuroplasticity, the brain&apos;s ability to form new connections and reorganize itself in response to experience. When one pathway is damaged, nearby areas can sometimes take over part of its job. This process does not happen automatically. It is shaped by practice that is repeated, meaningful and appropriately challenging.
         </p>
-        <blockquote className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-[Cormorant,serif]">
+        <blockquote className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-cormorant">
           The brain learns through repetition, and physical therapy provides the structure to make that repetition safe and purposeful.
         </blockquote>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           The brain learns through repetition, and physical therapy provides the structure to make that repetition safe and purposeful. A therapist chooses tasks that stretch your abilities without overwhelming them, then adjusts as you improve.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">What Physical Therapy Typically Involves</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What Physical Therapy Typically Involves</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Therapy usually starts with an assessment of strength, range of motion, muscle tone, balance, walking pattern and fall risk. From there, goals are set around what matters most to you, such as returning to work, caring for grandchildren or moving around the house independently. Common approaches include:
         </p>
@@ -94,12 +89,12 @@ export default function Page() {
           Physical therapy often works alongside other disciplines. Occupational therapy focuses on daily activities such as dressing and cooking, speech therapy addresses communication and swallowing, and counseling can support the emotional side of recovery.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">What the Research Shows</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What the Research Shows</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Clinical guidelines for stroke rehabilitation consistently recommend early, intensive, task-oriented practice, and studies have linked this kind of therapy to better walking ability and independence. Research on traumatic brain injury and conditions like Parkinson disease and multiple sclerosis also supports exercise and balance training for improving mobility and reducing falls. Progress varies widely, and recovery is often greatest in the first months, but meaningful gains can continue well beyond that period with ongoing practice.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Ways to Support Your Recovery</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Ways to Support Your Recovery</h2>
         <ul className="mt-4 space-y-4">
           {tips.map((t) => (
             <li key={t} className="flex gap-3 text-[var(--color-ink)] leading-loose text-base">
@@ -111,7 +106,7 @@ export default function Page() {
           ))}
         </ul>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Be Patient With Yourself</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Be Patient With Yourself</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Recovery rarely moves in a straight line. There will be good days, plateaus and days that feel like a step backward. Progress is often measured in small gains, and each one builds toward greater independence. Emotional changes such as sadness, anxiety or irritability are common and deserve attention too.
         </p>
@@ -134,12 +129,12 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h3 className="font-[Cormorant,serif] text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
+          <h3 className="font-cormorant text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {related.map((r) => (
               <a key={r.href} href={r.href} className="animate-fade-up block bg-white rounded-2xl p-6 border border-[var(--color-border)] hover:shadow-lg transition-shadow">
                 <p className="text-xs uppercase tracking-widest text-[var(--color-muted)] mb-2">{r.label}</p>
-                <p className="font-[Cormorant,serif] text-2xl text-[var(--color-ink)] mb-2">{r.title}</p>
+                <p className="font-cormorant text-2xl text-[var(--color-ink)] mb-2">{r.title}</p>
                 <p className="text-sm text-[var(--color-muted)]">{r.text}</p>
               </a>
             ))}
@@ -149,7 +144,7 @@ export default function Page() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
           <p className="text-white/80 mb-8">We are here to help.</p>
           <a href="/contact" className="inline-block bg-white text-[var(--color-primary)] px-8 py-3 rounded-full font-medium hover:bg-[var(--color-light)] transition-colors">Contact Us</a>
         </div>

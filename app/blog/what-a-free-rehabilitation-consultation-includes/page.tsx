@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 
 export const metadata: Metadata = {
   title: 'What a Free Rehabilitation Consultation Includes',
@@ -35,41 +36,35 @@ const related = [
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white">
-        <div className="max-w-5xl mx-auto px-6 text-center">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white">
+        <HeroBackdrop src="/images/stock/blog-what-a-free-rehabilitation-consultation-includes.jpg" alt="Chiropractor demonstrating spine anatomy to a patient during consultation indoors." />
+        <div className="relative max-w-5xl mx-auto px-6 text-center">
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white transition-colors">Home</a> › <a href="/blog" className="hover:text-white transition-colors">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
-          <h1 className="font-['Cormorant_Garamond',serif] text-5xl font-light leading-tight max-w-3xl mx-auto text-center">What a Free Rehabilitation Consultation Includes</h1>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl mx-auto text-center">What a Free Rehabilitation Consultation Includes</h1>
           <p className="mt-6 text-sm text-white/70">Published October 2026 · 6 min read</p>
         </div>
       </section>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/blog-what-a-free-rehabilitation-consultation-includes.jpg"} alt={"Chiropractor demonstrating spine anatomy to a patient during consultation indoors."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6">
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Picking up the phone to ask about rehabilitation can feel like a big step. Maybe you are recovering from a stroke or brain injury, or you are supporting someone who is. You may be wondering what will be asked of you, whether you will be judged, and whether anything will actually change. A first consultation exists to answer those worries, and understanding it ahead of time can make the first conversation much easier.
         </p>
 
-        <h2 className="font-['Cormorant_Garamond',serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">What a Rehabilitation Consultation Is</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What a Rehabilitation Consultation Is</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           A consultation is an introductory conversation between you and a rehabilitation team. It is not a full course of treatment. Its purpose is to help you and the practice understand whether the services are a good fit for your needs. You can describe what has changed, ask questions, and learn how therapy typically works. To confirm how a consultation is arranged at our Southfield, MI practice, call (248) 415-2500.
         </p>
 
-        <h2 className="font-['Cormorant_Garamond',serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Can Benefit</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Can Benefit</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Rehabilitation supports people whose daily function has been affected by neurological injury or illness, surgery, or other medical events. Common concerns include difficulty with hand use and self-care, changes in speech, language, or swallowing, problems with memory and thinking, and emotional strain during recovery. Families and caregivers often have questions too, and they are an important part of the conversation.
         </p>
 
-        <h2 className="font-['Cormorant_Garamond',serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">What Is Usually Discussed</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What Is Usually Discussed</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           While every practice works a little differently, an initial consultation commonly covers several areas:
         </p>
@@ -91,16 +86,16 @@ export default function Page() {
           Our team includes an occupational therapist, a speech therapist, a psychiatrist who serves as medical director, and licensed counselors who provide case management and support. A consultation helps identify which of these areas fit your situation.
         </p>
 
-        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-['Cormorant_Garamond',serif]">
+        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-cormorant">
           A consultation exists to answer those worries, and understanding it ahead of time can make the first conversation much easier.
         </div>
 
-        <h2 className="font-['Cormorant_Garamond',serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Why Early Conversations Matter</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Why Early Conversations Matter</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Research on neuroplasticity shows that the brain can reorganize and form new connections in response to practice and repetition. Studies of stroke and brain injury recovery generally find that structured, goal-focused rehabilitation supports better functional outcomes than no therapy, and that starting sooner is often helpful. Recovery is also about more than physical skills. Mood, sleep, and stress affect how well people can participate in therapy, which is why a whole-person view is valuable. Individual results vary, and no one can promise a particular outcome.
         </p>
 
-        <h2 className="font-['Cormorant_Garamond',serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">How to Prepare</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">How to Prepare</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base mb-4">
           You do not need to have everything figured out. A little preparation, though, helps the conversation stay focused on you:
         </p>
@@ -113,12 +108,12 @@ export default function Page() {
           ))}
         </ul>
 
-        <h2 className="font-['Cormorant_Garamond',serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Questions Worth Asking</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Questions Worth Asking</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Do not hold back. Ask who would be involved in your care, how goals are set, how progress is measured, and how family members can take part. Ask what practice you would do at home between sessions. If you have questions about coverage or costs, raise them directly, since those details depend on your own situation. Good rehabilitation is collaborative, and your questions help shape the plan.
         </p>
 
-        <h2 className="font-['Cormorant_Garamond',serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Taking the Next Step</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Taking the Next Step</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Reaching out is not a commitment. It is a way to gather information and feel more confident about what comes next. If you or someone you love is facing changes after a neurological event, we invite you to call Irvine Neuro Rehabilitation in Southfield, MI at (248) 415-2500 or send us a message. We will listen first.
         </p>
@@ -136,11 +131,11 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h3 className="font-['Cormorant_Garamond',serif] text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
+          <h3 className="font-cormorant text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {related.map((r) => (
               <a key={r.href} href={r.href} className="animate-fade-up block bg-white rounded-2xl p-6 border border-[var(--color-border)] hover:shadow-lg transition-shadow">
-                <h4 className="font-['Cormorant_Garamond',serif] text-2xl text-[var(--color-primary)] mb-2">{r.title}</h4>
+                <h4 className="font-cormorant text-2xl text-[var(--color-primary)] mb-2">{r.title}</h4>
                 <p className="text-[var(--color-muted)] text-sm leading-relaxed">{r.text}</p>
               </a>
             ))}
@@ -150,7 +145,7 @@ export default function Page() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-['Cormorant_Garamond',serif] text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
           <p className="text-white/80 mb-8">We are here to help.</p>
           <a href="/contact" className="inline-block bg-white text-[var(--color-primary)] px-8 py-3 rounded-full font-medium hover:bg-[var(--color-light)] transition-colors">Contact Us</a>
         </div>

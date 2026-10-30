@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 
 export const metadata: Metadata = {
   title: 'Terms and Conditions - SMS | Irvine Neuro Rehabilitation',
@@ -9,8 +10,9 @@ export const metadata: Metadata = {
 export default function TermsSmsPage() {
   return (
     <main className="min-h-screen">
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
-        <div className="container mx-auto px-6">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white text-center">
+        <HeroBackdrop src="/images/stock/hub-sms.jpg" alt="An older woman reading a message on her smartphone outdoors" />
+        <div className="relative container mx-auto px-6">
           <h1 className="font-cormorant text-5xl font-bold mb-4 animate-fade-up">
             Irvine Neuro Rehabilitation Terms and Conditions - SMS
           </h1>

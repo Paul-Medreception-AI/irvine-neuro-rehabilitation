@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -42,27 +43,21 @@ const faqs = [
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
+        <HeroBackdrop src="/images/stock/compare-holistic-vs-standard-rehabilitation.jpg" alt="Serious doctor in uniform massaging smiling female patients neck and stretching stiff neck muscles against gray background" />
+        <div className="relative max-w-4xl mx-auto px-6">
           <nav className="text-sm text-white/70 mb-6">
             <Link href="/" className="hover:text-white transition-colors">Home</Link> › <span>Resources</span> › <span>Comparison</span>
           </nav>
-          <h1 className="font-[Cormorant_Garamond,serif] text-5xl font-light">Holistic vs Standard Rehabilitation Programs</h1>
+          <h1 className="font-cormorant text-5xl font-light">Holistic vs Standard Rehabilitation Programs</h1>
           <p className="mt-6 text-lg text-white/80 max-w-2xl mx-auto">Understand how the two approaches differ so you can choose the path that fits your recovery in Southfield, MI.</p>
         </div>
       </section>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/compare-holistic-vs-standard-rehabilitation.jpg"} alt={"Serious doctor in uniform massaging smiling female patients neck and stretching stiff neck muscles against gray background"} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl mb-12 text-[var(--color-primary)]">Side-by-Side Comparison</h2>
+          <h2 className="font-cormorant text-4xl mb-12 text-[var(--color-primary)]">Side-by-Side Comparison</h2>
           <div className="rounded-2xl overflow-hidden border border-[var(--color-border)] animate-fade-up">
             <div className="grid grid-cols-3 bg-[var(--color-primary)] text-white font-medium">
               <div className="p-4">Factor</div>
@@ -83,13 +78,13 @@ export default function Page() {
       <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-6 text-[var(--color-ink)]">
           <div className="animate-fade-up">
-            <h2 className="font-[Cormorant_Garamond,serif] text-4xl mb-6 text-[var(--color-primary)]">Holistic Rehabilitation</h2>
+            <h2 className="font-cormorant text-4xl mb-6 text-[var(--color-primary)]">Holistic Rehabilitation</h2>
             <p className="mb-4 leading-relaxed">Holistic rehabilitation treats the whole person rather than a single symptom. After a brain injury, stroke or other neurological change, movement, speech, memory, mood and daily routines are often affected together. A holistic plan coordinates care across these areas.</p>
             <p className="mb-4 leading-relaxed">Evidence generally supports multidisciplinary rehabilitation for complex conditions, since progress in one area often supports progress in others. Typical patients have several concurrent challenges and benefit from one coordinated plan.</p>
             <p className="mb-12 leading-relaxed">Expect an initial assessment, shared goals, and regular reviews as needs change. Sessions may involve different clinicians, with case management helping keep everything aligned.</p>
           </div>
           <div className="animate-fade-up">
-            <h2 className="font-[Cormorant_Garamond,serif] text-4xl mb-6 text-[var(--color-primary)]">Standard Rehabilitation</h2>
+            <h2 className="font-cormorant text-4xl mb-6 text-[var(--color-primary)]">Standard Rehabilitation</h2>
             <p className="mb-4 leading-relaxed">Standard rehabilitation usually centers on one discipline, such as physical, occupational or speech therapy, with a defined goal and timeline. It is a proven, efficient route when the problem is well defined.</p>
             <p className="mb-4 leading-relaxed">Evidence is strong for focused interventions like strengthening, gait training or targeted language exercises. Typical patients have one main impairment and few other barriers to recovery.</p>
             <p className="leading-relaxed">Expect an evaluation, a structured exercise or skills plan, and progress measured against specific milestones. If new needs appear, the plan can be expanded.</p>
@@ -98,7 +93,7 @@ export default function Page() {
       </section>
 
       <section className="bg-[var(--color-light)] rounded-2xl p-12 max-w-3xl mx-auto my-20 animate-fade-up">
-        <h2 className="font-[Cormorant_Garamond,serif] text-4xl mb-8 text-[var(--color-primary)]">How to Decide</h2>
+        <h2 className="font-cormorant text-4xl mb-8 text-[var(--color-primary)]">How to Decide</h2>
         <h3 className="text-xl font-semibold mb-3 text-[var(--color-primary)]">Choose holistic if...</h3>
         <ul className="space-y-3 mb-8 text-[var(--color-ink)]">
           {['Several areas of function are affected at once', 'Mood, thinking or daily living are concerns alongside physical recovery', 'You want one coordinated plan across providers'].map((t) => (
@@ -115,7 +110,7 @@ export default function Page() {
 
       <section className="bg-white py-20">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl mb-8 text-[var(--color-primary)]">Frequently Asked Questions</h2>
+          <h2 className="font-cormorant text-4xl mb-8 text-[var(--color-primary)]">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <details key={f.q} className="group border border-[var(--color-border)] rounded-xl p-5 animate-fade-up">
@@ -132,7 +127,7 @@ export default function Page() {
 
       <section className="bg-[var(--color-primary)] py-20 text-center text-white">
         <div className="max-w-2xl mx-auto px-6 animate-fade-up">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl mb-4">Ready to Choose Your Path?</h2>
+          <h2 className="font-cormorant text-4xl mb-4">Ready to Choose Your Path?</h2>
           <p className="mb-8 text-white/80">Talk with Irvine Neuro Rehabilitation in Southfield, MI at (248) 415-2500.</p>
           <Link href="/contact" className="inline-block bg-[var(--color-accent)] border border-white text-white px-8 py-3 rounded-full hover:bg-[var(--color-accent-dark)] transition-colors">Discuss Your Options</Link>
         </div>

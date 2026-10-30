@@ -2,6 +2,7 @@
 // mapped from lib/data/conditions.ts, so a page added there (including by the silo
 // builder's data_append) appears here without editing this file.
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 import { CONDITIONS } from '../../lib/data/conditions'
 
 const TITLE = "Conditions We Treat | Irvine Neuro Rehabilitation"
@@ -31,8 +32,9 @@ const CARDS: Card[] = [
 export default function ConditionsHubPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
+        <HeroBackdrop src="/images/stock/hub-conditions.jpg" alt="A physical therapist working with a patient on shoulder movement" />
+        <div className="relative max-w-4xl mx-auto px-6">
           <nav className="text-sm text-white/70 mb-4" aria-label="Breadcrumb">
             <a href="/" className="hover:underline">Home</a>
             <span className="mx-2">›</span>

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 
 export const metadata: Metadata = {
   title: 'Individual vs Group Therapy: Which Fits Your Recovery?',
@@ -43,25 +44,19 @@ export default function Page() {
   const bList = ['You want to connect with others who understand', 'You want to practice skills in a social setting', 'You value shared experience and encouragement', 'You are comfortable with a set schedule']
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6 animate-fade-up">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
+        <HeroBackdrop src="/images/stock/compare-individual-vs-group-therapy.jpg" alt="A man having a counseling session with a therapist in a modern office setting." />
+        <div className="relative max-w-4xl mx-auto px-6 animate-fade-up">
           <nav className="text-sm mb-6 text-[var(--color-light)]">Home › Resources › Comparison</nav>
-          <h1 className="font-[Cormorant] text-5xl font-light">Individual vs Group Therapy Sessions: Which Fits Your Recovery?</h1>
+          <h1 className="font-cormorant text-5xl font-light">Individual vs Group Therapy Sessions: Which Fits Your Recovery?</h1>
           <p className="mt-6 text-lg text-[var(--color-light)] max-w-2xl mx-auto">A clear look at how each format works, so you can make a confident decision about your care in Southfield, MI.</p>
         </div>
       </section>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/compare-individual-vs-group-therapy.jpg"} alt={"A man having a counseling session with a therapist in a modern office setting."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-[Cormorant] text-4xl mb-12 text-[var(--color-primary)]">Side-by-Side Comparison</h2>
+          <h2 className="font-cormorant text-4xl mb-12 text-[var(--color-primary)]">Side-by-Side Comparison</h2>
           <div className="rounded-2xl overflow-hidden border border-[var(--color-border)] animate-fade-up">
             <div className="grid grid-cols-3 bg-[var(--color-primary)] text-white font-semibold">
               <div className="p-4">Factor</div>
@@ -82,13 +77,13 @@ export default function Page() {
       <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-6 text-[var(--color-ink)]">
           <div className="animate-fade-up">
-            <h2 className="font-[Cormorant] text-4xl mb-6 text-[var(--color-primary)]">Individual Therapy</h2>
+            <h2 className="font-cormorant text-4xl mb-6 text-[var(--color-primary)]">Individual Therapy</h2>
             <p className="mb-4">Individual therapy is a one-on-one relationship between you and a clinician. Sessions focus entirely on your history, symptoms and goals, so the approach can be adjusted as your needs change.</p>
             <p className="mb-4">Evidence supports individual therapy across many concerns, including mood, anxiety, adjustment after illness or injury, and skill rebuilding. The consistent one-to-one relationship is often cited as a helpful factor.</p>
             <p className="mb-12">A typical patient values privacy, has complex or sensitive concerns, or needs focused work. Expect an initial conversation about goals, then regular sessions with practical steps to work on between visits.</p>
           </div>
           <div className="animate-fade-up">
-            <h2 className="font-[Cormorant] text-4xl mb-6 text-[var(--color-primary)]">Group Therapy</h2>
+            <h2 className="font-cormorant text-4xl mb-6 text-[var(--color-primary)]">Group Therapy</h2>
             <p className="mb-4">Group therapy brings several people together with a facilitator. Members share experiences, practice skills and learn that they are not alone in what they are facing.</p>
             <p className="mb-4">Research indicates group formats can be effective for many concerns, particularly those involving coping, communication and social connection. Hearing different perspectives can open new ways of approaching challenges.</p>
             <p>A typical participant wants community and accountability and is comfortable learning alongside others. Expect a set meeting rhythm, shared ground rules about confidentiality, and participation at your own comfort level.</p>
@@ -97,7 +92,7 @@ export default function Page() {
       </section>
 
       <section className="bg-[var(--color-light)] rounded-2xl p-12 max-w-3xl mx-auto my-20 animate-fade-up">
-        <h2 className="font-[Cormorant] text-4xl mb-8 text-[var(--color-primary)]">How to Decide</h2>
+        <h2 className="font-cormorant text-4xl mb-8 text-[var(--color-primary)]">How to Decide</h2>
         <h3 className="font-semibold text-xl mb-3 text-[var(--color-primary)]">Choose individual therapy if…</h3>
         <ul className="space-y-2 mb-8 text-[var(--color-ink)]">
           {aList.map((t) => (<li key={t} className="flex gap-3"><Check />{t}</li>))}
@@ -110,7 +105,7 @@ export default function Page() {
 
       <section className="bg-white py-20">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant] text-4xl mb-8 text-[var(--color-primary)]">Frequently Asked Questions</h2>
+          <h2 className="font-cormorant text-4xl mb-8 text-[var(--color-primary)]">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <details key={f.q} className="border border-[var(--color-border)] rounded-xl p-5 animate-fade-up">
@@ -124,7 +119,7 @@ export default function Page() {
 
       <section className="bg-[var(--color-primary)] py-20 text-center text-white">
         <div className="max-w-2xl mx-auto px-6 animate-fade-up">
-          <h2 className="font-[Cormorant] text-4xl mb-4">Not sure which is right for you?</h2>
+          <h2 className="font-cormorant text-4xl mb-4">Not sure which is right for you?</h2>
           <p className="mb-8 text-[var(--color-light)]">Talk with our team at Irvine Neuro Rehabilitation in Southfield, MI, or call (248) 415-2500.</p>
           <a href="/contact" className="inline-block rounded-full bg-white text-[var(--color-accent)] px-8 py-3 font-semibold transition-colors hover:bg-[var(--color-light)]">Discuss Your Options</a>
         </div>

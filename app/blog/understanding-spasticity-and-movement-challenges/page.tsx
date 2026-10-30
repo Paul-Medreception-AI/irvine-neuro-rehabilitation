@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 
 export const metadata: Metadata = {
   title: 'Understanding Spasticity and Movement Challenges',
@@ -36,31 +37,25 @@ const related = [
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white">
-        <div className="max-w-5xl mx-auto px-6 text-center">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white">
+        <HeroBackdrop src="/images/stock/blog-understanding-spasticity-and-movement-challenges.jpg" alt="Close-up of a person using a wheelchair in a studio setting with a gray background." />
+        <div className="relative max-w-5xl mx-auto px-6 text-center">
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white transition-colors">Home</a> › <a href="/blog" className="hover:text-white transition-colors">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
-          <h1 className="font-[Cormorant,serif] text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Understanding Spasticity and Movement Challenges</h1>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Understanding Spasticity and Movement Challenges</h1>
           <p className="mt-6 text-sm text-white/80">Published October 2026 · 6 min read</p>
         </div>
       </section>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/blog-understanding-spasticity-and-movement-challenges.jpg"} alt={"Close-up of a person using a wheelchair in a studio setting with a gray background."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6 text-[var(--color-ink)]">
         <p className="leading-loose text-base">
           Reaching for a cup, buttoning a shirt or taking a step across the kitchen are things most of us never think about. For someone living with spasticity, each of these can feel like working against a muscle that will not let go. If your arm pulls inward on its own, or your leg stiffens just when you need it to move, you are not imagining it, and you are not alone.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">What Is Spasticity?</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What Is Spasticity?</h2>
         <p className="leading-loose text-base mb-4">
           Spasticity is a condition in which muscles stay tight or stiff because of abnormal signals between the brain, spinal cord and muscles. Normally, muscles contract and relax in a balanced way. When the pathways that regulate this balance are damaged, muscles can become overactive, especially when they are stretched quickly.
         </p>
@@ -68,7 +63,7 @@ export default function Page() {
           People describe it in different ways: stiffness, heaviness, tightness, sudden jerks or spasms, or a limb that rests in an unusual position. It can be mild, affecting only a little ease of movement, or severe enough to limit walking, dressing, hygiene and sleep.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Does It Affect?</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Does It Affect?</h2>
         <p className="leading-loose text-base mb-4">
           Spasticity results from injury or disease of the central nervous system. Common causes include:
         </p>
@@ -83,16 +78,16 @@ export default function Page() {
           Because it can appear weeks or months after the original injury, many people are surprised when stiffness develops during recovery. This is common and does not mean you did something wrong.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Why It Matters</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Why It Matters</h2>
         <p className="leading-loose text-base">
           Spasticity is more than discomfort. Over time, muscles that stay shortened can lead to contractures, where a joint becomes fixed in a bent position. It can also cause pain, skin problems from poor hygiene access, trouble with positioning, fatigue, and difficulty with speech, swallowing or self-care when it affects the face, trunk or arms. Emotionally, losing the ability to move the way you used to can be frustrating and isolating. Addressing spasticity early helps protect function, comfort and independence.
         </p>
 
-        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-[Cormorant,serif]">
+        <div className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-cormorant">
           Addressing spasticity early helps protect function, comfort and independence.
         </div>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">What the Research Tells Us</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What the Research Tells Us</h2>
         <p className="leading-loose text-base mb-4">
           Clinical guidelines generally support a combined approach rather than any single fix. Stretching, positioning and regular movement are considered foundational. Task-oriented training, where you practice real activities repeatedly, is supported by evidence for improving function after stroke and brain injury. Splints or braces may help maintain joint position.
         </p>
@@ -100,12 +95,12 @@ export default function Page() {
           Medical options may include oral medications, injections that target specific overactive muscles, or, in select cases, other procedures. Which options are appropriate depends on your diagnosis, how widespread the stiffness is, and your goals. These decisions are best made with a physician who knows your history.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">The Role of Rehabilitation</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">The Role of Rehabilitation</h2>
         <p className="leading-loose text-base">
           Rehabilitation looks at the whole person. Occupational therapy focuses on everyday tasks such as dressing, eating and managing the home, and on adaptive strategies that make them easier. Speech therapy can help when stiffness or weakness affects communication or swallowing. Medical oversight and counseling support round out care, since living with a lasting condition affects mood, relationships and routines. Irvine Neuro Rehabilitation in Southfield, MI brings together occupational therapy, speech therapy, psychiatry and case management and counseling support.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Tips for Daily Life</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Tips for Daily Life</h2>
         <ul className="space-y-3 mb-4">
           {tips.map((t) => (
             <li key={t} className="flex gap-3 leading-loose text-base">
@@ -120,7 +115,7 @@ export default function Page() {
           Seek prompt medical attention if stiffness suddenly worsens, since a new infection, pressure sore or other problem may be the trigger.
         </p>
 
-        <h2 className="font-[Cormorant,serif] text-3xl text-[var(--color-ink)] mt-12 mb-4">Taking the Next Step</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Taking the Next Step</h2>
         <p className="leading-loose text-base">
           Spasticity can be managed, and many people find that with the right plan, movement becomes easier and daily life feels more manageable. If stiffness or movement challenges are affecting you or someone you love, reach out to Irvine Neuro Rehabilitation at (248) 415-2500 to talk about your needs and the support that may help.
         </p>
@@ -139,12 +134,12 @@ export default function Page() {
       </div>
 
       <section className="bg-[var(--color-cream)] py-16 max-w-7xl mx-auto px-6">
-        <h3 className="font-[Cormorant,serif] text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
+        <h3 className="font-cormorant text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
         <div className="grid md:grid-cols-3 gap-6">
           {related.map((r) => (
             <a key={r.href} href={r.href} className="animate-fade-up block bg-white rounded-2xl p-6 border border-[var(--color-border)] hover:shadow-lg transition-shadow">
               <p className="text-xs uppercase tracking-widest text-[var(--color-muted)] mb-2">{r.label}</p>
-              <p className="font-[Cormorant,serif] text-2xl text-[var(--color-ink)]">{r.title}</p>
+              <p className="font-cormorant text-2xl text-[var(--color-ink)]">{r.title}</p>
             </a>
           ))}
         </div>
@@ -152,7 +147,7 @@ export default function Page() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
           <p className="mb-8 text-white/80">We are here to help.</p>
           <a href="/contact" className="inline-block bg-white text-[var(--color-primary)] px-8 py-3 rounded-full font-medium hover:bg-[var(--color-light)] transition-colors">Contact Us</a>
         </div>

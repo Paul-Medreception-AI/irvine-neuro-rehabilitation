@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 
 export const metadata: Metadata = {
   title: 'Insurance & Billing | Irvine Neuro Rehabilitation',
-  description: 'Learn how benefits verification, billing, and self-pay estimates work at Irvine Neuro Rehabilitation in Southfield, MI. Call (248) 415-2500 with questions.',
+  description: 'Insurance at Irvine Neuro Rehabilitation, Southfield MI: Medicare, BCBS of Michigan, Blue Care Network, UnitedHealthcare, auto and workers comp. (248) 415-2500.',
   alternates: { canonical: '/insurance' },
   openGraph: {
     title: 'Insurance & Billing | Irvine Neuro Rehabilitation',
-    description: 'Learn how benefits verification, billing, and self-pay estimates work at Irvine Neuro Rehabilitation in Southfield, MI. Call (248) 415-2500 with questions.',
+    description: 'Insurance at Irvine Neuro Rehabilitation, Southfield MI: Medicare, BCBS of Michigan, Blue Care Network, UnitedHealthcare, auto and workers comp. (248) 415-2500.',
     url: 'https://irvineneurorehabilitation.com/insurance',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
@@ -14,14 +15,26 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary',
     title: 'Insurance & Billing | Irvine Neuro Rehabilitation',
-    description: 'Learn how benefits verification, billing, and self-pay estimates work at Irvine Neuro Rehabilitation in Southfield, MI. Call (248) 415-2500 with questions.',
+    description: 'Insurance at Irvine Neuro Rehabilitation, Southfield MI: Medicare, BCBS of Michigan, Blue Care Network, UnitedHealthcare, auto and workers comp. (248) 415-2500.',
   },
 }
 
+// The plans the practice lists in its own records (MedReception Studio, 2026-10-30).
+const PLANS = [
+  'Medicare',
+  'Medicare Plus Blue',
+  'Blue Cross Blue Shield of Michigan',
+  'Blue Care Network',
+  'UnitedHealthcare',
+  'Brain Injury Medicaid Waiver',
+  'Auto insurance',
+  "Workers' compensation",
+]
+
 const steps = [
   {
-    title: 'Verify Coverage',
-    text: 'Before your first visit we check your specific benefits so you understand what your plan may cover, including any co-pay or deductible.',
+    title: 'Ask About Your Plan',
+    text: 'Call us before your first visit and tell us which service you need. Some services are billed to insurance and some are paid directly, so we will talk through which applies to you.',
     icon: (
       <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M12 3 4.5 6v5.25c0 4.5 3.2 8.2 7.5 9.75 4.3-1.55 7.5-5.25 7.5-9.75V6L12 3Z" />
@@ -59,8 +72,8 @@ const steps = [
 
 const faqs = [
   {
-    q: 'Will you tell me what my insurance covers?',
-    a: 'We verify your specific benefits before your first visit and explain what we find. Please keep in mind that a benefits check is not a guarantee of payment; your insurer makes the final determination.',
+    q: 'Which insurance plans do you work with?',
+    a: 'Medicare, Medicare Plus Blue, Blue Cross Blue Shield of Michigan, Blue Care Network, UnitedHealthcare, the Brain Injury Medicaid Waiver, auto insurance and workers compensation. Coverage depends on your plan and the service, so call us with your plan details. Your insurer makes the final determination.',
   },
   {
     q: 'What is the difference between a co-pay and a deductible?',
@@ -71,8 +84,8 @@ const faqs = [
     a: 'An EOB is a statement from your insurer showing what was billed, what the plan paid, and what may be your responsibility. It is not a bill, but it is helpful to compare against any statement you receive from us.',
   },
   {
-    q: 'What if I do not use insurance?',
-    a: 'Self-pay patients are welcome and receive an estimate up front, before care begins, so you know what to expect.',
+    q: 'Are some services paid directly?',
+    a: 'Yes. Some services are billed to insurance and some are paid directly. Tell us which service you are asking about and we will explain how it is handled.',
   },
   {
     q: 'Who do I call with a billing question?',
@@ -83,17 +96,18 @@ const faqs = [
 export default function InsurancePage() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <h1 className="font-[Cormorant,serif] text-5xl font-light">Insurance &amp; Billing</h1>
-          <p className="mt-4 text-lg text-white/80">Transparent pricing and billing information</p>
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
+        <HeroBackdrop src="/images/stock/hub-insurance.jpg" alt="A woman reviewing paperwork at a desk while on a phone call" />
+        <div className="relative max-w-3xl mx-auto px-6">
+          <h1 className="font-cormorant text-5xl font-light">Insurance &amp; Billing</h1>
+          <p className="mt-4 text-lg text-white/80">The plans we work with, and how billing works</p>
         </div>
       </section>
 
       {/* The real accepted-carrier list must be supplied by the practice before any carrier is named on this page. */}
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl text-center mb-16 text-[var(--color-primary)]">Accepted Insurance Plans</h2>
+          <h2 className="font-cormorant text-4xl text-center mb-16 text-[var(--color-primary)]">Accepted Insurance Plans</h2>
           <div className="animate-fade-up max-w-3xl mx-auto bg-white border border-[var(--color-border)] rounded-2xl p-10 text-center">
             <div className="flex justify-center text-[var(--color-accent)] mb-4">
               <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -101,10 +115,17 @@ export default function InsurancePage() {
               </svg>
             </div>
             <p className="text-[var(--color-ink)] leading-relaxed">
-              Coverage for neuro rehabilitation and therapy services varies a great deal between plans, and even between different plans from the same insurer. Rather than give you a generic list, we verify your specific benefits before your first visit so you know where you stand.
+              We work with these plans and programs:
             </p>
-            <p className="mt-4 text-[var(--color-ink)] leading-relaxed">
-              Self-pay patients are welcome and receive an estimate up front.
+            <ul className="mt-6 grid sm:grid-cols-2 gap-3 text-left">
+              {PLANS.map((p) => (
+                <li key={p} className="flex gap-3 items-start rounded-xl bg-[var(--color-cream)] border border-[var(--color-border)] px-4 py-3 text-[var(--color-ink)]">
+                  <span className="text-[var(--color-primary)]" aria-hidden="true">✓</span><span>{p}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-6 text-[var(--color-ink)] leading-relaxed">
+              Some services are billed to insurance and some are paid directly. Coverage also depends on your specific plan, so call us and tell us which service you are asking about.
             </p>
             <a href="tel:2484152500" className="mt-6 inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] transition-colors text-white px-8 py-3 rounded-full">
               Call (248) 415-2500
@@ -115,13 +136,13 @@ export default function InsurancePage() {
 
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl text-center mb-16 text-[var(--color-primary)]">How Billing Works</h2>
+          <h2 className="font-cormorant text-4xl text-center mb-16 text-[var(--color-primary)]">How Billing Works</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((s, i) => (
               <div key={s.title} className="animate-fade-up bg-[var(--color-cream)] border border-[var(--color-border)] rounded-2xl p-8 text-center">
                 <div className="flex justify-center text-[var(--color-accent)] mb-4">{s.icon}</div>
                 <p className="text-sm text-[var(--color-muted)]">Step {i + 1}</p>
-                <h3 className="font-[Cormorant,serif] text-2xl text-[var(--color-primary)] mb-3">{s.title}</h3>
+                <h3 className="font-cormorant text-2xl text-[var(--color-primary)] mb-3">{s.title}</h3>
                 <p className="text-[var(--color-ink)] text-sm leading-relaxed">{s.text}</p>
               </div>
             ))}
@@ -130,7 +151,7 @@ export default function InsurancePage() {
       </section>
 
       <section className="animate-fade-up bg-[var(--color-light)] rounded-2xl p-12 max-w-3xl mx-auto mx-6 my-20">
-        <h3 className="font-[Cormorant,serif] text-3xl text-[var(--color-primary)] mb-4">Self-Pay Options</h3>
+        <h3 className="font-cormorant text-3xl text-[var(--color-primary)] mb-4">Self-Pay Options</h3>
         <p className="text-[var(--color-ink)] leading-relaxed">
           If you are not using insurance, you can ask for a good faith estimate of expected charges before care begins. Under the federal No Surprises Act, patients who are uninsured or choose not to use insurance have the right to receive a good faith estimate of expected costs for scheduled care.
         </p>
@@ -141,7 +162,7 @@ export default function InsurancePage() {
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl text-center mb-12 text-[var(--color-primary)]">Billing Questions</h2>
+          <h2 className="font-cormorant text-4xl text-center mb-12 text-[var(--color-primary)]">Billing Questions</h2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <details key={f.q} className="animate-fade-up group bg-white border border-[var(--color-border)] rounded-xl p-6">
@@ -155,7 +176,7 @@ export default function InsurancePage() {
 
       <section className="bg-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="font-[Cormorant,serif] text-4xl font-light mb-4">Questions About Coverage?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Questions About Coverage?</h2>
           <p className="text-white/80 mb-8">Start with a free consultation and we will help you understand your options.</p>
           <a href="/contact" className="inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] border border-white/40 transition-colors text-white px-8 py-3 rounded-full">
             Request a Free Consultation

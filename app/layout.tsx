@@ -8,7 +8,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ['300','400','500','600','700'], variable: '--font-cormorant' })
 const dmSans = DM_Sans({ subsets: ['latin'], weight: ['300','400','500','600'], variable: '--font-dm-sans' })
 
-const siteTitle = 'Irvine Neuro Rehabilitation | Personalized Neuro Rehabilitation to Reclaim Your Independence'
+const siteTitle = 'Irvine Neuro Rehabilitation | Brain Injury Rehab in Southfield, MI'
 const siteDescription = 'Since 1986, Irvine Neuro Rehabilitation has served patients and families with compassion and understanding. Our holistic programs are shaped around your needs and physical condition, never a one-size-fits-all plan.'
 
 
@@ -39,15 +39,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
-      <body className="font-[family-name:var(--font-dm-sans)] bg-[var(--color-cream)] text-[var(--color-ink)]">
+      <body className="font-sans bg-[var(--color-cream)] text-[var(--color-ink)]">
         <SiteHeader />
-        <main>{children}</main>
+        <div id="content">{children}</div>
         <footer className="bg-[var(--color-ink)] text-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div>
-                <img src="/logo.png" alt="Irvine Neuro Rehabilitation" className="h-11 w-auto" />
-                <p className="mt-4 text-white/70 text-sm">Compassionate, goal-focused neuro rehabilitation since 1986.</p>
+                <a href="/" className="inline-block bg-white rounded-xl px-4 py-3" aria-label="Irvine Neuro Rehabilitation, home"><img src="/logo.png" alt="Irvine Neuro Rehabilitation" className="h-[66px] w-auto max-w-full" /></a>
+                <p className="mt-4 text-white/70 text-sm">Neuro rehabilitation and residential care in Southfield, Michigan since 1986. Licensed by the State of Michigan and CARF accredited.</p>
                 <div className="flex items-center gap-4 mt-6">
                   <a href="https://www.facebook.com/IrvineManor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white/70 hover:text-white transition-colors">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.600V3.800c-.3 0-1.300-.2-2.500-.2-2.500 0-4.200 1.500-4.200 4.300v2.600H7.400v3.300h2.800V22h3.300z"/></svg>
@@ -55,7 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <a href="https://www.instagram.com/irvineneurorehabllc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-white/70 hover:text-white transition-colors">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.800 2h8.400A5.800 5.800 0 0122 7.800v8.400a5.800 5.800 0 01-5.800 5.800H7.800A5.800 5.800 0 012 16.200V7.800A5.800 5.800 0 017.800 2zm-.2 2A3.600 3.600 0 004 7.600v8.800A3.600 3.600 0 007.600 20h8.800a3.600 3.600 0 003.600-3.600V7.600A3.600 3.600 0 0016.400 4H7.600zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6zm5.200-3.300a1.200 1.200 0 110 2.400 1.200 1.200 0 010-2.400z"/></svg>
                   </a>
-                  <a href="https://www.linkedin.com/company/49111151/admin/feed/posts/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white/70 hover:text-white transition-colors">
+                  <a href="https://www.linkedin.com/company/49111151/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-white/70 hover:text-white transition-colors">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.900 3a2 2 0 110 4 2 2 0 010-4zM3 9h4v12H3V9zm7 0h3.800v1.700c.6-1 1.900-2 3.900-2 4 0 4.300 2.600 4.300 5.900V21h-4v-5.700c0-1.400 0-3.100-1.900-3.100s-2.200 1.500-2.200 3V21h-4V9z"/></svg>
                   </a>
                 </div>
@@ -66,15 +66,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <li><a href="/services" className="hover:text-white transition-colors">Services</a></li>
                   <li><a href="/conditions" className="hover:text-white transition-colors">Conditions</a></li>
                   <li><a href="/about" className="hover:text-white transition-colors">About</a></li>
-                  <li><a href="/team" className="hover:text-white transition-colors">Team</a></li>
+                  <li><a href="/team" className="hover:text-white transition-colors">Our Team</a></li>
+                  <li><a href="/locations/southfield-mi" className="hover:text-white transition-colors">Our Southfield Campus</a></li>
+                  <li><a href="/reviews" className="hover:text-white transition-colors">Patient Reviews</a></li>
                   <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-semibold mb-4">Contact</h3>
-                <p className="text-sm text-white/70">
-                  Phone: <a href="tel:(248) 415-2500" className="hover:text-white transition-colors">(248) 415-2500</a>
-                </p>
+                <address className="not-italic text-sm text-white/70 space-y-2">
+                  <p>25700 Lahser Road<br />Southfield, Michigan 48033</p>
+                  <p>Phone: <a href="tel:+12484152500" className="hover:text-white transition-colors">(248) 415-2500</a></p>
+                  <p>Mon to Thu, 9:00am to 5:00pm<br />Fri, 9:00am to 12:00pm</p>
+                  <p><a href="https://www.google.com/maps/search/?api=1&query=25700+Lahser+Road+Southfield+MI+48033" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-white">Get directions</a></p>
+                </address>
               </div>
             </div>
             <div className="mt-12 pt-8 border-t border-white/10 text-sm text-white/70">

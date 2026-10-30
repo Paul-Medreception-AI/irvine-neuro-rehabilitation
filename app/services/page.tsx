@@ -2,6 +2,7 @@
 // mapped from lib/data/services.ts, so a page added there (including by the silo
 // builder's data_append) appears here without editing this file.
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 import { SERVICES } from '../../lib/data/services'
 
 const TITLE = "Services | Irvine Neuro Rehabilitation"
@@ -31,8 +32,9 @@ const CARDS: Card[] = [
 export default function ServicesHubPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
+        <HeroBackdrop src="/images/stock/hub-services.jpg" alt="A therapist guiding an older man through an arm stretching exercise" />
+        <div className="relative max-w-4xl mx-auto px-6">
           <nav className="text-sm text-white/70 mb-4" aria-label="Breadcrumb">
             <a href="/" className="hover:underline">Home</a>
             <span className="mx-2">›</span>

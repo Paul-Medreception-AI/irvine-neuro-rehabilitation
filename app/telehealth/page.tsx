@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 
 export const metadata: Metadata = {
   title: 'Visiting Our Office | Irvine Neuro Rehabilitation',
@@ -22,9 +23,10 @@ export default function Page() {
   return (
     <main>
       {/* The practice's website does not mention telehealth, so this page describes in-person visits. */}
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-3xl mx-auto px-6">
-          <h1 className="font-[Cormorant_Garamond,serif] text-5xl font-light">Visiting Our Office</h1>
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
+        <HeroBackdrop src="/images/irvine/campus-dusk.jpg" alt="Irvine Neuro Rehabilitation's Southfield campus at dusk" />
+        <div className="relative max-w-3xl mx-auto px-6">
+          <h1 className="font-cormorant text-5xl font-light">Visiting Our Office</h1>
           <p className="mt-6 text-lg text-white/90">
             Care starts with an in-person visit, and you can reach the office in Southfield, MI by phone at (248) 415-2500.
           </p>
@@ -33,7 +35,7 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl font-light text-[var(--color-primary)] text-center">Your First Visit</h2>
+          <h2 className="font-cormorant text-4xl font-light text-[var(--color-primary)] text-center">Your First Visit</h2>
           <p className="mt-4 max-w-2xl mx-auto text-center text-[var(--color-muted)]">
             An in-person visit for specialty medical care is generally a conversation first. You talk with our team about your story, your concerns and what you hope to achieve.
           </p>
@@ -68,7 +70,7 @@ export default function Page() {
 
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl font-light text-[var(--color-primary)] text-center">Finding Us</h2>
+          <h2 className="font-cormorant text-4xl font-light text-[var(--color-primary)] text-center">Finding Us</h2>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             <div className="animate-fade-up rounded-lg border border-[var(--color-border)] bg-[var(--color-cream)] p-8">
               <svg className="w-8 h-8 text-[var(--color-accent)]" stroke="currentColor" strokeWidth={1.5} fill="none" viewBox="0 0 24 24" aria-hidden="true">
@@ -76,8 +78,9 @@ export default function Page() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
               </svg>
               <h3 className="mt-4 text-xl font-semibold text-[var(--color-primary)]">Address</h3>
-              <p className="mt-3 text-[var(--color-ink)]">[Street address to be added]</p>
-              <p className="text-[var(--color-ink)]">Southfield, MI</p>
+              <p className="mt-3 text-[var(--color-ink)]">25700 Lahser Road</p>
+              <p className="text-[var(--color-ink)]">Southfield, Michigan 48033</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=25700+Lahser+Road+Southfield+MI+48033" target="_blank" rel="noopener noreferrer" className="mt-3 inline-block text-[var(--color-accent)] underline">Get directions</a>
             </div>
             <div className="animate-fade-up rounded-lg border border-[var(--color-border)] bg-[var(--color-cream)] p-8">
               <svg className="w-8 h-8 text-[var(--color-accent)]" stroke="currentColor" strokeWidth={1.5} fill="none" viewBox="0 0 24 24" aria-hidden="true">
@@ -91,7 +94,7 @@ export default function Page() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2m5-2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <h3 className="mt-4 text-xl font-semibold text-[var(--color-primary)]">Office Hours</h3>
-              <p className="mt-3 text-[var(--color-ink)]">[Office hours to be added]</p>
+              <p className="mt-3 text-[var(--color-ink)]">Mon to Thu, 9:00am to 5:00pm<br />Fri, 9:00am to 12:00pm</p>
             </div>
           </div>
         </div>
@@ -99,7 +102,7 @@ export default function Page() {
 
       <section className="bg-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl font-light">Start With a Conversation</h2>
+          <h2 className="font-cormorant text-4xl font-light">Start With a Conversation</h2>
           <p className="mt-4 text-white/90">Tell us about your goals and concerns, and we will help you understand how our programs may fit your needs.</p>
           <a href="/contact" className="mt-8 inline-block rounded bg-white px-8 py-3 font-medium text-[var(--color-primary)] transition hover:bg-[var(--color-light)]">
             Request a Free Consultation

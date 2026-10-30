@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -57,8 +58,9 @@ const faqs = [
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
+        <HeroBackdrop src="/images/stock/compare-recreational-therapy-vs-exercise-therapy.jpg" alt="A physiotherapist assists a patient in stretching exercises indoors." />
+        <div className="relative max-w-4xl mx-auto px-6">
           <nav aria-label="Breadcrumb" className="text-sm text-white/70 mb-6 flex items-center justify-center gap-2">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>›</span>
@@ -66,22 +68,15 @@ export default function Page() {
             <span>›</span>
             <span className="text-white">Comparison</span>
           </nav>
-          <h1 className="font-[Cormorant_Garamond,serif] text-5xl font-light">Recreational Therapy vs Traditional Exercise Therapy</h1>
+          <h1 className="font-cormorant text-5xl font-light">Recreational Therapy vs Traditional Exercise Therapy</h1>
           <p className="mt-6 text-lg text-white/80 max-w-2xl mx-auto">A clear look at how each approach works, so you can choose the path that fits your goals.</p>
         </div>
       </section>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/compare-recreational-therapy-vs-exercise-therapy.jpg"} alt={"A physiotherapist assists a patient in stretching exercises indoors."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl mb-12 text-[var(--color-primary)]">Side-by-Side Comparison</h2>
+          <h2 className="font-cormorant text-4xl mb-12 text-[var(--color-primary)]">Side-by-Side Comparison</h2>
           <div className="rounded-2xl overflow-hidden border border-[var(--color-border)] animate-fade-up">
             <div className="grid grid-cols-3 bg-[var(--color-primary)] text-white font-semibold">
               <div className="p-4">Factor</div>
@@ -102,13 +97,13 @@ export default function Page() {
       <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-6 text-[var(--color-ink)]">
           <div className="animate-fade-up">
-            <h2 className="font-[Cormorant_Garamond,serif] text-4xl mb-6 text-[var(--color-primary)]">Recreational Therapy</h2>
+            <h2 className="font-cormorant text-4xl mb-6 text-[var(--color-primary)]">Recreational Therapy</h2>
             <p className="mb-4 leading-relaxed">Recreational therapy uses purposeful activities such as games, creative arts, social outings, music and adapted leisure pursuits to address physical, cognitive, emotional and social needs. The activity is the tool, and the goal is practical: greater independence and a fuller daily life.</p>
             <p className="mb-4 leading-relaxed">Research on activity-based and leisure-focused interventions suggests benefits for mood, social participation and quality of life, particularly in people recovering from neurological conditions, injury or mental health challenges. Evidence varies by condition, and outcomes depend on how well the program matches individual goals.</p>
             <p className="mb-12 leading-relaxed">A typical participant wants to reconnect with enjoyable activities, build confidence or practice skills in a lower-pressure setting. Expect an initial discussion of interests and goals, then activities that are graded in difficulty and adapted as you progress.</p>
           </div>
           <div className="animate-fade-up">
-            <h2 className="font-[Cormorant_Garamond,serif] text-4xl mb-6 text-[var(--color-primary)]">Traditional Exercise Therapy</h2>
+            <h2 className="font-cormorant text-4xl mb-6 text-[var(--color-primary)]">Traditional Exercise Therapy</h2>
             <p className="mb-4 leading-relaxed">Traditional exercise therapy uses prescribed movements and conditioning to restore or improve physical function. It commonly includes strengthening, stretching, balance work, gait training and aerobic activity, progressed gradually under a therapist&apos;s guidance.</p>
             <p className="mb-4 leading-relaxed">Exercise is one of the most widely studied rehabilitation approaches, with solid support for improving strength, mobility and function across many musculoskeletal and neurological conditions. Results depend strongly on consistency and appropriate progression.</p>
             <p className="leading-relaxed">A typical patient has identifiable physical limitations after an injury, surgery or illness. Expect an assessment, a tailored plan of exercises, periodic reassessment and a home program to keep progress going between visits.</p>
@@ -117,7 +112,7 @@ export default function Page() {
       </section>
 
       <section className="bg-[var(--color-light)] rounded-2xl p-12 max-w-3xl mx-auto my-20 animate-fade-up">
-        <h2 className="font-[Cormorant_Garamond,serif] text-4xl mb-8 text-[var(--color-primary)]">How to Decide</h2>
+        <h2 className="font-cormorant text-4xl mb-8 text-[var(--color-primary)]">How to Decide</h2>
         <h3 className="text-xl font-semibold text-[var(--color-primary)] mb-4">Choose recreational therapy if...</h3>
         <ul className="space-y-3 mb-10 text-[var(--color-ink)]">
           {aList.map((t) => (<li key={t} className="flex gap-3">{checkIcon}<span>{t}</span></li>))}
@@ -131,7 +126,7 @@ export default function Page() {
 
       <section className="bg-white py-20">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl mb-10 text-[var(--color-primary)]">Frequently Asked Questions</h2>
+          <h2 className="font-cormorant text-4xl mb-10 text-[var(--color-primary)]">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map((f) => (
               <details key={f.q} className="group border border-[var(--color-border)] rounded-xl p-5 animate-fade-up">
@@ -150,7 +145,7 @@ export default function Page() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="font-[Cormorant_Garamond,serif] text-4xl font-light mb-4">Ready to Choose the Right Approach?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Choose the Right Approach?</h2>
           <p className="mb-8 text-white/80">Talk with Irvine Neuro Rehabilitation in Southfield, MI about your goals and options.</p>
           <Link href="/contact" className="inline-block rounded-full bg-white text-[var(--color-accent)] px-8 py-3 font-semibold hover:bg-[var(--color-light)] transition-colors">Discuss Your Options</Link>
         </div>

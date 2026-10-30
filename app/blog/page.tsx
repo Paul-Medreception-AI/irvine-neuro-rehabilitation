@@ -2,6 +2,7 @@
 // lib/data/blog.ts, which holds exactly the posts that exist, so it cannot link to a
 // post that is not there or leave one out.
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 import { BLOG_POSTS } from '../../lib/data/blog'
 
 const TITLE = "Health Articles | Irvine Neuro Rehabilitation"
@@ -20,8 +21,9 @@ export default function BlogIndexPage() {
   const [featured, ...rest] = BLOG_POSTS
   return (
     <>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-24 text-white text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
+        <HeroBackdrop src="/images/stock/hub-blog.jpg" alt="A caregiver reading together with an older man at home" />
+        <div className="relative max-w-4xl mx-auto px-6">
           <nav className="text-sm text-white/70 mb-4" aria-label="Breadcrumb">
             <a href="/" className="hover:underline">Home</a>
             <span className="mx-2">›</span>

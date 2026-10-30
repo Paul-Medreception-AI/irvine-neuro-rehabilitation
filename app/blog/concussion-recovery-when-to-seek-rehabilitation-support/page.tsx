@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import HeroBackdrop from '@/components/HeroBackdrop'
 
 export const metadata: Metadata = {
   title: 'Concussion Recovery: When to Seek Rehab Support',
@@ -46,46 +47,40 @@ function Check() {
 export default function Page() {
   return (
     <main>
-      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
+      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white">
+        <HeroBackdrop src="/images/stock/blog-concussion-recovery-when-to-seek-rehabilitation-support.jpg" alt="A therapist carefully applying colorful kinesiology tape on a patient's forearm for supportive therapy." />
+        <div className="relative max-w-4xl mx-auto px-6 text-center">
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white transition-colors">Home</a> › <a href="/blog" className="hover:text-white transition-colors">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
-          <h1 className="font-[Cormorant] text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Concussion Recovery: When to Seek Rehabilitation Support</h1>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Concussion Recovery: When to Seek Rehabilitation Support</h1>
           <p className="mt-6 text-sm text-white/70">Published October 2026 · 6 min read</p>
         </div>
       </section>
 
-      {/* page-image:start */}
-      <div className="max-w-5xl mx-auto px-6 -mt-10 relative z-10">
-        <div className="w-full rounded-2xl overflow-hidden shadow-xl bg-[var(--color-light)]">
-          <img src={"/images/stock/blog-concussion-recovery-when-to-seek-rehabilitation-support.jpg"} alt={"A therapist carefully applying colorful kinesiology tape on a patient's forearm for supportive therapy."} width={1200} height={627} loading="lazy" className="block w-full h-auto" />
-        </div>
-      </div>
-      {/* page-image:end */}
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6">
         <p className="text-[var(--color-ink)] leading-loose text-base">
           You were told it was &ldquo;just a concussion,&rdquo; and that you would feel better in a few days. Yet weeks later, reading feels exhausting, noise is overwhelming, and you are not quite yourself. If that sounds familiar, you are not imagining it, and you are far from alone. Knowing when to move beyond rest and seek rehabilitation support can make a real difference in how smoothly you recover.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">What a Concussion Is</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What a Concussion Is</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           A concussion is a mild traumatic brain injury caused by a blow or jolt to the head or body that makes the brain move rapidly within the skull. This can temporarily change how brain cells function. Imaging such as CT or MRI is often normal, because the problem is mostly one of function rather than visible structural damage. Loss of consciousness is not required; most people with a concussion are never knocked out.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Is Affected</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Who Is Affected</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Concussions happen to athletes, but also to people injured in car accidents, falls, workplace incidents and assaults. Children, teens, adults and older adults can all be affected. Having had a previous concussion, a history of migraine, anxiety or depression, or ongoing stress can make recovery slower for some people.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">What Typical Recovery Looks Like</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">What Typical Recovery Looks Like</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Research suggests that most adults improve within several weeks, and children and teens may take somewhat longer. Current guidance has moved away from strict, prolonged bed rest. A short period of relative rest is followed by a gradual, symptom-guided return to daily activity, since extended inactivity can itself prolong symptoms. A meaningful minority of people, however, continue to have symptoms past a month. When symptoms linger, this is sometimes called persistent post-concussion symptoms, and it deserves attention rather than waiting.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Signs It May Be Time to Seek Support</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Signs It May Be Time to Seek Support</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base mb-4">
           Consider reaching out to a healthcare professional if you notice any of the following:
         </p>
@@ -98,7 +93,7 @@ export default function Page() {
           ))}
         </ul>
 
-        <blockquote className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-[Cormorant]">
+        <blockquote className="bg-[var(--color-light)] border-l-4 border-[var(--color-primary)] p-6 my-8 text-[var(--color-ink)] italic text-xl font-cormorant">
           A short period of relative rest is followed by a gradual, symptom-guided return to daily activity.
         </blockquote>
 
@@ -106,7 +101,7 @@ export default function Page() {
           Seek urgent medical care right away for warning signs such as a worsening headache, repeated vomiting, seizures, increasing confusion, weakness or numbness, slurred speech, or unusual drowsiness. These are not signs to wait on.
         </p>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">How Rehabilitation Can Help</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">How Rehabilitation Can Help</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Concussion affects more than headaches. It can touch thinking, communication, emotions and the ability to manage everyday tasks, so recovery often benefits from a team approach. At Irvine Neuro Rehabilitation in Southfield, MI, our team includes an occupational therapist, a speech therapist, a psychiatrist who serves as medical director, and licensed counselors and case management support.
         </p>
@@ -117,7 +112,7 @@ export default function Page() {
           <li className="flex gap-3 text-[var(--color-ink)] leading-loose text-base"><Check /><span>Case management can help coordinate care and next steps.</span></li>
         </ul>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Tips While You Recover</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Practical Tips While You Recover</h2>
         <ul className="space-y-3">
           {tips.map((t) => (
             <li key={t} className="flex gap-3 text-[var(--color-ink)] leading-loose text-base">
@@ -127,7 +122,7 @@ export default function Page() {
           ))}
         </ul>
 
-        <h2 className="font-[Cormorant] text-3xl text-[var(--color-ink)] mt-12 mb-4">Take the Next Step</h2>
+        <h2 className="font-cormorant text-3xl text-[var(--color-ink)] mt-12 mb-4">Take the Next Step</h2>
         <p className="text-[var(--color-ink)] leading-loose text-base">
           Slow recovery is not a sign of weakness, and you do not have to push through it alone. If your symptoms are interfering with life weeks after an injury, a conversation with a professional can clarify what is happening and what may help. To talk with our team, call (248) 415-2500 or reach out through our contact page.
         </p>
@@ -147,7 +142,7 @@ export default function Page() {
 
       <section className="bg-[var(--color-cream)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h3 className="font-[Cormorant] text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
+          <h3 className="font-cormorant text-3xl mb-8 text-[var(--color-ink)]">Related Resources</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <a href="/blog" className="animate-fade-up block bg-white rounded-2xl p-6 border border-[var(--color-border)] hover:shadow-lg transition-shadow">
               <svg className="w-8 h-8 text-[var(--color-accent)] mb-3" stroke="currentColor" strokeWidth={1.5} fill="none" viewBox="0 0 24 24">
@@ -176,7 +171,7 @@ export default function Page() {
 
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-white text-center">
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="font-[Cormorant] text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
+          <h2 className="font-cormorant text-4xl font-light mb-4">Ready to Take the Next Step?</h2>
           <p className="mb-8 text-white/80">We are here to help.</p>
           <a href="/contact" className="inline-block bg-[var(--color-accent)] border border-white/40 hover:bg-[var(--color-accent-dark)] transition-colors text-white px-8 py-3 rounded-full">Contact Us</a>
         </div>

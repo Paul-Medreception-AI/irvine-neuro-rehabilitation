@@ -1,5 +1,5 @@
 {
-  "note": "Page photos chosen by the website builder. Pexels photos are free to use (pexels.com/license); credit is appreciated, not required.",
+  "note": "Page photos chosen by the website builder. Pexels photos are free to use (pexels.com/license); credit is appreciated, not required. Practice photos (public/images/irvine, public/images/team) come from irvineneurorehabilitation.com.",
   "images": [
     {
       "page": "services:occupational-therapy",
@@ -8,7 +8,9 @@
       "alt": "Crop unrecognizable orthopedist in uniform and wristwatch supporting shoulder and reached arm of faceless female patient with resistance band in doctor office",
       "pexels_id": 4506166,
       "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/crop-anonymous-woman-stretching-elastic-band-near-professional-chiropractor-4506166/"
+      "pexels_url": "https://www.pexels.com/photo/crop-anonymous-woman-stretching-elastic-band-near-professional-chiropractor-4506166/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "services:head-injury-rehabilitation",
@@ -16,17 +18,10 @@
       "source": "pexels",
       "alt": "A physiotherapist assists a patient with arm exercises in a clinical setting.",
       "pexels_id": 20860596,
-      "photographer": "Funkcinės Terapijos Centras",
-      "pexels_url": "https://www.pexels.com/photo/physiotherapist-massaging-arms-of-patient-20860596/"
-    },
-    {
-      "page": "services:free-consultation",
-      "file": "public/images/stock/free-consultation.jpg",
-      "source": "pexels",
-      "alt": "Smiling ethnic female doctor in medical uniform with stethoscope and notebook talking on smartphone while standing in glass hospital corridor",
-      "pexels_id": 4173250,
-      "photographer": "Gustavo Fring",
-      "pexels_url": "https://www.pexels.com/photo/positive-doctor-in-uniform-with-stethoscope-and-documents-talking-on-smartphone-4173250/"
+      "photographer": "Funkcin\u0117s Terapijos Centras",
+      "pexels_url": "https://www.pexels.com/photo/physiotherapist-massaging-arms-of-patient-20860596/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "services:physical-therapy",
@@ -35,16 +30,20 @@
       "alt": "Professional physiotherapist using ultrasound device for leg treatment.",
       "pexels_id": 13185367,
       "photographer": "Juan Manuel Montejano Lopez",
-      "pexels_url": "https://www.pexels.com/photo/leg-of-patient-during-medical-examination-13185367/"
+      "pexels_url": "https://www.pexels.com/photo/leg-of-patient-during-medical-examination-13185367/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:acquired-brain-injury",
       "file": "public/images/stock/acquired-brain-injury.jpg",
       "source": "pexels",
-      "alt": "Detailed brain MRI scans displayed on a lightbox, showcasing medical imaging techniques.",
-      "pexels_id": 5723883,
-      "photographer": "cottonbro studio",
-      "pexels_url": "https://www.pexels.com/photo/mri-images-of-the-brain-5723883/"
+      "alt": "A therapist supports a woman's shoulder and arm during a stretching exercise in a bright treatment room.",
+      "pexels_id": 5793792,
+      "photographer": "Yan Krukau",
+      "pexels_url": "https://www.pexels.com/photo/a-woman-doing-therapy-5793792/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "services:recreational-therapy",
@@ -53,88 +52,108 @@
       "alt": "Elderly man holding a colorful therapy ball indoors, promoting relaxation and health.",
       "pexels_id": 339619,
       "photographer": "Matthias Zomer",
-      "pexels_url": "https://www.pexels.com/photo/person-holding-multicolored-ball-339619/"
+      "pexels_url": "https://www.pexels.com/photo/person-holding-multicolored-ball-339619/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:als",
       "file": "public/images/stock/als.jpg",
       "source": "pexels",
-      "alt": "Two paramedics in uniform discussing beside an ambulance during daytime.",
-      "pexels_id": 8942492,
-      "photographer": "Mikhail Nilov",
-      "pexels_url": "https://www.pexels.com/photo/man-and-woman-standing-near-vehicle-8942492/"
+      "alt": "A caregiver kneels beside a woman in a wheelchair and holds her hands.",
+      "pexels_id": 8127503,
+      "photographer": "Ivan S",
+      "pexels_url": "https://www.pexels.com/photo/man-holding-woman-s-hands-8127503/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:anoxic-brain-injury",
       "file": "public/images/stock/anoxic-brain-injury.jpg",
       "source": "pexels",
-      "alt": "Paramedics provide urgent care to a patient on a stretcher during an emergency situation.",
-      "pexels_id": 8943279,
-      "photographer": "Mikhail Nilov",
-      "pexels_url": "https://www.pexels.com/photo/lifeguard-rescuing-patient-8943279/"
+      "alt": "A physical therapist guides a man through a leg exercise on a mat in a rehabilitation gym.",
+      "pexels_id": 20860624,
+      "photographer": "Funkcin\u0117s Terapijos Centras",
+      "pexels_url": "https://www.pexels.com/photo/patient-exercising-under-care-of-therapist-20860624/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:aphasia",
       "file": "public/images/stock/aphasia.jpg",
       "source": "pexels",
-      "alt": "Senior adult having a virtual doctor consultation on a tablet with medications on the table.",
-      "pexels_id": 8376171,
-      "photographer": "Tima Miroshnichenko",
-      "pexels_url": "https://www.pexels.com/photo/high-angle-shot-of-a-person-making-a-zoom-call-to-a-doctor-8376171/"
+      "alt": "A clinician with a clipboard talks with an older man seated on a sofa.",
+      "pexels_id": 7345460,
+      "photographer": "Antoni Shkraba",
+      "pexels_url": "https://www.pexels.com/photo/man-and-woman-sitting-on-the-couch-7345460/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:brain-tumor-recovery",
       "file": "public/images/stock/brain-tumor-recovery.jpg",
       "source": "pexels",
-      "alt": "A doctor analyzes brain scans on a digital tablet beside a patient in a hospital bed.",
-      "pexels_id": 6011602,
-      "photographer": "Tima Miroshnichenko",
-      "pexels_url": "https://www.pexels.com/photo/doctor-looking-at-ct-scan-result-6011602/"
+      "alt": "A smiling older woman does a seated reaching stretch at home.",
+      "pexels_id": 6975788,
+      "photographer": "Mikhail Nilov",
+      "pexels_url": "https://www.pexels.com/photo/a-mature-woman-in-white-shirt-smiling-6975788/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:balance-disorders",
       "file": "public/images/stock/balance-disorders.jpg",
       "source": "pexels",
-      "alt": "Man with neck pain holding his neck in discomfort, conveying tension or stress.",
-      "pexels_id": 7298881,
-      "photographer": "Kindel Media",
-      "pexels_url": "https://www.pexels.com/photo/close-up-photo-of-a-man-having-a-neck-pain-7298881/"
+      "alt": "An older man and woman practice a one-leg balance pose on mats in a park.",
+      "pexels_id": 8939960,
+      "photographer": "Vlada Karpovich",
+      "pexels_url": "https://www.pexels.com/photo/man-and-woman-doing-yoga-pose-8939960/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:cerebral-palsy",
       "file": "public/images/stock/cerebral-palsy.jpg",
       "source": "pexels",
-      "alt": "A mother and daughter window shopping in a charming urban brick-lined walkway.",
-      "pexels_id": 8297506,
-      "photographer": "RDNE Stock project",
-      "pexels_url": "https://www.pexels.com/photo/city-fashion-woman-street-8297506/"
+      "alt": "A therapist and a young girl sit on exercise balls in a pediatric therapy gym.",
+      "pexels_id": 7427582,
+      "photographer": "Danik Prihodko",
+      "pexels_url": "https://www.pexels.com/photo/a-mother-and-daughter-sitting-on-exercise-balls-7427582/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:cognitive-impairment",
       "file": "public/images/stock/cognitive-impairment.jpg",
       "source": "pexels",
-      "alt": "Close-up of hands reading a braille book, highlighting tactile learning for visual impairment.",
-      "pexels_id": 6609519,
-      "photographer": "Tima Miroshnichenko",
-      "pexels_url": "https://www.pexels.com/photo/person-reading-a-book-using-braille-system-6609519/"
+      "alt": "Hands working on wooden puzzles and brain teasers spread across a table.",
+      "pexels_id": 7296753,
+      "photographer": "https://kaboompics.com/",
+      "pexels_url": "https://www.pexels.com/photo/a-person-playing-with-a-jigsaw-7296753/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:coordination-problems",
       "file": "public/images/stock/coordination-problems.jpg",
       "source": "pexels",
-      "alt": "Two paramedics talking beside a bright yellow ambulance, showcasing teamwork and medical readiness.",
-      "pexels_id": 8942494,
-      "photographer": "Mikhail Nilov",
-      "pexels_url": "https://www.pexels.com/photo/man-and-woman-having-conversation-near-an-ambulance-8942494/"
+      "alt": "An older man does a core exercise with a medicine ball while a trainer kneels beside him.",
+      "pexels_id": 6922165,
+      "photographer": "Kampus Production",
+      "pexels_url": "https://www.pexels.com/photo/man-in-red-shirt-doing-shoulder-exercise-beside-a-woman-in-black-tank-top-6922165/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:concussion",
       "file": "public/images/stock/concussion.jpg",
       "source": "pexels",
-      "alt": "Top view of empty blister packs with white tablets on a light grey background, ideal for healthcare topics.",
-      "pexels_id": 39633925,
-      "photographer": "Miles Burke",
-      "pexels_url": "https://www.pexels.com/photo/empty-blister-pack-with-white-tablets-on-grey-background-39633925/"
+      "alt": "A physical therapist watches a young man perform a guided neck exercise.",
+      "pexels_id": 20860589,
+      "photographer": "Funkcin\u0117s Terapijos Centras",
+      "pexels_url": "https://www.pexels.com/photo/physiotherapist-helping-a-patient-exercise-his-neck-20860589/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:difficulty-with-daily-living-skills",
@@ -143,43 +162,53 @@
       "alt": "A family assists in measuring blood pressure at home, promoting healthcare awareness.",
       "pexels_id": 7446757,
       "photographer": "Gustavo Fring",
-      "pexels_url": "https://www.pexels.com/photo/woman-in-wheelchair-measuring-blood-pressure-7446757/"
+      "pexels_url": "https://www.pexels.com/photo/woman-in-wheelchair-measuring-blood-pressure-7446757/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:guillain-barre-syndrome",
       "file": "public/images/stock/guillain-barre-syndrome.jpg",
       "source": "pexels",
-      "alt": "Flat lay of medication bottle, glass vial, and red capsules on a white surface.",
-      "pexels_id": 7904421,
-      "photographer": "Anna Tarazevich",
-      "pexels_url": "https://www.pexels.com/photo/vial-flask-and-pills-7904421/"
+      "alt": "A therapist supports a woman's leg during a range of motion exercise on a treatment table.",
+      "pexels_id": 5793895,
+      "photographer": "Yan Krukau",
+      "pexels_url": "https://www.pexels.com/photo/physiotherapist-holding-womans-leg-5793895/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:gait-abnormalities",
       "file": "public/images/stock/gait-abnormalities.jpg",
       "source": "pexels",
-      "alt": "Fashionable shot of a prosthetic leg wearing trendy leather shoes against a stone background.",
-      "pexels_id": 9623790,
-      "photographer": "Lara Jameson",
-      "pexels_url": "https://www.pexels.com/photo/person-in-black-trousers-and-black-leather-shoes-9623790/"
+      "alt": "An older man walking with a cane is steadied by a companion on a city sidewalk.",
+      "pexels_id": 5267336,
+      "photographer": "KEON VINES",
+      "pexels_url": "https://www.pexels.com/photo/man-and-woman-walking-on-the-street-5267336/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:memory-loss",
       "file": "public/images/stock/memory-loss.jpg",
       "source": "pexels",
-      "alt": "Hands holding a photo frame, symbolizing remembrance and nostalgia.",
-      "pexels_id": 8964190,
-      "photographer": "Ivan S",
-      "pexels_url": "https://www.pexels.com/photo/a-person-in-black-long-sleeves-holding-a-picture-frame-8964190/"
+      "alt": "An older man points to a photo album while a young woman looks on at a kitchen table.",
+      "pexels_id": 8056997,
+      "photographer": "Pavel Danilyuk",
+      "pexels_url": "https://www.pexels.com/photo/a-father-and-daughter-looking-at-a-photo-album-8056997/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:hemiparesis",
       "file": "public/images/stock/hemiparesis.jpg",
       "source": "pexels",
-      "alt": "Top view of medical tools, pills, and equipment arranged on a white background, conveying healthcare essentials.",
-      "pexels_id": 9562136,
-      "photographer": "Derek Finch",
-      "pexels_url": "https://www.pexels.com/photo/stethoscope-besides-medicines-9562136/"
+      "alt": "A therapist gently stretches a woman's arm and wrist beside a sunny window.",
+      "pexels_id": 5793788,
+      "photographer": "Yan Krukau",
+      "pexels_url": "https://www.pexels.com/photo/a-woman-massaging-the-arm-5793788/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:muscle-weakness",
@@ -188,88 +217,97 @@
       "alt": "Close-up of a woman's legs during an electrical therapy session in a hospital setting.",
       "pexels_id": 13185368,
       "photographer": "Juan Manuel Montejano Lopez",
-      "pexels_url": "https://www.pexels.com/photo/legs-of-woman-lying-down-in-hospital-13185368/"
+      "pexels_url": "https://www.pexels.com/photo/legs-of-woman-lying-down-in-hospital-13185368/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:neuropathy",
       "file": "public/images/stock/neuropathy.jpg",
       "source": "pexels",
-      "alt": "Unrecognizable male doctor wearing medical uniform and latex gloves holding Petri dish filled with assorted drugs while standing near white wall in hospital",
-      "pexels_id": 4021800,
-      "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/crop-man-doctor-with-stethoscope-and-medicine-4021800/"
+      "alt": "A physical therapist holds a patient's bare leg and foot during a therapy session.",
+      "pexels_id": 20860609,
+      "photographer": "Funkcin\u0117s Terapijos Centras",
+      "pexels_url": "https://www.pexels.com/photo/physiotherapist-massaging-lifted-leg-20860609/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:multiple-sclerosis",
       "file": "public/images/stock/multiple-sclerosis.jpg",
       "source": "pexels",
-      "alt": "Various colored ribbons representing different cancer awareness causes on a white surface.",
-      "pexels_id": 7723539,
-      "photographer": "Tara Winstead",
-      "pexels_url": "https://www.pexels.com/photo/a-variety-of-cancer-awareness-ribbons-7723539/"
+      "alt": "A woman in a wheelchair smiles with an instructor during an exercise session in a gym.",
+      "pexels_id": 33768804,
+      "photographer": "Centre for Ageing Better",
+      "pexels_url": "https://www.pexels.com/photo/inclusive-fitness-class-in-sports-gymnasium-33768804/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:parkinson-s-disease",
       "file": "public/images/stock/parkinson-s-disease.jpg",
       "source": "pexels",
-      "alt": "High angle of crop unrecognizable lady in sleepwear under blanket showing white medical pills in hand in light room",
-      "pexels_id": 6798728,
-      "photographer": "Michelle Leman",
-      "pexels_url": "https://www.pexels.com/photo/faceless-woman-demonstrating-pills-in-hand-6798728/"
+      "alt": "Older adults raise their arms overhead during a seated chair exercise class.",
+      "pexels_id": 11674389,
+      "photographer": "Centre for Ageing Better",
+      "pexels_url": "https://www.pexels.com/photo/seniors-exercising-11674389/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:post-concussion-syndrome",
       "file": "public/images/stock/post-concussion-syndrome.jpg",
       "source": "pexels",
-      "alt": "Athletes engage in recovery therapy with cupping and massage in a gym.",
-      "pexels_id": 27730474,
-      "photographer": "Jonathan Borba",
-      "pexels_url": "https://www.pexels.com/photo/two-women-are-working-out-in-a-gym-27730474/"
+      "alt": "A therapist gently positions a young man's head and neck in a clinic office.",
+      "pexels_id": 14797755,
+      "photographer": "World Sikh Organization of Canada",
+      "pexels_url": "https://www.pexels.com/photo/young-man-on-being-examined-by-a-physiotherapist-14797755/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:spinal-cord-injury",
       "file": "public/images/stock/spinal-cord-injury.jpg",
       "source": "pexels",
-      "alt": "Comprehensive spinal x-ray images, ideal for medical studies and diagnostics.",
-      "pexels_id": 5723877,
-      "photographer": "cottonbro studio",
-      "pexels_url": "https://www.pexels.com/photo/medical-images-of-the-backbone-5723877/"
+      "alt": "A man in a wheelchair lifts dumbbells during a strength workout in a gym.",
+      "pexels_id": 7289300,
+      "photographer": "Alesia  Kozik",
+      "pexels_url": "https://www.pexels.com/photo/a-man-at-a-gym-7289300/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:stroke",
       "file": "public/images/stock/stroke.jpg",
       "source": "pexels",
-      "alt": "A healthcare worker operates a modern infusion pump in a hospital setting, ensuring precise medication delivery.",
-      "pexels_id": 6129679,
-      "photographer": "RDNE Stock project",
-      "pexels_url": "https://www.pexels.com/photo/close-up-photo-of-an-infusion-pump-6129679/"
+      "alt": "Two caregivers help an older man walk across a room at home.",
+      "pexels_id": 7551678,
+      "photographer": "Kampus Production",
+      "pexels_url": "https://www.pexels.com/photo/man-in-white-long-sleeve-shirt-holding-a-man-in-blue-sweater-while-walking-7551678/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:spasticity",
       "file": "public/images/stock/spasticity.jpg",
       "source": "pexels",
-      "alt": "A gloved hand holds a prescription bottle with pills against a blue background.",
-      "pexels_id": 16051949,
-      "photographer": "Etatics Inc.",
-      "pexels_url": "https://www.pexels.com/photo/vial-with-pills-in-hand-16051949/"
-    },
-    {
-      "page": "locations:southfield-mi",
-      "file": "public/images/stock/location-southfield-mi.jpg",
-      "source": "pexels",
-      "alt": "Aerial night view of Chicago's illuminated skyline showcasing skyscrapers and city lights.",
-      "pexels_id": 2124698,
-      "photographer": "Chait Goli",
-      "pexels_url": "https://www.pexels.com/photo/bird-s-eye-photography-of-high-rise-buildings-2124698/"
+      "alt": "A physical therapist stretches a man's raised leg as he lies on a treatment table.",
+      "pexels_id": 20860582,
+      "photographer": "Funkcin\u0117s Terapijos Centras",
+      "pexels_url": "https://www.pexels.com/photo/physiotherapist-and-patient-exercising-20860582/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:traumatic-brain-injury",
       "file": "public/images/stock/traumatic-brain-injury.jpg",
       "source": "pexels",
-      "alt": "Woman with head injury holding her head in pain indoors.",
-      "pexels_id": 5207232,
-      "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/photograph-of-a-woman-with-a-headache-5207232/"
+      "alt": "A young man practices a one-leg balance exercise while clinicians watch in a therapy room.",
+      "pexels_id": 35098354,
+      "photographer": "Artem  Korsakov",
+      "pexels_url": "https://www.pexels.com/photo/man-balancing-in-indoor-group-exercise-session-35098354/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "compare:holistic-vs-standard-rehabilitation",
@@ -278,7 +316,9 @@
       "alt": "Serious doctor in uniform massaging smiling female patients neck and stretching stiff neck muscles against gray background",
       "pexels_id": 4506217,
       "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/professional-massage-therapist-treating-a-female-patient-s-injured-neck-4506217/"
+      "pexels_url": "https://www.pexels.com/photo/professional-massage-therapist-treating-a-female-patient-s-injured-neck-4506217/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "conditions:vestibular-dysfunction",
@@ -287,7 +327,9 @@
       "alt": "Caucasian woman in a park, eyes closed, holding head in pain hinting at a headache or migraine.",
       "pexels_id": 7298395,
       "photographer": "Kindel Media",
-      "pexels_url": "https://www.pexels.com/photo/a-woman-holding-her-head-7298395/"
+      "pexels_url": "https://www.pexels.com/photo/a-woman-holding-her-head-7298395/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "compare:occupational-therapy-vs-physical-therapy",
@@ -296,7 +338,9 @@
       "alt": "Crop anonymous chiropractor in uniform and wristwatch examining shoulder of smiling faceless woman in casual clothes in doctor office in clinic",
       "pexels_id": 4506169,
       "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/crop-unrecognizable-orthopedist-stretching-shoulder-of-female-patient-4506169/"
+      "pexels_url": "https://www.pexels.com/photo/crop-unrecognizable-orthopedist-stretching-shoulder-of-female-patient-4506169/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "compare:recreational-therapy-vs-exercise-therapy",
@@ -304,8 +348,10 @@
       "source": "pexels",
       "alt": "A physiotherapist assists a patient in stretching exercises indoors.",
       "pexels_id": 20860622,
-      "photographer": "Funkcinės Terapijos Centras",
-      "pexels_url": "https://www.pexels.com/photo/physiotherapist-with-exercising-man-20860622/"
+      "photographer": "Funkcin\u0117s Terapijos Centras",
+      "pexels_url": "https://www.pexels.com/photo/physiotherapist-with-exercising-man-20860622/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "compare:individual-vs-group-therapy",
@@ -314,70 +360,86 @@
       "alt": "A man having a counseling session with a therapist in a modern office setting.",
       "pexels_id": 5336890,
       "photographer": "Tima Miroshnichenko",
-      "pexels_url": "https://www.pexels.com/photo/a-man-sitting-in-an-armchair-5336890/"
+      "pexels_url": "https://www.pexels.com/photo/a-man-sitting-in-an-armchair-5336890/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "compare:outpatient-vs-inpatient-neuro-rehabilitation",
       "file": "public/images/stock/compare-outpatient-vs-inpatient-neuro-rehabilitation.jpg",
       "source": "pexels",
-      "alt": "A healthcare worker drawing blood from a patient's arm in a clinical environment.",
-      "pexels_id": 37553369,
-      "photographer": "Tahir Xəlfəquliyev",
-      "pexels_url": "https://www.pexels.com/photo/healthcare-professional-drawing-blood-in-clinical-setting-37553369/"
+      "alt": "A physical therapist supports a man's arms as he lifts dumbbells in a clinic.",
+      "pexels_id": 20860623,
+      "photographer": "Funkcin\u0117s Terapijos Centras",
+      "pexels_url": "https://www.pexels.com/photo/man-supporting-patient-who-lifting-dumbbells-20860623/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:adapting-your-home-for-greater-independence",
       "file": "public/images/stock/blog-adapting-your-home-for-greater-independence.jpg",
       "source": "pexels",
-      "alt": "Detailed view of a prosthetic leg in a modern indoor setting, highlighting mobility aids.",
-      "pexels_id": 7153941,
-      "photographer": "Vlada Karpovich",
-      "pexels_url": "https://www.pexels.com/photo/close-up-photo-of-bionic-leg-7153941/"
+      "alt": "A woman in a wheelchair prepares food at a kitchen counter in her home.",
+      "pexels_id": 4063506,
+      "photographer": "Marcus Aurelius",
+      "pexels_url": "https://www.pexels.com/photo/woman-in-wheelchair-using-phone-in-kitchen-4063506/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:balance-and-fall-prevention-after-neurological-conditions",
       "file": "public/images/stock/blog-balance-and-fall-prevention-after-neurological-conditions.jpg",
       "source": "pexels",
-      "alt": "Close-up of a child's leg with an orthopedic cast and a pink shoe on concrete floor.",
-      "pexels_id": 6191213,
-      "photographer": "cottonbro studio",
-      "pexels_url": "https://www.pexels.com/photo/a-girl-with-orthopedic-cast-6191213/"
+      "alt": "An older woman holds her arms out for balance during a group exercise class.",
+      "pexels_id": 12086689,
+      "photographer": "Wellness Gallery Catalyst Foundation",
+      "pexels_url": "https://www.pexels.com/photo/elderly-woman-dancing-12086689/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:aphasia-and-communication-after-stroke",
       "file": "public/images/stock/blog-aphasia-and-communication-after-stroke.jpg",
       "source": "pexels",
-      "alt": "Senior couple measuring blood pressure at home, showcasing care and companionship.",
-      "pexels_id": 5790815,
-      "photographer": "Vlada Karpovich",
-      "pexels_url": "https://www.pexels.com/photo/a-man-in-blue-sweater-checking-his-blood-pressure-5790815/"
+      "alt": "An older woman gestures as she talks face to face with a caregiver.",
+      "pexels_id": 18429374,
+      "photographer": "Jsme  MILA",
+      "pexels_url": "https://www.pexels.com/photo/two-women-talking-18429374/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:caregiver-self-care-during-a-loved-one-s-recovery",
       "file": "public/images/stock/blog-caregiver-self-care-during-a-loved-one-s-recovery.jpg",
       "source": "pexels",
-      "alt": "Emergency responder assisting a sick woman on a sofa indoors.",
-      "pexels_id": 6753265,
-      "photographer": "Pavel Danilyuk",
-      "pexels_url": "https://www.pexels.com/photo/paramedic-checking-on-a-woman-6753265/"
+      "alt": "A woman sits on a park bench holding a cup of tea and smiling.",
+      "pexels_id": 21405564,
+      "photographer": "Centre for Ageing Better",
+      "pexels_url": "https://www.pexels.com/photo/smiling-woman-sitting-with-cup-21405564/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:cerebral-palsy-and-lifelong-therapy-goals",
       "file": "public/images/stock/blog-cerebral-palsy-and-lifelong-therapy-goals.jpg",
       "source": "pexels",
-      "alt": "Children with Down syndrome enjoying a garden experience.",
-      "pexels_id": 8298422,
-      "photographer": "RDNE Stock project",
-      "pexels_url": "https://www.pexels.com/photo/wood-nature-love-summer-8298422/"
+      "alt": "A smiling young woman holds therapy balls while seated on mats in a therapy room.",
+      "pexels_id": 16873404,
+      "photographer": "Manik Mandal",
+      "pexels_url": "https://www.pexels.com/photo/smiling-woman-sitting-on-floor-and-holding-balls-16873404/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:cognitive-challenges-after-brain-injury",
       "file": "public/images/stock/blog-cognitive-challenges-after-brain-injury.jpg",
       "source": "pexels",
-      "alt": "Wooden tiles spelling 'Brain Cancer' on a dark blue background, symbolizing awareness.",
-      "pexels_id": 8016915,
-      "photographer": "Anna Tarazevich",
-      "pexels_url": "https://www.pexels.com/photo/brain-cancer-text-using-scrabble-tiles-8016915/"
+      "alt": "An older man concentrates on solving a puzzle cube.",
+      "pexels_id": 8900003,
+      "photographer": "SHVETS production",
+      "pexels_url": "https://www.pexels.com/photo/close-up-of-elderly-man-solving-a-rubik-s-cube-8900003/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:communicating-with-your-therapy-team",
@@ -386,16 +448,20 @@
       "alt": "Doctor and patients during a consultation in a modern clinic, teamwork concept.",
       "pexels_id": 7108332,
       "photographer": "Pavel Danilyuk",
-      "pexels_url": "https://www.pexels.com/photo/a-couple-sitting-at-a-doctor-s-clinic-7108332/"
+      "pexels_url": "https://www.pexels.com/photo/a-couple-sitting-at-a-doctor-s-clinic-7108332/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:emotional-adjustment-after-a-brain-injury",
       "file": "public/images/stock/blog-emotional-adjustment-after-a-brain-injury.jpg",
       "source": "pexels",
-      "alt": "Healthcare professional conducting an EEG examination using a Brainscope device on a male patient.",
-      "pexels_id": 19034027,
-      "photographer": "KOS Chiropractic Integrative Health",
-      "pexels_url": "https://www.pexels.com/photo/man-during-examination-with-use-of-brainscope-19034027/"
+      "alt": "A counselor takes notes and listens as a man talks during a session.",
+      "pexels_id": 9064384,
+      "photographer": "RDNE Stock project",
+      "pexels_url": "https://www.pexels.com/photo/a-woman-comforting-the-man-9064384/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:concussion-recovery-when-to-seek-rehabilitation-support",
@@ -404,7 +470,9 @@
       "alt": "A therapist carefully applying colorful kinesiology tape on a patient's forearm for supportive therapy.",
       "pexels_id": 8219160,
       "photographer": "Danik Prihodko",
-      "pexels_url": "https://www.pexels.com/photo/a-person-putting-kinesio-tape-on-another-person-8219160/"
+      "pexels_url": "https://www.pexels.com/photo/a-person-putting-kinesio-tape-on-another-person-8219160/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:how-physical-therapy-supports-movement-after-neurological-in",
@@ -413,16 +481,20 @@
       "alt": "Side view of professional orthopedist in uniform and eyewear helping fit woman reaching arm with dumbbell in doctor office on blurred background",
       "pexels_id": 4506112,
       "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/chiropractor-examining-female-patient-with-reached-arm-and-dumbbell-4506112/"
+      "pexels_url": "https://www.pexels.com/photo/chiropractor-examining-female-patient-with-reached-arm-and-dumbbell-4506112/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:how-families-can-support-a-loved-one-in-rehabilitation",
       "file": "public/images/stock/blog-how-families-can-support-a-loved-one-in-rehabilitation.jpg",
       "source": "pexels",
-      "alt": "Crop faceless female laying under blanket and holding pills while little girl sitting close with glass of water",
-      "pexels_id": 5693067,
-      "photographer": "Alex Green",
-      "pexels_url": "https://www.pexels.com/photo/crop-woman-with-pills-near-little-daughter-5693067/"
+      "alt": "An adult daughter reaches out a hand to help her older mother up from a sofa.",
+      "pexels_id": 7231629,
+      "photographer": "cottonbro studio",
+      "pexels_url": "https://www.pexels.com/photo/women-in-the-home-living-room-7231629/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:making-therapy-part-of-everyday-life",
@@ -431,25 +503,31 @@
       "alt": "Crop faceless orthopedist in uniform and wristwatch checking up arm joint of slim woman in casual wear in doctor office in clinic",
       "pexels_id": 4506071,
       "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/crop-unrecognizable-chiropractor-examining-arm-of-smiling-female-patient-4506071/"
+      "pexels_url": "https://www.pexels.com/photo/crop-unrecognizable-chiropractor-examining-arm-of-smiling-female-patient-4506071/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:improving-hand-function-after-neurological-injury",
       "file": "public/images/stock/blog-improving-hand-function-after-neurological-injury.jpg",
       "source": "pexels",
-      "alt": "Close-up of a hand holding various colorful pills and capsules.",
-      "pexels_id": 22253613,
-      "photographer": "Gilmer Diaz Estela",
-      "pexels_url": "https://www.pexels.com/photo/handfull-of-pills-22253613/"
+      "alt": "A therapist works on a patient's hand and wrist during a treatment session.",
+      "pexels_id": 5473223,
+      "photographer": "Ryutaro Tsukata",
+      "pexels_url": "https://www.pexels.com/photo/crop-chiropractor-massaging-hand-of-patient-5473223/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:managing-fatigue-during-neurological-recovery",
       "file": "public/images/stock/blog-managing-fatigue-during-neurological-recovery.jpg",
       "source": "pexels",
-      "alt": "A healthcare worker in scrubs appears exhausted in a medical examination room.",
-      "pexels_id": 6627830,
-      "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/doctor-standing-with-his-head-back-in-the-medical-examination-room-6627830/"
+      "alt": "A tired older man rests on a sofa under a blanket with his arm across his forehead.",
+      "pexels_id": 8900029,
+      "photographer": "SHVETS production",
+      "pexels_url": "https://www.pexels.com/photo/man-in-white-shirt-sleeping-with-hand-on-forehead-8900029/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:occupational-therapy-for-daily-independence",
@@ -458,16 +536,20 @@
       "alt": "A man in a wheelchair using a staircase railing for support indoors.",
       "pexels_id": 11597466,
       "photographer": "Nadiia Doloh",
-      "pexels_url": "https://www.pexels.com/photo/man-sitting-on-a-wheelchair-assisting-himself-on-the-stairs-11597466/"
+      "pexels_url": "https://www.pexels.com/photo/man-sitting-on-a-wheelchair-assisting-himself-on-the-stairs-11597466/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:life-after-stroke-rebuilding-skills-at-home",
       "file": "public/images/stock/blog-life-after-stroke-rebuilding-skills-at-home.jpg",
       "source": "pexels",
-      "alt": "A paramedic attends to an injured man in an ambulance, ensuring his safety and comfort.",
-      "pexels_id": 6520099,
-      "photographer": "RDNE Stock project",
-      "pexels_url": "https://www.pexels.com/photo/man-lying-on-a-stretcher-6520099/"
+      "alt": "A caregiver talks with an older woman holding forearm crutches in her kitchen.",
+      "pexels_id": 29372734,
+      "photographer": "Jsme  MILA",
+      "pexels_url": "https://www.pexels.com/photo/caregiver-assisting-senior-in-prague-home-setting-29372734/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:multiple-sclerosis-and-rehabilitation-goals",
@@ -476,7 +558,9 @@
       "alt": "A woman assists a man with a prosthetic leg during a rehabilitation session on a yoga mat.",
       "pexels_id": 6111598,
       "photographer": "Kampus Production",
-      "pexels_url": "https://www.pexels.com/photo/woman-in-white-tank-top-and-blue-denim-jeans-sitting-on-blue-yoga-mat-6111598/"
+      "pexels_url": "https://www.pexels.com/photo/woman-in-white-tank-top-and-blue-denim-jeans-sitting-on-blue-yoga-mat-6111598/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:preparing-for-your-first-rehabilitation-consultation",
@@ -485,25 +569,31 @@
       "alt": "Nurse helping a female patient during a check-up in a modern, bright clinic setting.",
       "pexels_id": 3985299,
       "photographer": "Gustavo Fring",
-      "pexels_url": "https://www.pexels.com/photo/photo-of-woman-talking-to-the-sick-patient-3985299/"
+      "pexels_url": "https://www.pexels.com/photo/photo-of-woman-talking-to-the-sick-patient-3985299/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:planning-long-term-recovery-with-your-family",
       "file": "public/images/stock/blog-planning-long-term-recovery-with-your-family.jpg",
       "source": "pexels",
-      "alt": "Close-up of health insurance spelled out with Scrabble tiles on a planner, alongside medication pills.",
-      "pexels_id": 7163938,
-      "photographer": "Leeloo The First",
-      "pexels_url": "https://www.pexels.com/photo/scrabble-pieces-and-a-planner-7163938/"
+      "alt": "Three family members talk together around a table on a sunny patio.",
+      "pexels_id": 6148873,
+      "photographer": "RDNE Stock project",
+      "pexels_url": "https://www.pexels.com/photo/people-sitting-at-the-table-6148873/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:parkinson-s-disease-and-staying-active",
       "file": "public/images/stock/blog-parkinson-s-disease-and-staying-active.jpg",
       "source": "pexels",
-      "alt": "Close-up of senior hands holding an inhaler outdoors, showcasing health and respiratory care.",
-      "pexels_id": 30425663,
-      "photographer": "Cnordic Nordic",
-      "pexels_url": "https://www.pexels.com/photo/senior-hands-holding-inhaler-device-outdoors-30425663/"
+      "alt": "An older couple does seated stretching exercises on mats in their living room.",
+      "pexels_id": 6974993,
+      "photographer": "T Leish",
+      "pexels_url": "https://www.pexels.com/photo/an-elderly-couple-practicing-home-yoga-6974993/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:questions-to-ask-when-choosing-a-rehabilitation-provider",
@@ -512,16 +602,20 @@
       "alt": "Professional massage therapist performing head and neck massage on content female patient relieving sore neck tensions",
       "pexels_id": 4506216,
       "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/professional-massage-therapist-treating-a-female-patient-s-injured-neck-4506216/"
+      "pexels_url": "https://www.pexels.com/photo/professional-massage-therapist-treating-a-female-patient-s-injured-neck-4506216/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:returning-to-daily-routines-after-injury",
       "file": "public/images/stock/blog-returning-to-daily-routines-after-injury.jpg",
       "source": "pexels",
-      "alt": "Senior adult organizing daily medications using a weekly pill organizer on a table indoors.",
-      "pexels_id": 8088898,
-      "photographer": "Yaroslav Shuraev",
-      "pexels_url": "https://www.pexels.com/photo/person-organizing-his-medicines-8088898/"
+      "alt": "A smiling older woman sifts flour into a bowl in her kitchen.",
+      "pexels_id": 15377744,
+      "photographer": "Centre for Ageing Better",
+      "pexels_url": "https://www.pexels.com/photo/elderly-woman-sifting-flour-in-kitchen-15377744/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:setting-realistic-goals-in-neuro-rehabilitation",
@@ -530,7 +624,9 @@
       "alt": "Aligned wooden blocks spelling 'Goals' symbolize target achievement and ambition.",
       "pexels_id": 32319627,
       "photographer": "Ann H",
-      "pexels_url": "https://www.pexels.com/photo/wooden-blocks-spelling-goals-on-a-table-32319627/"
+      "pexels_url": "https://www.pexels.com/photo/wooden-blocks-spelling-goals-on-a-table-32319627/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:spinal-cord-injury-and-building-independence",
@@ -539,7 +635,9 @@
       "alt": "Mother and daughter share a warm embrace in a park, highlighting love and mobility support.",
       "pexels_id": 6284842,
       "photographer": "Gustavo Fring",
-      "pexels_url": "https://www.pexels.com/photo/a-girl-hugging-a-woman-in-a-wheelchair-6284842/"
+      "pexels_url": "https://www.pexels.com/photo/a-girl-hugging-a-woman-in-a-wheelchair-6284842/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:staying-motivated-through-a-long-recovery",
@@ -547,35 +645,43 @@
       "source": "pexels",
       "alt": "A senior patient using crutches to walk down a hospital corridor, symbolizing recovery and mobility assistance.",
       "pexels_id": 24193871,
-      "photographer": "Stéf -b.",
-      "pexels_url": "https://www.pexels.com/photo/rear-view-of-a-patient-walking-with-crutches-on-a-hospital-corridor-24193871/"
+      "photographer": "St\u00e9f -b.",
+      "pexels_url": "https://www.pexels.com/photo/rear-view-of-a-patient-walking-with-crutches-on-a-hospital-corridor-24193871/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:safe-return-to-community-activities",
       "file": "public/images/stock/blog-safe-return-to-community-activities.jpg",
       "source": "pexels",
-      "alt": "A contactless temperature check being conducted in an indoor classroom setting for safety measures.",
-      "pexels_id": 6684267,
-      "photographer": "Andy Barbour",
-      "pexels_url": "https://www.pexels.com/photo/a-person-checking-the-temperature-6684267/"
+      "alt": "Two men help an older person with a walker get out of a car.",
+      "pexels_id": 6647024,
+      "photographer": "RDNE Stock project",
+      "pexels_url": "https://www.pexels.com/photo/man-in-white-shirt-helping-an-elderly-person-6647024/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:sleep-and-brain-injury-recovery",
       "file": "public/images/stock/blog-sleep-and-brain-injury-recovery.jpg",
       "source": "pexels",
-      "alt": "Top view of a bandaged foot resting on a bed, depicting injury and recovery.",
-      "pexels_id": 15068316,
-      "photographer": "Towfiqu barbhuiya",
-      "pexels_url": "https://www.pexels.com/photo/man-with-bandage-on-foot-15068316/"
+      "alt": "An older couple sleeps peacefully in bed.",
+      "pexels_id": 8972607,
+      "photographer": "SHVETS production",
+      "pexels_url": "https://www.pexels.com/photo/a-couple-sleeping-on-the-bed-8972607/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:the-role-of-routine-in-neurological-recovery",
       "file": "public/images/stock/blog-the-role-of-routine-in-neurological-recovery.jpg",
       "source": "pexels",
-      "alt": "Detailed view of a reflex hammer held by a healthcare professional.",
-      "pexels_id": 7108274,
-      "photographer": "Pavel Danilyuk",
-      "pexels_url": "https://www.pexels.com/photo/doctor-holding-a-hammer-7108274/"
+      "alt": "An older man does a seated stretch on a yoga mat in his living room.",
+      "pexels_id": 8899534,
+      "photographer": "SHVETS production",
+      "pexels_url": "https://www.pexels.com/photo/a-man-in-blue-t-shirt-stretching-his-legs-8899534/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:understanding-neuroplasticity-in-rehabilitation",
@@ -584,25 +690,31 @@
       "alt": "A woman exercises in a bright rehabilitation center, focusing on recovery and wellness.",
       "pexels_id": 25596776,
       "photographer": "Ahmet Kurt",
-      "pexels_url": "https://www.pexels.com/photo/woman-in-rehabilitation-exercising-in-a-bright-room-25596776/"
+      "pexels_url": "https://www.pexels.com/photo/woman-in-rehabilitation-exercising-in-a-bright-room-25596776/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:using-recreation-to-rebuild-confidence",
       "file": "public/images/stock/blog-using-recreation-to-rebuild-confidence.jpg",
       "source": "pexels",
-      "alt": "Close-up of an adult using an inhaler for asthma management.",
-      "pexels_id": 29702937,
-      "photographer": "Cnordic Nordic",
-      "pexels_url": "https://www.pexels.com/photo/adult-using-inhaler-for-asthma-relief-29702937/"
+      "alt": "An older couple laughs while playing a block stacking game at a table.",
+      "pexels_id": 8791170,
+      "photographer": "ANTONI SHKRABA production",
+      "pexels_url": "https://www.pexels.com/photo/an-elderly-couple-playing-jenga-8791170/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:understanding-traumatic-brain-injury-recovery",
       "file": "public/images/stock/blog-understanding-traumatic-brain-injury-recovery.jpg",
       "source": "pexels",
-      "alt": "Woman with a head bandage being checked with a digital thermometer indoors, showcasing care and medical attention.",
-      "pexels_id": 5207242,
-      "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/person-checking-the-woman-s-temperature-5207242/"
+      "alt": "A man does an arm stretch while a therapist watches in a rehabilitation studio.",
+      "pexels_id": 6111621,
+      "photographer": "Kampus Production",
+      "pexels_url": "https://www.pexels.com/photo/a-woman-supervising-a-man-s-exercise-6111621/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:understanding-spasticity-and-movement-challenges",
@@ -611,16 +723,20 @@
       "alt": "Close-up of a person using a wheelchair in a studio setting with a gray background.",
       "pexels_id": 8524615,
       "photographer": "cottonbro studio",
-      "pexels_url": "https://www.pexels.com/photo/a-person-riding-a-wheelchair-8524615/"
+      "pexels_url": "https://www.pexels.com/photo/a-person-riding-a-wheelchair-8524615/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:vestibular-problems-and-dizziness-explained",
       "file": "public/images/stock/blog-vestibular-problems-and-dizziness-explained.jpg",
       "source": "pexels",
-      "alt": "A woman outdoors holds her head, depicting stress or a headache.",
-      "pexels_id": 7298391,
-      "photographer": "Kindel Media",
-      "pexels_url": "https://www.pexels.com/photo/a-woman-holding-her-head-7298391/"
+      "alt": "A therapist places a hand on a woman's head to guide her head position.",
+      "pexels_id": 5793701,
+      "photographer": "Yan Krukau",
+      "pexels_url": "https://www.pexels.com/photo/woman-in-white-long-sleeve-shirt-holding-a-person-s-head-5793701/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:what-a-free-rehabilitation-consultation-includes",
@@ -628,26 +744,32 @@
       "source": "pexels",
       "alt": "Chiropractor demonstrating spine anatomy to a patient during consultation indoors.",
       "pexels_id": 19440815,
-      "photographer": "Fatih  Ustaosmanoğlu",
-      "pexels_url": "https://www.pexels.com/photo/chiropractor-with-model-of-spine-19440815/"
+      "photographer": "Fatih  Ustaosmano\u011flu",
+      "pexels_url": "https://www.pexels.com/photo/chiropractor-with-model-of-spine-19440815/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:what-to-expect-from-neuro-rehabilitation-after-a-brain-injur",
       "file": "public/images/stock/blog-what-to-expect-from-neuro-rehabilitation-after-a-brain-injur.jpg",
       "source": "pexels",
-      "alt": "Crop anonymous orthopedist in wristwatch and uniform helping young woman in casual wear reaching arms with elastic tape in doctor office",
-      "pexels_id": 4506160,
-      "photographer": "https://kaboompics.com/",
-      "pexels_url": "https://www.pexels.com/photo/crop-unrecognizable-chiropractor-and-female-patient-with-elastic-tape-4506160/"
+      "alt": "A man does a resistance exercise on a reformer machine while a therapist supervises.",
+      "pexels_id": 6111616,
+      "photographer": "Kampus Production",
+      "pexels_url": "https://www.pexels.com/photo/a-man-in-blue-shirt-exercising-with-supervision-6111616/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:walking-and-gait-retraining-basics",
       "file": "public/images/stock/blog-walking-and-gait-retraining-basics.jpg",
       "source": "pexels",
-      "alt": "A smiling woman in activewear walks energetically on a sunny street, showcasing urban lifestyle.",
-      "pexels_id": 4939429,
-      "photographer": "Nataliya Vaitkevich",
-      "pexels_url": "https://www.pexels.com/photo/woman-in-activewear-with-a-jacket-walking-while-carrying-a-backpack-4939429/"
+      "alt": "An older person walks with a rolling walker beside a companion on a garden path.",
+      "pexels_id": 19971191,
+      "photographer": "Rollz International",
+      "pexels_url": "https://www.pexels.com/photo/two-people-walking-outdoors-19971191/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:why-holistic-rehabilitation-matters",
@@ -656,7 +778,9 @@
       "alt": "Crop unrecognizable osteopath pressing shoulder of patient lying on bed during massage of spine",
       "pexels_id": 5473215,
       "photographer": "Ryutaro Tsukata",
-      "pexels_url": "https://www.pexels.com/photo/crop-masseur-preparing-client-for-spine-treatment-5473215/"
+      "pexels_url": "https://www.pexels.com/photo/crop-masseur-preparing-client-for-spine-treatment-5473215/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:what-is-recreational-therapy-and-who-can-benefit",
@@ -665,16 +789,262 @@
       "alt": "Group fitness class with colorful pool noodles in an outdoor swimming pool in West Java.",
       "pexels_id": 37304109,
       "photographer": "Dwi Rizqi F",
-      "pexels_url": "https://www.pexels.com/photo/aquatic-exercise-class-in-west-java-pool-37304109/"
+      "pexels_url": "https://www.pexels.com/photo/aquatic-exercise-class-in-west-java-pool-37304109/",
+      "width": 2000,
+      "height": 1050
     },
     {
       "page": "blog:why-one-size-fits-all-rehabilitation-falls-short",
       "file": "public/images/stock/blog-why-one-size-fits-all-rehabilitation-falls-short.jpg",
       "source": "pexels",
-      "alt": "Detailed close-up of a foot in an orthopedic brace, highlighting post-injury recovery.",
-      "pexels_id": 14569654,
-      "photographer": "Towfiqu barbhuiya",
-      "pexels_url": "https://www.pexels.com/photo/close-up-of-hand-on-brace-14569654/"
+      "alt": "A physical therapist assesses a man's posture in a clinic.",
+      "pexels_id": 20860581,
+      "photographer": "Funkcin\u0117s Terapijos Centras",
+      "pexels_url": "https://www.pexels.com/photo/physiotherapist-standing-over-patient-20860581/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:speech-language-pathology",
+      "file": "public/images/stock/program-speech-language-pathology.jpg",
+      "source": "pexels",
+      "alt": "An older woman in conversation with two staff members in a hallway",
+      "pexels_id": 18459197,
+      "photographer": "Jsme  MILA",
+      "pexels_url": "https://www.pexels.com/photo/caregivers-talking-with-patient-in-hallway-18459197/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:residential-rehabilitation",
+      "file": "public/images/stock/program-residential-rehabilitation.jpg",
+      "source": "pexels",
+      "alt": "Residents and staff seated around a dining table in a homelike common room",
+      "pexels_id": 18459204,
+      "photographer": "Jsme  MILA",
+      "pexels_url": "https://www.pexels.com/photo/elderly-people-sitting-at-table-with-caregiver-in-dining-room-18459204/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:semi-independent-apartment-living",
+      "file": "public/images/stock/program-semi-independent-apartment-living.jpg",
+      "source": "pexels",
+      "alt": "A woman using a wheelchair smiles in an apartment kitchen while two people prepare a meal",
+      "pexels_id": 7446752,
+      "photographer": "Gustavo Fring",
+      "pexels_url": "https://www.pexels.com/photo/a-happy-family-in-the-kitchen-smiling-at-the-camera-7446752/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:nursing-care",
+      "file": "public/images/stock/program-nursing-care.jpg",
+      "source": "pexels",
+      "alt": "A nurse wearing a stethoscope checks a woman's blood pressure with a wrist monitor as they sit on a sofa",
+      "pexels_id": 7345459,
+      "photographer": "Antoni Shkraba",
+      "pexels_url": "https://www.pexels.com/photo/man-and-woman-sitting-on-the-couch-7345459/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:medical-rehabilitation",
+      "file": "public/images/stock/program-medical-rehabilitation.jpg",
+      "source": "pexels",
+      "alt": "A caregiver guides an older man through an arm stretching exercise",
+      "pexels_id": 7551622,
+      "photographer": "Kampus Production",
+      "pexels_url": "https://www.pexels.com/photo/a-woman-helping-a-man-in-doing-exercise-7551622/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:cognitive-day-group",
+      "file": "public/images/stock/program-cognitive-day-group.jpg",
+      "source": "pexels",
+      "alt": "A staff member helps an older adult at a laptop while others work at a shared table",
+      "pexels_id": 7983563,
+      "photographer": "Kampus Production",
+      "pexels_url": "https://www.pexels.com/photo/elderly-computer-class-7983563/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:case-management",
+      "file": "public/images/stock/program-case-management.jpg",
+      "source": "pexels",
+      "alt": "A staff member and an older man review information together on a desktop computer",
+      "pexels_id": 8413389,
+      "photographer": "SHVETS production",
+      "pexels_url": "https://www.pexels.com/photo/elderly-man-wearing-eyeglasses-looking-at-a-woman-8413389/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:counseling",
+      "file": "public/images/stock/program-counseling.jpg",
+      "source": "pexels",
+      "alt": "A counselor takes notes while talking with a man seated in an armchair",
+      "pexels_id": 5336963,
+      "photographer": "Tima Miroshnichenko",
+      "pexels_url": "https://www.pexels.com/photo/a-psychologist-talking-to-her-patient-5336963/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:behavioral-modification",
+      "file": "public/images/stock/program-behavioral-modification.jpg",
+      "source": "pexels",
+      "alt": "A young man talks with a therapist who is holding a clipboard",
+      "pexels_id": 7176057,
+      "photographer": "SHVETS production",
+      "pexels_url": "https://www.pexels.com/photo/close-up-shot-of-a-person-interviewing-a-man-7176057/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:life-activity-and-skill-building",
+      "file": "public/images/stock/program-life-activity-and-skill-building.jpg",
+      "source": "pexels",
+      "alt": "A man using a wheelchair works on a task at a kitchen table",
+      "pexels_id": 7446648,
+      "photographer": "Gustavo Fring",
+      "pexels_url": "https://www.pexels.com/photo/man-on-a-wheelchair-at-a-table-in-a-kitchen-tinkering-7446648/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:medication-management",
+      "file": "public/images/stock/program-medication-management.jpg",
+      "source": "pexels",
+      "alt": "A nurse in a white uniform talks with an older man",
+      "pexels_id": 8413336,
+      "photographer": "SHVETS production",
+      "pexels_url": "https://www.pexels.com/photo/a-person-having-conversation-8413336/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:social-work",
+      "file": "public/images/stock/program-social-work.jpg",
+      "source": "pexels",
+      "alt": "A couple meets with a professional at a kitchen table with papers in front of them",
+      "pexels_id": 9870222,
+      "photographer": "Ron Lach",
+      "pexels_url": "https://www.pexels.com/photo/couple-talking-with-social-worker-in-kitchen-9870222/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:respite-care",
+      "file": "public/images/stock/program-respite-care.jpg",
+      "source": "pexels",
+      "alt": "A caregiver gently combs the hair of an older man seated by a window",
+      "pexels_id": 7551654,
+      "photographer": "Kampus Production",
+      "pexels_url": "https://www.pexels.com/photo/woman-in-yellow-cardigan-holding-brown-and-black-hairbrush-7551654/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "services:leisure-activities",
+      "file": "public/images/stock/program-leisure-activities.jpg",
+      "source": "pexels",
+      "alt": "Three older adults play chess together on a sofa",
+      "pexels_id": 39191574,
+      "photographer": "Vitaly Gariev",
+      "pexels_url": "https://www.pexels.com/photo/senior-friends-playing-chess-in-cozy-room-39191574/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "hub:services",
+      "file": "public/images/stock/hub-services.jpg",
+      "source": "pexels",
+      "alt": "A senior man is assisted by a caregiver for stretching exercises indoors.",
+      "pexels_id": 7551627,
+      "photographer": "Kampus Production",
+      "pexels_url": "https://www.pexels.com/photo/a-man-in-blue-sweater-wearing-eyeglasses-doing-exercise-7551627/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "hub:conditions",
+      "file": "public/images/stock/hub-conditions.jpg",
+      "source": "pexels",
+      "alt": "Physiotherapist working with a patient in a clinical setting, focusing on shoulder therapy.",
+      "pexels_id": 20860576,
+      "photographer": "Funkcin\u0117s Terapijos Centras",
+      "pexels_url": "https://www.pexels.com/photo/physiotherapist-massaging-arm-20860576/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "hub:blog",
+      "file": "public/images/stock/hub-blog.jpg",
+      "source": "pexels",
+      "alt": "A caregiver helps a senior man with reading, providing support at home.",
+      "pexels_id": 7551618,
+      "photographer": "Kampus Production",
+      "pexels_url": "https://www.pexels.com/photo/a-woman-in-yellow-cardigan-talking-to-the-man-while-reading-a-book-7551618/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "hub:faq",
+      "file": "public/images/stock/hub-faq.jpg",
+      "source": "pexels",
+      "alt": "Senior man consulting with female doctor in a colorful office setting.",
+      "pexels_id": 39192354,
+      "photographer": "Vitaly Gariev",
+      "pexels_url": "https://www.pexels.com/photo/doctor-and-patient-consultation-in-modern-office-39192354/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "hub:insurance",
+      "file": "public/images/stock/hub-insurance.jpg",
+      "source": "pexels",
+      "alt": "Businesswoman reviewing paperwork while on a call at a modern office workspace.",
+      "pexels_id": 6829567,
+      "photographer": "Kampus Production",
+      "pexels_url": "https://www.pexels.com/photo/a-businesswoman-looking-at-documents-6829567/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "hub:newpatients",
+      "file": "public/images/stock/hub-newpatients.jpg",
+      "source": "pexels",
+      "alt": "A physiotherapist assists a patient in a rehabilitation session at a Vilnius clinic.",
+      "pexels_id": 20860610,
+      "photographer": "Funkcin\u0117s Terapijos Centras",
+      "pexels_url": "https://www.pexels.com/photo/patient-lying-on-his-hide-being-examined-by-a-physiotherapist-20860610/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "hub:reviews",
+      "file": "public/images/stock/hub-reviews.jpg",
+      "source": "pexels",
+      "alt": "An elderly caregiver warmly greets a senior woman at home, symbolizing care and companionship.",
+      "pexels_id": 29372534,
+      "photographer": "Jsme  MILA",
+      "pexels_url": "https://www.pexels.com/photo/elderly-caregiver-shaking-hands-with-senior-woman-29372534/",
+      "width": 2000,
+      "height": 1050
+    },
+    {
+      "page": "hub:sms",
+      "file": "public/images/stock/hub-sms.jpg",
+      "source": "pexels",
+      "alt": "Elderly woman with a smartphone relaxing outdoors in autumn.",
+      "pexels_id": 6838559,
+      "photographer": "Kampus Production",
+      "pexels_url": "https://www.pexels.com/photo/an-elderly-woman-in-white-jacket-using-her-mobile-phone-6838559/",
+      "width": 2000,
+      "height": 1050
     }
   ]
 }
