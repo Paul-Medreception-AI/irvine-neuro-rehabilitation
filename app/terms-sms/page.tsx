@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Terms and Conditions - SMS | Irvine Neuro Rehabilitation',
@@ -10,17 +10,16 @@ export const metadata: Metadata = {
 export default function TermsSmsPage() {
   return (
     <main className="min-h-screen">
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white text-center">
-        <HeroBackdrop src="/images/stock/hub-sms.jpg" alt="An older woman reading a message on her smartphone outdoors" />
-        <div className="relative container mx-auto px-6">
+      <SplitHero src="/images/stock/hub-sms.jpg" alt="An older woman reading a message on her smartphone outdoors">
+        <div className="container">
           <h1 className="font-cormorant text-5xl font-bold mb-4 animate-fade-up">
             Irvine Neuro Rehabilitation Terms and Conditions - SMS
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto animate-fade-up">
+          <p className="text-xl text-white/90 max-w-2xl animate-fade-up">
             Irvine Neuro Rehabilitation
           </p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-6">

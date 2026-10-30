@@ -27,9 +27,3 @@ body { background-color: var(--color-cream); color: var(--color-ink); }
   animation-timeline: view();
   animation-range: entry 0% entry 35%;
 }
-/* Photo heroes (components/HeroBackdrop.tsx): a soft shadow under the white copy so it holds up
-   over the light parts of a photograph as well as the scrim. */
-.hero-photo h1,
-.hero-photo h2,
-.hero-photo p,
-.hero-photo nav { text-shadow: 0 2px 14px rgba(14,14,30,0.55), 0 1px 3px rgba(14,14,30,0.45); }

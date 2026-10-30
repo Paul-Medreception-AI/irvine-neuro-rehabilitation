@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import HeroBackdrop from '../HeroBackdrop'
+import SplitHero from '../SplitHero'
 import type { Metadata } from 'next'
 
 export type FAQ = { q: string; a: string }
@@ -115,31 +115,36 @@ export function ServicePageTemplate({ c }: { c: ServicePageContent }) {
     mainEntity: list(c.faqs).map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
   } : null
 
+  const heroCopy = (
+    <>
+      <nav className="text-sm mb-6 opacity-90" aria-label="Breadcrumb">
+        <a href="/" className="hover:underline">Home</a>
+        <span className="mx-2">›</span>
+        <a href={c.hubHref} className="hover:underline">{c.hubLabel}</a>
+        <span className="mx-2">›</span>
+        <span>{c.title}</span>
+      </nav>
+      <h1 className="text-4xl md:text-5xl font-semibold mb-6 leading-tight">{c.headline}</h1>
+      <p className="text-lg sm:text-xl opacity-95 leading-relaxed">{c.heroSubhead || c.description}</p>
+      <div className="flex flex-wrap gap-4 mt-8">
+        <a href={c.ctaHref} className="bg-white text-[var(--color-dark)] px-7 py-3.5 rounded-xl font-bold shadow-xl hover:-translate-y-0.5 transition-all">{c.ctaLabel}</a>
+        <a href="tel:+12484152500" className="border-2 border-white text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-white/10 transition-all">Call (248) 415-2500</a>
+      </div>
+    </>
+  )
+
   return (
     <main className="min-h-screen">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }} />
       {schemaFaq && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq) }} />}
 
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white">
-        {c.heroImage && c.heroImage.src ? <HeroBackdrop src={c.heroImage.src} alt={c.heroImage.alt} /> : null}
-        <div className="relative max-w-7xl mx-auto px-6">
-          <div className="max-w-3xl">
-            <nav className="text-sm mb-6 opacity-90" aria-label="Breadcrumb">
-              <a href="/" className="hover:underline">Home</a>
-              <span className="mx-2">›</span>
-              <a href={c.hubHref} className="hover:underline">{c.hubLabel}</a>
-              <span className="mx-2">›</span>
-              <span>{c.title}</span>
-            </nav>
-            <h1 className="text-4xl md:text-5xl font-semibold mb-6 leading-tight">{c.headline}</h1>
-            <p className="text-xl opacity-95 max-w-3xl leading-relaxed">{c.heroSubhead || c.description}</p>
-            <div className="flex flex-wrap gap-4 mt-8">
-              <a href={c.ctaHref} className="bg-white text-[var(--color-dark)] px-7 py-3.5 rounded-xl font-bold shadow-xl hover:-translate-y-0.5 transition-all">{c.ctaLabel}</a>
-              <a href="tel:+12484152500" className="border-2 border-white text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-white/10 transition-all">Call (248) 415-2500</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      {c.heroImage && c.heroImage.src ? (
+        <SplitHero src={c.heroImage.src} alt={c.heroImage.alt}>{heroCopy}</SplitHero>
+      ) : (
+        <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] text-white">
+          <div className="max-w-7xl mx-auto px-6 py-16 lg:py-20 max-w-3xl">{heroCopy}</div>
+        </section>
+      )}
 
       {c.featuredVideo && (
         <section className="bg-white py-16">

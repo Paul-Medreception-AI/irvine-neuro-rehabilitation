@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Individual vs Group Therapy: Which Fits Your Recovery?',
@@ -44,14 +44,13 @@ export default function Page() {
   const bList = ['You want to connect with others who understand', 'You want to practice skills in a social setting', 'You value shared experience and encouragement', 'You are comfortable with a set schedule']
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
-        <HeroBackdrop src="/images/stock/compare-individual-vs-group-therapy.jpg" alt="A man having a counseling session with a therapist in a modern office setting." />
-        <div className="relative max-w-4xl mx-auto px-6 animate-fade-up">
+      <SplitHero src="/images/stock/compare-individual-vs-group-therapy.jpg" alt="A man having a counseling session with a therapist in a modern office setting.">
+        <div className="animate-fade-up">
           <nav className="text-sm mb-6 text-[var(--color-light)]">Home › Resources › Comparison</nav>
           <h1 className="font-cormorant text-5xl font-light">Individual vs Group Therapy Sessions: Which Fits Your Recovery?</h1>
-          <p className="mt-6 text-lg text-[var(--color-light)] max-w-2xl mx-auto">A clear look at how each format works, so you can make a confident decision about your care in Southfield, MI.</p>
+          <p className="mt-6 text-lg text-[var(--color-light)] max-w-2xl">A clear look at how each format works, so you can make a confident decision about your care in Southfield, MI.</p>
         </div>
-      </section>
+      </SplitHero>
 
 
       <section className="bg-[var(--color-cream)] py-24">

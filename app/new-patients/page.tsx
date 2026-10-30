@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'New Patient Information | Irvine Neuro Rehabilitation',
@@ -50,13 +50,12 @@ function Check() {
 export default function NewPatientsPage() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
-        <HeroBackdrop src="/images/stock/hub-newpatients.jpg" alt="A therapist guiding a patient through an exercise on a treatment table" />
-        <div className="relative max-w-3xl mx-auto px-6">
+      <SplitHero src="/images/stock/hub-newpatients.jpg" alt="A therapist guiding a patient through an exercise on a treatment table">
+        <div>
           <h1 className="font-cormorant text-5xl font-light">New Patients</h1>
           <p className="mt-4 text-lg text-white/80">Everything you need to know before your first visit</p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-7xl mx-auto px-6">

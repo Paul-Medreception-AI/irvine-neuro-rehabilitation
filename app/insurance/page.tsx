@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Insurance & Billing | Irvine Neuro Rehabilitation',
@@ -96,13 +96,12 @@ const faqs = [
 export default function InsurancePage() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
-        <HeroBackdrop src="/images/stock/hub-insurance.jpg" alt="A woman reviewing paperwork at a desk while on a phone call" />
-        <div className="relative max-w-3xl mx-auto px-6">
+      <SplitHero src="/images/stock/hub-insurance.jpg" alt="A woman reviewing paperwork at a desk while on a phone call">
+        <div>
           <h1 className="font-cormorant text-5xl font-light">Insurance &amp; Billing</h1>
           <p className="mt-4 text-lg text-white/80">The plans we work with, and how billing works</p>
         </div>
-      </section>
+      </SplitHero>
 
       {/* The real accepted-carrier list must be supplied by the practice before any carrier is named on this page. */}
       <section className="bg-[var(--color-cream)] py-24">

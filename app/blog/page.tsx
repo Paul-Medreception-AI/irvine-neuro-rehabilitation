@@ -2,7 +2,8 @@
 // lib/data/blog.ts, which holds exactly the posts that exist, so it cannot link to a
 // post that is not there or leave one out.
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import Image from 'next/image'
+import SplitHero from '@/components/SplitHero'
 import { BLOG_POSTS } from '../../lib/data/blog'
 
 const TITLE = "Health Articles | Irvine Neuro Rehabilitation"
@@ -21,18 +22,17 @@ export default function BlogIndexPage() {
   const [featured, ...rest] = BLOG_POSTS
   return (
     <>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
-        <HeroBackdrop src="/images/stock/hub-blog.jpg" alt="A caregiver reading together with an older man at home" />
-        <div className="relative max-w-4xl mx-auto px-6">
+      <SplitHero src="/images/stock/hub-blog.jpg" alt="A caregiver reading together with an older man at home">
+        <div>
           <nav className="text-sm text-white/70 mb-4" aria-label="Breadcrumb">
             <a href="/" className="hover:underline">Home</a>
             <span className="mx-2">›</span>
             <span>Resources</span>
           </nav>
           <h1 className="font-cormorant text-5xl md:text-6xl font-light">Health Articles</h1>
-          <p className="text-xl text-white/85 max-w-2xl mx-auto mt-4 leading-relaxed">Clear, practical information to help you make informed decisions about your health.</p>
+          <p className="text-xl text-white/85 max-w-2xl mt-4 leading-relaxed">Clear, practical information to help you make informed decisions about your health.</p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-[var(--color-cream)] py-20">
         <div className="max-w-7xl mx-auto px-6">
@@ -40,7 +40,7 @@ export default function BlogIndexPage() {
             <a href={'/blog/' + featured.slug} className="group block bg-white rounded-2xl p-10 border border-[var(--color-border)] shadow-sm hover:shadow-xl transition-all duration-300">
               {featured.image ? (
                 <div className="w-full -mt-2 mb-8 rounded-xl overflow-hidden bg-[var(--color-light)]">
-                  <img src={featured.image.src} alt={featured.image.alt || featured.title} className="block w-full h-auto" />
+                  <Image src={featured.image.src} alt={featured.image.alt || featured.title} width={1200} height={630} priority sizes="(max-width: 1024px) 100vw, 900px" className="block w-full h-auto" />
                 </div>
               ) : null}
               <p className="text-xs uppercase tracking-widest text-[var(--color-primary)]">Featured article</p>
@@ -60,7 +60,7 @@ export default function BlogIndexPage() {
                 <a key={p.slug} href={'/blog/' + p.slug} className="group block bg-white rounded-2xl overflow-hidden border border-[var(--color-border)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
                   {p.image ? (
                     <div className="w-full bg-[var(--color-light)] overflow-hidden">
-                      <img src={p.image.src} alt={p.image.alt || p.title} loading="lazy" className="block w-full h-auto group-hover:scale-105 transition-transform duration-500" />
+                      <Image src={p.image.src} alt={p.image.alt || p.title} width={1200} height={630} sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 400px" className="block w-full h-auto group-hover:scale-105 transition-transform duration-500" />
                     </div>
                   ) : null}
                   <div className="p-8">

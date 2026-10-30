@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -58,10 +58,9 @@ const faqs = [
 export default function Page() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
-        <HeroBackdrop src="/images/stock/compare-recreational-therapy-vs-exercise-therapy.jpg" alt="A physiotherapist assists a patient in stretching exercises indoors." />
-        <div className="relative max-w-4xl mx-auto px-6">
-          <nav aria-label="Breadcrumb" className="text-sm text-white/70 mb-6 flex items-center justify-center gap-2">
+      <SplitHero src="/images/stock/compare-recreational-therapy-vs-exercise-therapy.jpg" alt="A physiotherapist assists a patient in stretching exercises indoors.">
+        <div>
+          <nav aria-label="Breadcrumb" className="text-sm text-white/70 mb-6 flex items-center justify-start gap-2">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>›</span>
             <span>Resources</span>
@@ -69,9 +68,9 @@ export default function Page() {
             <span className="text-white">Comparison</span>
           </nav>
           <h1 className="font-cormorant text-5xl font-light">Recreational Therapy vs Traditional Exercise Therapy</h1>
-          <p className="mt-6 text-lg text-white/80 max-w-2xl mx-auto">A clear look at how each approach works, so you can choose the path that fits your goals.</p>
+          <p className="mt-6 text-lg text-white/80 max-w-2xl">A clear look at how each approach works, so you can choose the path that fits your goals.</p>
         </div>
-      </section>
+      </SplitHero>
 
 
       <section className="bg-[var(--color-cream)] py-24">

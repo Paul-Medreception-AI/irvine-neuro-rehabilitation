@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -122,10 +122,9 @@ const faqs = [
 export default function FAQPage() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
-        <HeroBackdrop src="/images/stock/hub-faq.jpg" alt="An older man talking with a clinician in a bright office" />
-        <div className="relative max-w-4xl mx-auto px-6">
-          <nav className="text-sm text-white/70 mb-6 flex justify-center gap-2">
+      <SplitHero src="/images/stock/hub-faq.jpg" alt="An older man talking with a clinician in a bright office">
+        <div>
+          <nav className="text-sm text-white/70 mb-6 flex justify-start gap-2">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>›</span>
             <span className="text-white">FAQ</span>
@@ -133,7 +132,7 @@ export default function FAQPage() {
           <h1 className="font-cormorant text-5xl font-light mb-4">Frequently Asked Questions</h1>
           <p className="text-lg text-white/80">Everything you need to know about our practice and services</p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-4xl mx-auto px-6">

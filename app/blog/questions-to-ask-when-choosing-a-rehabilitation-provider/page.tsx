@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Questions to Ask When Choosing a Rehabilitation Provider',
@@ -34,17 +34,16 @@ const related = [
 export default function Page() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white">
-        <HeroBackdrop src="/images/stock/blog-questions-to-ask-when-choosing-a-rehabilitation-provider.jpg" alt="Professional massage therapist performing head and neck massage on content female patient relieving sore neck tensions" />
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
+      <SplitHero src="/images/stock/blog-questions-to-ask-when-choosing-a-rehabilitation-provider.jpg" alt="Professional massage therapist performing head and neck massage on content female patient relieving sore neck tensions">
+        <div>
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white">Home</a> › <a href="/blog" className="hover:text-white">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
-          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Questions to Ask When Choosing a Rehabilitation Provider</h1>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl">Questions to Ask When Choosing a Rehabilitation Provider</h1>
           <p className="text-white/70 mt-6 text-sm">Published October 2026 · 6 min read</p>
         </div>
-      </section>
+      </SplitHero>
 
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6">

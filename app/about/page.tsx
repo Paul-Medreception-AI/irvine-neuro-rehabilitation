@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 import Image from 'next/image'
+import { focus } from '@/lib/imageFocus'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -34,9 +35,8 @@ const HISTORY = [
 export default function AboutPage() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-36 text-white">
-        <HeroBackdrop src="/images/irvine/campus-exterior.jpg" alt="Irvine Neuro Rehabilitation's Lahser Road campus in Southfield, Michigan" />
-        <div className="relative mx-auto max-w-6xl px-6">
+      <SplitHero src="/images/irvine/campus-exterior.jpg" alt="Irvine Neuro Rehabilitation's Lahser Road campus in Southfield, Michigan">
+        <div>
           <nav className="mb-6 text-sm text-white/70">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span className="mx-2">›</span>
@@ -45,7 +45,7 @@ export default function AboutPage() {
           <h1 className="font-cormorant text-5xl sm:text-6xl font-light">About Irvine Neuro Rehabilitation</h1>
           <p className="mt-4 text-xl text-white/90 max-w-2xl">One woman’s vision for excellence, serving people with brain injuries and their families in Southfield since 1986.</p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-5">
@@ -121,7 +121,7 @@ export default function AboutPage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-6xl px-6 grid gap-10 md:grid-cols-2 items-center">
           <div className="relative h-72 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
-            <Image src="/images/irvine/campus-entrance.jpg" alt="The Irvine Rehab entrance at 25700 Lahser Road" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+            <Image src="/images/irvine/campus-entrance.jpg" alt="The Irvine Rehab entrance at 25700 Lahser Road" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" style={{ objectPosition: focus("/images/irvine/campus-entrance.jpg") }} />
           </div>
           <div>
             <h2 className="font-cormorant text-4xl text-[var(--color-primary)]">Accreditations and Certifications</h2>
@@ -139,8 +139,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-20 text-center text-white">
-        <HeroBackdrop src="/images/irvine/campus-dusk.jpg" alt="Irvine Neuro Rehabilitation's Southfield campus at dusk" />
+      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] py-20 text-center text-white">
         <div className="relative mx-auto max-w-3xl px-6">
           <h2 className="font-cormorant text-4xl font-light mb-8">Ready to Get Started?</h2>
           <Link href="/contact" className="inline-block rounded-lg bg-[var(--color-accent)] px-8 py-4 text-[var(--color-dark)] bg-white font-semibold transition-colors hover:bg-[var(--color-cream)]">Request a Free Consultation</Link>

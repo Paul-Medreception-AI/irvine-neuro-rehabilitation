@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Visiting Our Office | Irvine Neuro Rehabilitation',
@@ -23,15 +23,14 @@ export default function Page() {
   return (
     <main>
       {/* The practice's website does not mention telehealth, so this page describes in-person visits. */}
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
-        <HeroBackdrop src="/images/irvine/campus-dusk.jpg" alt="Irvine Neuro Rehabilitation's Southfield campus at dusk" />
-        <div className="relative max-w-3xl mx-auto px-6">
+      <SplitHero src="/images/irvine/campus-dusk.jpg" alt="Irvine Neuro Rehabilitation's Southfield campus at dusk">
+        <div>
           <h1 className="font-cormorant text-5xl font-light">Visiting Our Office</h1>
           <p className="mt-6 text-lg text-white/90">
             Care starts with an in-person visit, and you can reach the office in Southfield, MI by phone at (248) 415-2500.
           </p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-7xl mx-auto px-6">

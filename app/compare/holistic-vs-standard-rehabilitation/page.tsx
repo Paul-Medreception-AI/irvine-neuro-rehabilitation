@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -43,16 +43,15 @@ const faqs = [
 export default function Page() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
-        <HeroBackdrop src="/images/stock/compare-holistic-vs-standard-rehabilitation.jpg" alt="Serious doctor in uniform massaging smiling female patients neck and stretching stiff neck muscles against gray background" />
-        <div className="relative max-w-4xl mx-auto px-6">
+      <SplitHero src="/images/stock/compare-holistic-vs-standard-rehabilitation.jpg" alt="Serious doctor in uniform massaging smiling female patients neck and stretching stiff neck muscles against gray background">
+        <div>
           <nav className="text-sm text-white/70 mb-6">
             <Link href="/" className="hover:text-white transition-colors">Home</Link> › <span>Resources</span> › <span>Comparison</span>
           </nav>
           <h1 className="font-cormorant text-5xl font-light">Holistic vs Standard Rehabilitation Programs</h1>
-          <p className="mt-6 text-lg text-white/80 max-w-2xl mx-auto">Understand how the two approaches differ so you can choose the path that fits your recovery in Southfield, MI.</p>
+          <p className="mt-6 text-lg text-white/80 max-w-2xl">Understand how the two approaches differ so you can choose the path that fits your recovery in Southfield, MI.</p>
         </div>
-      </section>
+      </SplitHero>
 
 
       <section className="bg-[var(--color-cream)] py-24">

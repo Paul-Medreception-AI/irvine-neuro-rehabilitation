@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Improving Hand Function After Neurological Injury',
@@ -43,17 +43,16 @@ const Check = () => (
 export default function Page() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white">
-        <HeroBackdrop src="/images/stock/blog-improving-hand-function-after-neurological-injury.jpg" alt="A therapist works on a patient's hand and wrist during a treatment session." />
-        <div className="relative max-w-5xl mx-auto px-6 text-center">
+      <SplitHero src="/images/stock/blog-improving-hand-function-after-neurological-injury.jpg" alt="A therapist works on a patient's hand and wrist during a treatment session.">
+        <div>
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white">Home</a> › <a href="/blog" className="hover:text-white">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
-          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Improving Hand Function After Neurological Injury</h1>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl">Improving Hand Function After Neurological Injury</h1>
           <p className="mt-6 text-sm text-white/70">Published October 2026 · 6 min read</p>
         </div>
-      </section>
+      </SplitHero>
 
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6 text-[var(--color-ink)] leading-loose text-base">

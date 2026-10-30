@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 import Image from 'next/image'
+import { focus } from '@/lib/imageFocus'
 
 export const metadata: Metadata = {
   title: 'Neuro Rehabilitation in Southfield, MI | Irvine Neuro Rehab',
@@ -40,9 +41,8 @@ const faqs = [
 export default function Page() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-36 text-white">
-        <HeroBackdrop src="/images/irvine/campus-exterior.jpg" alt="Irvine Neuro Rehabilitation's Lahser Road campus in Southfield, Michigan" />
-        <div className="relative max-w-4xl mx-auto px-6">
+      <SplitHero src="/images/irvine/campus-exterior.jpg" alt="Irvine Neuro Rehabilitation's Lahser Road campus in Southfield, Michigan">
+        <div>
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white transition-colors">Home</a> › Locations › Southfield, MI
           </nav>
@@ -50,7 +50,7 @@ export default function Page() {
           <p className="text-xl text-white/80 mb-8">Our Lahser Road campus: residential care, therapy and our administrative offices, all in one place.</p>
           <a href="/contact" className="inline-block rounded-full bg-white px-8 py-3 font-medium text-[var(--color-primary)] hover:bg-[var(--color-light)] transition-colors">Schedule a Tour</a>
         </div>
-      </section>
+      </SplitHero>
 
 
       <section className="bg-[var(--color-cream)] py-20">
@@ -62,7 +62,7 @@ export default function Page() {
             <p className="text-[var(--color-ink)] leading-relaxed">As with most physical impairments, no two head injuries are alike, and each one is as unique as the person involved. It is that uniqueness that fuels our process of individualized care.</p>
           </div>
           <div className="relative h-80 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
-            <Image src="/images/irvine/campus-entrance.jpg" alt="The Irvine Rehab entrance at 25700 Lahser Road" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+            <Image src="/images/irvine/campus-entrance.jpg" alt="The Irvine Rehab entrance at 25700 Lahser Road" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" style={{ objectPosition: focus("/images/irvine/campus-entrance.jpg") }} />
           </div>
         </div>
       </section>
@@ -86,7 +86,7 @@ export default function Page() {
               ['/images/irvine/hands-on-therapy.jpg', 'A therapist providing hands-on therapy to a client'],
             ].map(([src, alt]) => (
               <div key={src} className="relative h-40 sm:h-52 rounded-xl overflow-hidden">
-                <Image src={src} alt={alt} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" />
+                <Image src={src} alt={alt} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" style={{ objectPosition: focus(src) }} />
               </div>
             ))}
           </div>
@@ -123,8 +123,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] text-white py-24 text-center">
-        <HeroBackdrop src="/images/irvine/campus-dusk.jpg" alt="Irvine Neuro Rehabilitation's Southfield campus at dusk" />
+      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] text-white py-24 text-center">
         <div className="relative max-w-3xl mx-auto px-6">
           <h2 className="font-cormorant text-4xl mb-6">Schedule a Tour</h2>
           <p className="text-white/90 mb-8">No charge for consultation. Call (248) 415-2500 or send us a message.</p>

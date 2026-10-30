@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Occupational Therapy vs Physical Therapy | Compare',
@@ -59,16 +59,15 @@ export default function Page() {
   ]
   return (
     <main className="text-[var(--color-ink)]">
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
-        <HeroBackdrop src="/images/stock/compare-occupational-therapy-vs-physical-therapy.jpg" alt="Crop anonymous chiropractor in uniform and wristwatch examining shoulder of smiling faceless woman in casual clothes in doctor office in clinic" />
-        <div className="relative max-w-4xl mx-auto px-6">
+      <SplitHero src="/images/stock/compare-occupational-therapy-vs-physical-therapy.jpg" alt="Crop anonymous chiropractor in uniform and wristwatch examining shoulder of smiling faceless woman in casual clothes in doctor office in clinic">
+        <div>
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white transition-colors">Home</a> › <span>Resources</span> › <span>Comparison</span>
           </nav>
           <h1 className="font-cormorant text-5xl font-light">Occupational Therapy vs Physical Therapy: Which Is Right for You?</h1>
-          <p className="mt-6 text-lg text-white/80 max-w-2xl mx-auto">Both help you recover and function better, but they focus on different goals. Here is how to tell them apart.</p>
+          <p className="mt-6 text-lg text-white/80 max-w-2xl">Both help you recover and function better, but they focus on different goals. Here is how to tell them apart.</p>
         </div>
-      </section>
+      </SplitHero>
 
 
       <section className="bg-[var(--color-cream)] py-24">

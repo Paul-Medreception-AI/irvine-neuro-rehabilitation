@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Making Therapy Part of Everyday Life',
@@ -37,17 +37,16 @@ const related = [
 export default function Page() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white">
-        <HeroBackdrop src="/images/stock/blog-making-therapy-part-of-everyday-life.jpg" alt="Crop faceless orthopedist in uniform and wristwatch checking up arm joint of slim woman in casual wear in doctor office in clinic" />
-        <div className="relative max-w-4xl mx-auto px-6 text-center">
+      <SplitHero src="/images/stock/blog-making-therapy-part-of-everyday-life.jpg" alt="Crop faceless orthopedist in uniform and wristwatch checking up arm joint of slim woman in casual wear in doctor office in clinic">
+        <div>
           <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white transition-colors">Home</a> › <a href="/blog" className="hover:text-white transition-colors">Resources</a> › Article
           </nav>
           <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
-          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Making Therapy Part of Everyday Life</h1>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl">Making Therapy Part of Everyday Life</h1>
           <p className="mt-6 text-sm text-white/70">Published October 2026 · 6 min read</p>
         </div>
-      </section>
+      </SplitHero>
 
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6">

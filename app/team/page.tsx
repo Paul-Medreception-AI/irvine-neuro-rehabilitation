@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 import Image from 'next/image'
 import { TEAM } from '@/lib/data/team'
 
@@ -24,9 +24,8 @@ export const metadata: Metadata = {
 export default function TeamPage() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-36 text-white text-center">
-        <HeroBackdrop src="/images/irvine/walker-hallway.jpg" alt="An Irvine staff member walking beside a client using a walker in a hallway" position="center 35%" />
-        <div className="relative max-w-3xl mx-auto px-6">
+      <SplitHero src="/images/irvine/walker-hallway.jpg" alt="An Irvine staff member walking beside a client using a walker in a hallway">
+        <div>
           <nav className="text-sm mb-6 text-white/85" aria-label="Breadcrumb">
             <a href="/" className="hover:underline">Home</a> <span className="mx-2">›</span> <a href="/about" className="hover:underline">About</a> <span className="mx-2">›</span> Our Team
           </nav>
@@ -35,7 +34,7 @@ export default function TeamPage() {
             Our team is diversified in all the innovative health care. Physical, occupational and speech therapy, nursing, counseling and case management work together on one plan built around each client.
           </p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -54,16 +54,15 @@ const faqs = [
 export default function Page() {
   return (
     <main className="text-[var(--color-ink)]">
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
-        <HeroBackdrop src="/images/stock/compare-outpatient-vs-inpatient-neuro-rehabilitation.jpg" alt="A physical therapist supports a man's arms as he lifts dumbbells in a clinic." />
-        <div className="relative max-w-4xl mx-auto px-6">
+      <SplitHero src="/images/stock/compare-outpatient-vs-inpatient-neuro-rehabilitation.jpg" alt="A physical therapist supports a man's arms as he lifts dumbbells in a clinic.">
+        <div>
           <nav className="text-sm text-white/70 mb-6">
             <Link href="/" className="hover:text-white transition-colors">Home</Link> › Resources › Comparison
           </nav>
           <h1 className="font-cormorant text-5xl font-light">Outpatient vs Inpatient Neuro Rehabilitation: What to Consider</h1>
-          <p className="mt-6 text-lg text-white/80 max-w-2xl mx-auto">Choosing a rehabilitation setting shapes your recovery. Here is a clear look at how the two options differ.</p>
+          <p className="mt-6 text-lg text-white/80 max-w-2xl">Choosing a rehabilitation setting shapes your recovery. Here is a clear look at how the two options differ.</p>
         </div>
-      </section>
+      </SplitHero>
 
 
       <section className="bg-[var(--color-cream)] py-24">

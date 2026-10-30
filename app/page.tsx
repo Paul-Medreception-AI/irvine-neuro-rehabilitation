@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import { focus } from '@/lib/imageFocus'
 import { TEAM, TESTIMONIALS } from '@/lib/data/team'
 
 export const metadata: Metadata = {
@@ -136,7 +136,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative h-80 sm:h-[26rem] rounded-2xl overflow-hidden shadow-xl">
-            <Image src="/images/irvine/walker-hallway.jpg" alt="An Irvine staff member walking beside a client using a walker" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+            <Image src="/images/irvine/walker-hallway.jpg" alt="An Irvine staff member walking beside a client using a walker" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" style={{ objectPosition: focus("/images/irvine/walker-hallway.jpg") }} />
           </div>
         </div>
       </section>
@@ -150,7 +150,7 @@ export default function Home() {
             {programs.map((p) => (
               <a key={p.name} href={p.href} className="group animate-fade-up bg-white rounded-2xl overflow-hidden border border-[var(--color-border)] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                 <div className="relative h-56 bg-[var(--color-light)]">
-                  <Image src={p.image} alt={p.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover" />
+                  <Image src={p.image} alt={p.alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover" style={{ objectPosition: focus(p.image) }} />
                 </div>
                 <div className="p-7">
                   <h3 className="font-cormorant text-2xl font-semibold text-[var(--color-ink)]">{p.name}</h3>
@@ -174,7 +174,7 @@ export default function Home() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="relative h-80 sm:h-[26rem] rounded-2xl overflow-hidden shadow-xl order-last lg:order-first">
-            <Image src="/images/irvine/campus-exterior.jpg" alt="Irvine Neuro Rehabilitation's Lahser Road campus in Southfield" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+            <Image src="/images/irvine/campus-exterior.jpg" alt="Irvine Neuro Rehabilitation's Lahser Road campus in Southfield" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" style={{ objectPosition: focus("/images/irvine/campus-exterior.jpg") }} />
           </div>
           <div className="animate-fade-up">
             <p className="text-sm uppercase tracking-widest text-[var(--color-primary)] font-semibold">Our Facility</p>
@@ -267,8 +267,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] text-white py-28 text-center">
-        <HeroBackdrop src="/images/irvine/campus-dusk.jpg" alt="Irvine Neuro Rehabilitation's Southfield campus at dusk" />
+      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] text-white py-28 text-center">
         <div className="relative max-w-4xl mx-auto px-6">
           <h2 className="font-cormorant text-4xl sm:text-5xl font-light">We’re Here to Help You</h2>
           <p className="text-lg text-white/90 mt-5">No charge for consultation. Schedule a tour, or call us at (248) 415-2500.</p>

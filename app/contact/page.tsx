@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
@@ -23,15 +23,14 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-36 text-white text-center">
-        <HeroBackdrop src="/images/irvine/campus-entrance.jpg" alt="The entrance to Irvine Rehab at 25700 Lahser Road, Southfield" position="center 65%" />
-        <div className="relative max-w-4xl mx-auto px-6">
+      <SplitHero src="/images/irvine/campus-entrance.jpg" alt="The entrance to Irvine Rehab at 25700 Lahser Road, Southfield">
+        <div>
           <h1 className="font-cormorant text-6xl font-light">Get In Touch</h1>
           <p className="mt-6 text-lg text-white/80">
             We'd love to hear from you. Reach out to schedule an appointment or ask a question.
           </p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16">

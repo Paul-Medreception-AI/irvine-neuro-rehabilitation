@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 
 export const metadata: Metadata = {
   title: 'Understanding Traumatic Brain Injury Recovery',
@@ -37,17 +37,16 @@ const related = [
 export default function Page() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-24 sm:py-32 text-white">
-        <HeroBackdrop src="/images/stock/blog-understanding-traumatic-brain-injury-recovery.jpg" alt="A man does an arm stretch while a therapist watches in a rehabilitation studio." />
-        <div className="relative max-w-4xl mx-auto px-6">
-          <nav className="text-sm text-white/70 mb-6 text-center">
+      <SplitHero src="/images/stock/blog-understanding-traumatic-brain-injury-recovery.jpg" alt="A man does an arm stretch while a therapist watches in a rehabilitation studio.">
+        <div>
+          <nav className="text-sm text-white/70 mb-6">
             <a href="/" className="hover:text-white transition-colors">Home</a> › <a href="/blog" className="hover:text-white transition-colors">Resources</a> › Article
           </nav>
-          <p className="text-xs uppercase tracking-widest text-white/70 mb-4 text-center">Patient Education</p>
-          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl mx-auto text-center">Understanding Traumatic Brain Injury Recovery</h1>
-          <p className="text-center text-white/70 text-sm mt-6">Published October 2026 · 6 min read</p>
+          <p className="text-xs uppercase tracking-widest text-white/70 mb-4">Patient Education</p>
+          <h1 className="font-cormorant text-5xl font-light leading-tight max-w-3xl">Understanding Traumatic Brain Injury Recovery</h1>
+          <p className="text-white/70 text-sm mt-6">Published October 2026 · 6 min read</p>
         </div>
-      </section>
+      </SplitHero>
 
 
       <article className="bg-white py-20 max-w-3xl mx-auto px-6">

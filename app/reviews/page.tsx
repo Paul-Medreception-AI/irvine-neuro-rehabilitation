@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import HeroBackdrop from '@/components/HeroBackdrop'
+import SplitHero from '@/components/SplitHero'
 import { TESTIMONIALS } from '@/lib/data/team'
 
 export const metadata: Metadata = {
@@ -23,15 +23,14 @@ export const metadata: Metadata = {
 export default function ReviewsPage() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden bg-[var(--color-dark)] py-28 sm:py-32 text-white text-center">
-        <HeroBackdrop src="/images/stock/hub-reviews.jpg" alt="A caregiver warmly greeting an older woman at home" />
-        <div className="relative max-w-3xl mx-auto px-6">
+      <SplitHero src="/images/stock/hub-reviews.jpg" alt="A caregiver warmly greeting an older woman at home">
+        <div>
           <h1 className="font-cormorant text-5xl font-light mb-6">Patient Reviews</h1>
           <p className="text-lg text-white/90">
             Families tell us Irvine feels like home. Here is what some of our patients have shared.
           </p>
         </div>
-      </section>
+      </SplitHero>
 
       <section className="bg-[var(--color-cream)] py-24">
         <div className="max-w-6xl mx-auto px-6">
