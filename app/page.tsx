@@ -115,7 +115,7 @@ export default function Home() {
               We don’t employ cookie cutter, one-size-fits-all strategies. Our holistic approach is specific to your needs and your physical condition, and our programs are geared toward targeting every component of rehabilitative care.
             </p>
             <p className="text-[var(--color-muted)] leading-relaxed mt-4">
-              Irvine began in 1986 as an adult foster care home with a closed head injury program, and grew into a full service organization for patients and their families: residential care, outpatient therapy, nursing, counseling and case management, all on one team.
+              Irvine began in 1986 as an adult foster care home with a closed head injury program, and grew into a full service organization for patients and their families: outpatient therapy, residential care, nursing, counseling and case management, all on one team.
             </p>
             <div className="flex flex-wrap gap-6 mt-8">
               <a href="/about" className="text-[var(--color-primary)] font-semibold hover:underline">Our story →</a>
@@ -165,12 +165,11 @@ export default function Home() {
           </div>
           <div className="animate-fade-up">
             <p className="text-sm uppercase tracking-widest text-[var(--color-primary)] font-semibold">Our Facility</p>
-            <h2 className="font-cormorant text-4xl sm:text-5xl text-[var(--color-ink)] mt-3">A Home Away From Home</h2>
+            <h2 className="font-cormorant text-4xl sm:text-5xl text-[var(--color-ink)] mt-3">Outpatient Therapy and Residential Care</h2>
             <p className="text-[var(--color-muted)] leading-relaxed mt-6">
-              We treat 90 percent of our people on an in-patient basis, so we devote considerable resources to making their stay a virtual home away from home, with all the necessities and comforts of their own residence.
-            </p>
+              Outpatient physical, occupational and speech therapy for stroke, brain injury and other conditions, and residential care for clients who need more support, all on our Lahser Road campus in Southfield.</p>
             <ul className="mt-6 space-y-3 text-[var(--color-ink)]">
-              {['Assisted living apartments', 'Sub-acute rooms', 'Adult foster care homes', 'Semi-independent apartments with therapy at home', 'Outpatient therapy for people who do not need residential care'].map((x) => (
+              {['Outpatient physical, occupational and speech therapy', 'Stroke and brain injury rehabilitation', 'Assisted living apartments and sub-acute rooms', 'Adult foster care homes', 'Semi-independent apartments with therapy at home'].map((x) => (
                 <li key={x} className="flex gap-3"><span className="text-[var(--color-primary)]" aria-hidden="true">✓</span><span>{x}</span></li>
               ))}
             </ul>

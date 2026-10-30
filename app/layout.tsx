@@ -46,7 +46,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div>
-                <a href="/" className="inline-block bg-white rounded-xl px-4 py-3" aria-label="Irvine Neuro Rehabilitation, home"><img src="/logo.png" alt="Irvine Neuro Rehabilitation" className="h-[66px] w-auto max-w-full" /></a>
+                <a href="/" className="inline-block" aria-label="Irvine Neuro Rehabilitation, home"><img src="/logo-white.png" alt="Irvine Neuro Rehabilitation" className="h-[66px] w-auto max-w-full" /></a>
                 <p className="mt-4 text-white/70 text-sm">Neuro rehabilitation and residential care in Southfield, Michigan since 1986. Licensed by the State of Michigan and CARF accredited.</p>
                 <div className="flex items-center gap-4 mt-6">
                   <a href="https://www.facebook.com/IrvineManor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white/70 hover:text-white transition-colors">

@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     q: 'What services does Irvine Neuro Rehabilitation offer?',
-    a: 'We offer 17 programs, including residential rehabilitation, physical therapy, occupational therapy, speech and language pathology, recreational and pool (aquatic) therapy, nursing care, counseling, case management, a cognitive day group, respite care and semi-independent apartment living. We treat most of our clients on an in-patient basis on our Southfield campus, and we also see outpatients. There is no charge for a consultation.',
+    a: 'We offer 17 programs, including residential rehabilitation, physical therapy, occupational therapy, speech and language pathology, recreational and pool (aquatic) therapy, nursing care, counseling, case management, a cognitive day group, respite care and semi-independent apartment living. We see outpatients for therapy, and we also have residential programs on our Southfield campus. There is no charge for a consultation.',
   },
   {
     q: 'What does the free consultation involve?',

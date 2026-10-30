@@ -21,11 +21,12 @@ export const metadata: Metadata = {
 }
 
 const campus = [
+  { title: 'Outpatient Therapy', body: 'Physical, occupational, speech and recreational therapy, including stroke and brain injury rehabilitation.' },
   { title: 'Assisted Living Apartments', body: 'Apartments on our Southfield campus that are at the heart of our in-patient care.' },
   { title: 'Sub-Acute Rooms', body: 'Rooms for clients who need a higher level of care during their recovery.' },
   { title: 'Adult Foster Care Homes', body: 'Homelike residential settings, where Irvine began in 1986.' },
   { title: 'Semi-Independent Apartments', body: 'Clients who reside at the Lahser Campus can receive therapy in their own semi-independent apartment.' },
-  { title: 'Outpatient Therapy', body: 'Physical, occupational, speech and recreational therapy for people who do not need residential care.' },
+  
   { title: 'Administrative Offices', body: 'The Lahser Campus is also home to our administrative offices and case management team.' },
 ]
 
@@ -56,8 +57,8 @@ export default function Page() {
         <div className="max-w-6xl mx-auto px-6 grid gap-12 lg:grid-cols-2 items-center">
           <div className="animate-fade-up">
             <h2 className="font-cormorant text-4xl text-[var(--color-primary)] mb-6">Our Facility</h2>
-            <p className="text-[var(--color-ink)] leading-relaxed mb-4">We treat 90 percent of our people on an in-patient basis. As a result, we devote considerable resources to ensure their stay with us is a virtual home away from home, with all the necessities and comforts of their own residence.</p>
-            <p className="text-[var(--color-ink)] leading-relaxed mb-4">Our assisted living apartments, sub-acute rooms and adult foster care homes are located at our Southfield campus and are at the heart of our in-patient care. These facilities help us deliver the quality programs we are known for.</p>
+            <p className="text-[var(--color-ink)] leading-relaxed mb-4">Our Lahser Road campus is home to our outpatient therapy clinic, for physical, occupational and speech therapy, and to our residential programs for clients who need more support.</p>
+            <p className="text-[var(--color-ink)] leading-relaxed mb-4">Our assisted living apartments, sub-acute rooms and adult foster care homes are located at our Southfield campus, designed to provide a comfortable, homelike environment throughout our clients’ recovery.</p>
             <p className="text-[var(--color-ink)] leading-relaxed">As with most physical impairments, no two head injuries are alike, and each one is as unique as the person involved. It is that uniqueness that fuels our process of individualized care.</p>
           </div>
           <div className="relative h-80 sm:h-96 rounded-2xl overflow-hidden shadow-xl">
