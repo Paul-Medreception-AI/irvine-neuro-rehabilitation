@@ -71,23 +71,36 @@ const affiliations = ['Michigan Brain Injury Providers Council', 'Brain Injury A
 export default function Home() {
   return (
     <main>
-      <section className="hero-photo relative overflow-hidden min-h-[88vh] flex items-center bg-[var(--color-dark)] text-white">
-        <HeroBackdrop src="/images/irvine/campus-entrance.jpg" alt="The entrance to Irvine Rehab at 25700 Lahser Road in Southfield, Michigan" position="center 60%" />
-        <div className="relative max-w-5xl mx-auto px-6 text-center py-24">
-          <p className="text-sm sm:text-base uppercase tracking-[0.2em] text-white/90 mb-6">Southfield, Michigan · Since 1986</p>
-          <h1 className="font-cormorant text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight leading-[1.05]">
-            Brain Injury and Neuro Rehabilitation, Built Around You
-          </h1>
-          <p className="text-lg sm:text-xl text-white/95 max-w-2xl mx-auto mt-6 leading-relaxed">
-            What could be more important to you or a loved one than finding a rehabilitation family focused on your personal goals? Since 1986, Irvine Neuro Rehabilitation has served our patients with compassion and understanding.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 mt-10">
-            <a href="/contact" className="bg-white text-[var(--color-dark)] px-8 py-4 rounded-xl font-bold shadow-xl hover:-translate-y-0.5 transition-all">
-              Request a Free Consultation
-            </a>
-            <a href="tel:+12484152500" className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all">
-              Call (248) 415-2500
-            </a>
+      <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] text-white">
+        <div className="max-w-7xl mx-auto px-6 py-14 sm:py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+          <div>
+            <p className="text-sm sm:text-base uppercase tracking-[0.2em] text-white/80 mb-5">Southfield, Michigan · Since 1986</p>
+            <h1 className="font-cormorant text-5xl sm:text-6xl font-light tracking-tight leading-[1.05]">
+              Brain Injury and Neuro Rehabilitation, Built Around You
+            </h1>
+            <p className="text-lg sm:text-xl text-white/90 mt-6 leading-relaxed max-w-xl">
+              What could be more important to you or a loved one than finding a rehabilitation family focused on your personal goals? Since 1986, Irvine Neuro Rehabilitation has served our patients with compassion and understanding.
+            </p>
+            <div className="flex flex-wrap gap-4 mt-9">
+              <a href="/contact" className="bg-white text-[var(--color-dark)] px-8 py-4 rounded-xl font-bold shadow-xl hover:-translate-y-0.5 transition-all">
+                Request a Free Consultation
+              </a>
+              <a href="tel:+12484152500" className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all">
+                Call (248) 415-2500
+              </a>
+            </div>
+          </div>
+          <div className="relative h-72 sm:h-96 lg:h-[32rem] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+            <Image
+              src="/images/irvine/campus-entrance.jpg"
+              alt="The entrance to Irvine Rehab at 25700 Lahser Road in Southfield, Michigan"
+              fill
+              priority
+              quality={85}
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+              style={{ objectPosition: 'center 60%' }}
+            />
           </div>
         </div>
       </section>
