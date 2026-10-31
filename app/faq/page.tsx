@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: 'Is Irvine accredited?',
-    a: 'Yes. Our program is licensed by the State of Michigan and accredited by CARF, the Commission on Accreditation of Rehabilitation Facilities.',
+    a: 'Yes. Irvine is licensed by the State of Michigan, and our residential Brain Injury Specialty Program is accredited by CARF, the Commission on Accreditation of Rehabilitation Facilities.',
   },
   {
     q: 'What is neuro rehabilitation?',

@@ -49,7 +49,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div>
                 <a href="/" className="inline-block" aria-label="Irvine Neuro Rehabilitation, home"><img src="/logo-white.png" alt="Irvine Neuro Rehabilitation" className="h-[66px] w-auto max-w-full" /></a>
-                <p className="mt-4 text-white/70 text-sm">Neuro rehabilitation and residential care in Southfield, Michigan since 1986. Licensed by the State of Michigan and CARF accredited.</p>
+                <p className="mt-4 text-white/70 text-sm">Neuro rehabilitation and residential care in Southfield, Michigan since 1986. Licensed by the State of Michigan. Our residential Brain Injury Specialty Program is CARF accredited.</p>
+                <a href="https://www.carf.org" target="_blank" rel="noopener noreferrer" aria-label="CARF accredited, visit carf.org" className="inline-block mt-4"><img src="/images/carf-seal.png" alt="CARF Accredited seal" width={56} height={56} className="w-14 h-14" /></a>
                 <div className="flex items-center gap-4 mt-6">
                   <a href="https://www.facebook.com/IrvineManor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white/70 hover:text-white transition-colors">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.600V3.800c-.3 0-1.300-.2-2.500-.2-2.500 0-4.200 1.500-4.200 4.300v2.600H7.400v3.300h2.800V22h3.300z"/></svg>

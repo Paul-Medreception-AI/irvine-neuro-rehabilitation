@@ -53,7 +53,7 @@ export default function AboutPage() {
             <p>Since 1986, Irvine Neuro Rehabilitation has served patients with compassion and understanding. We know that when you or a loved one seeks a rehabilitation family, what matters most is finding one focused on your personal goals.</p>
             <p>We do not use cookie cutter, one-size-fits-all strategies. Our holistic approach is specific to your needs and your physical condition, and our programs target every component of rehabilitative care.</p>
             <p>Irvine Neuro Rehabilitation started in Oak Park as a way to offer a more patient-focused philosophy to rehabilitation services. Today our multi-disciplinary team cares for clients through a continuum of rehabilitation and residential services, from assisted living apartments, sub-acute rooms and adult foster care homes to outpatient therapy.</p>
-            <p>Our program is licensed by the State of Michigan and CARF accredited. It is our belief that each client and their family are unique and should be treated with compassion, respect and integrity.</p>
+            <p>Irvine is licensed by the State of Michigan, and our residential Brain Injury Specialty Program is CARF accredited. It is our belief that each client and their family are unique and should be treated with compassion, respect and integrity.</p>
           </div>
           <aside className="lg:col-span-2">
             <div className="animate-fade-up rounded-2xl border border-[var(--color-border)] bg-white p-8">
@@ -126,7 +126,7 @@ export default function AboutPage() {
           <div>
             <h2 className="font-cormorant text-4xl text-[var(--color-primary)]">Accreditations and Certifications</h2>
             <ul className="mt-6 space-y-3 text-[var(--color-ink)]">
-              <li>CARF (Commission on Accreditation of Rehabilitation Facilities)</li>
+              <li className="flex items-center gap-4"><a href="https://www.carf.org" target="_blank" rel="noopener noreferrer" aria-label="CARF accredited, visit carf.org" className="shrink-0"><img src="/images/carf-seal.png" alt="CARF Accredited seal" width={72} height={72} className="w-[72px] h-[72px]" /></a><span>CARF (Commission on Accreditation of Rehabilitation Facilities): Brain Injury Specialty Program, Residential Rehabilitation. <a href="https://carf.org/provider/irvine-head-injury-inc-75341" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 text-[var(--color-primary)]">View on carf.org</a></span></li>
               <li>State of Michigan Licensure</li>
             </ul>
             <h3 className="font-cormorant text-2xl text-[var(--color-primary)] mt-10">Affiliations</h3>

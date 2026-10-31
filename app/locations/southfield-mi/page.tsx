@@ -5,11 +5,11 @@ import { focus } from '@/lib/imageFocus'
 
 export const metadata: Metadata = {
   title: 'Neuro Rehabilitation in Southfield, MI | Irvine Neuro Rehab',
-  description: 'Our Lahser Road campus in Southfield, MI: residential brain injury rehabilitation plus outpatient PT, OT and speech therapy. CARF accredited. (248) 415-2500.',
+  description: 'Our Lahser Road campus in Southfield, MI: a CARF-accredited residential brain injury program plus outpatient PT, OT and speech therapy. (248) 415-2500.',
   alternates: { canonical: '/locations/southfield-mi' },
   openGraph: {
     title: 'Neuro Rehabilitation in Southfield, MI | Irvine Neuro Rehab',
-    description: 'Our Lahser Road campus in Southfield, MI: residential brain injury rehabilitation plus outpatient PT, OT and speech therapy. CARF accredited. (248) 415-2500.',
+    description: 'Our Lahser Road campus in Southfield, MI: a CARF-accredited residential brain injury program plus outpatient PT, OT and speech therapy. (248) 415-2500.',
     url: 'https://irvineneurorehabilitation.com/locations/southfield-mi',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary',
     title: 'Neuro Rehabilitation in Southfield, MI | Irvine Neuro Rehab',
-    description: 'Our Lahser Road campus in Southfield, MI: residential brain injury rehabilitation plus outpatient PT, OT and speech therapy. CARF accredited. (248) 415-2500.',
+    description: 'Our Lahser Road campus in Southfield, MI: a CARF-accredited residential brain injury program plus outpatient PT, OT and speech therapy. (248) 415-2500.',
   },
 }
 

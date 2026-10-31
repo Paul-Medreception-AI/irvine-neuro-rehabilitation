@@ -67,7 +67,7 @@ const allPrograms = [
 // Every line here is a practice fact: its own website, its Studio records or the 2026-10-30 call.
 const reasons = [
   { title: 'Focused on brain injury since 1986', body: 'Irvine began with a closed head injury program and has grown into a full service rehabilitation organization for patients and their families.' },
-  { title: 'CARF accredited and state licensed', body: 'Our program is accredited by CARF, the Commission on Accreditation of Rehabilitation Facilities, and licensed by the State of Michigan.' },
+  { title: 'CARF accredited and state licensed', body: 'Our residential Brain Injury Specialty Program is accredited by CARF, the Commission on Accreditation of Rehabilitation Facilities, and Irvine is licensed by the State of Michigan.' },
   { title: 'One team under one roof', body: 'Physical, occupational and speech therapy, recreational and pool therapy, nursing, counseling and case management work together on one plan.' },
   { title: 'Outpatient and residential care', body: 'Outpatient therapy and residential programs on the same Southfield campus, so care can change as needs change.' },
   { title: 'A plan built for one person', body: 'We don’t employ cookie cutter, one-size-fits-all strategies. Your plan is specific to your needs and your physical condition.' },
@@ -124,13 +124,19 @@ export default function Home() {
 
       <section className="bg-white border-b border-[var(--color-border)]">
         <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:divide-x md:divide-[var(--color-border)]">
+          <div className="flex items-start gap-4 md:pr-8">
+            <a href="https://www.carf.org" target="_blank" rel="noopener noreferrer" aria-label="CARF accredited, visit carf.org" className="shrink-0"><img src="/images/carf-seal.png" alt="CARF Accredited seal" width={64} height={64} className="w-16 h-16" /></a>
+            <div>
+              <p className="font-cormorant text-2xl font-semibold text-[var(--color-ink)] leading-tight">CARF Accredited</p>
+              <p className="text-sm text-[var(--color-muted)] mt-1">Brain Injury Specialty Program, residential rehabilitation. <a href="https://carf.org/provider/irvine-head-injury-inc-75341" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 text-[var(--color-primary)]">View on carf.org</a></p>
+            </div>
+          </div>
           {[
-            { title: 'CARF Accredited', body: 'Commission on Accreditation of Rehabilitation Facilities' },
             { title: 'Licensed by the State of Michigan', body: 'Outpatient therapy and residential programs' },
-            { title: 'Serving Patients Since 1986', body: 'Focused on brain injury rehabilitation from the start' },
+            { title: 'Specialized Brain Injury Care', body: 'Personalized rehabilitation programs focused on independence and recovery.' },
           ].map((t) => (
-            <div key={t.title} className="flex items-start gap-4 md:px-8 first:md:pl-0">
-              <svg className="w-8 h-8 shrink-0 text-[var(--color-primary)]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M12 3 4.5 6v5.25c0 4.5 3.2 8.2 7.5 9.75 4.3-1.55 7.5-5.25 7.5-9.75V6L12 3Z" /></svg>
+            <div key={t.title} className="flex items-start gap-4 md:px-8">
+              <svg className="w-8 h-8 shrink-0 mt-1 text-[var(--color-primary)]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M12 3 4.5 6v5.25c0 4.5 3.2 8.2 7.5 9.75 4.3-1.55 7.5-5.25 7.5-9.75V6L12 3Z" /></svg>
               <div>
                 <p className="font-cormorant text-2xl text-[var(--color-ink)] leading-tight">{t.title}</p>
                 <p className="text-sm text-[var(--color-muted)] mt-1">{t.body}</p>

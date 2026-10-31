@@ -17,7 +17,7 @@ const rows = (hub: string, list: Row[]): NavItem[] => list.map((r) => ({ href: h
 
 const NAME = "Irvine Neuro Rehabilitation"
 const LOGO: string | null = "/logo.png"
-const CTA = {"href":"/contact","label":"Free Consultation"}
+const CTA = {"href":"/contact","label":"Request a Free Consultation"}
 const PHONE: { href: string; label: string } | null = {"href":"tel:2484152500","label":"(248) 415-2500"}
 
 const NAV: NavGroup[] = [
