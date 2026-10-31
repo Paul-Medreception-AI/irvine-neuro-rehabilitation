@@ -123,26 +123,28 @@ export default function Home() {
       </SplitHero>
 
       <section className="bg-white border-b border-[var(--color-border)]">
-        <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:divide-x md:divide-[var(--color-border)]">
-          <div className="flex items-start gap-4 md:pr-8">
-            <a href="https://www.carf.org" target="_blank" rel="noopener noreferrer" aria-label="CARF accredited, visit carf.org" className="shrink-0"><img src="/images/carf-seal.png" alt="CARF Accredited seal" width={64} height={64} className="w-16 h-16" /></a>
-            <div>
-              <p className="font-cormorant text-2xl font-semibold text-[var(--color-ink)] leading-tight">CARF Accredited</p>
-              <p className="text-sm text-[var(--color-muted)] mt-1">Brain Injury Specialty Program, residential rehabilitation. <a href="https://carf.org/provider/irvine-head-injury-inc-75341" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 text-[var(--color-primary)]">View on carf.org</a></p>
-            </div>
+        <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-0 md:divide-x md:divide-[var(--color-border)] items-start">
+          <div className="flex flex-col items-center text-center md:px-8">
+            <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[var(--color-light)] text-[var(--color-primary)]" aria-hidden="true">
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M12 3 4.5 6v5.25c0 4.5 3.2 8.2 7.5 9.75 4.3-1.55 7.5-5.25 7.5-9.75V6L12 3Z" /></svg>
+            </span>
+            <p className="font-cormorant text-2xl text-[var(--color-ink)] leading-tight mt-4">State Licensed</p>
+            <p className="text-sm text-[var(--color-muted)] mt-1">Our program is licensed by the State of Michigan.</p>
           </div>
-          {[
-            { title: 'Licensed by the State of Michigan', body: 'Outpatient therapy and residential programs' },
-            { title: 'Specialized Brain Injury Care', body: 'Personalized rehabilitation programs focused on independence and recovery.' },
-          ].map((t) => (
-            <div key={t.title} className="flex items-start gap-4 md:px-8">
-              <svg className="w-8 h-8 shrink-0 mt-1 text-[var(--color-primary)]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M12 3 4.5 6v5.25c0 4.5 3.2 8.2 7.5 9.75 4.3-1.55 7.5-5.25 7.5-9.75V6L12 3Z" /></svg>
-              <div>
-                <p className="font-cormorant text-2xl text-[var(--color-ink)] leading-tight">{t.title}</p>
-                <p className="text-sm text-[var(--color-muted)] mt-1">{t.body}</p>
-              </div>
-            </div>
-          ))}
+          <div className="flex flex-col items-center text-center md:px-8">
+            <a href="https://www.carf.org" target="_blank" rel="noopener noreferrer" aria-label="CARF accredited, visit carf.org">
+              <img src="/images/carf-seal.png" alt="CARF Accredited seal" width={64} height={64} className="w-16 h-16" />
+            </a>
+            <p className="font-cormorant text-2xl font-semibold text-[var(--color-ink)] leading-tight mt-4">CARF Accredited</p>
+            <p className="text-sm text-[var(--color-muted)] mt-1">Brain Injury Specialty Program, residential rehabilitation. <a href="https://carf.org/provider/irvine-head-injury-inc-75341" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 text-[var(--color-primary)]">View on carf.org</a></p>
+          </div>
+          <div className="flex flex-col items-center text-center md:px-8">
+            <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[var(--color-light)] text-[var(--color-primary)]" aria-hidden="true">
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 21s-7.5-4.6-7.5-10.5A4.5 4.5 0 0112 7.6a4.5 4.5 0 017.5 2.9C19.5 16.4 12 21 12 21z" /></svg>
+            </span>
+            <p className="font-cormorant text-2xl text-[var(--color-ink)] leading-tight mt-4">Specialized Brain Injury Care</p>
+            <p className="text-sm text-[var(--color-muted)] mt-1">Personalized rehabilitation programs focused on independence and recovery.</p>
+          </div>
         </div>
       </section>
 
