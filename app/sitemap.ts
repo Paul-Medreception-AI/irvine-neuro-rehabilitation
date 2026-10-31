@@ -10,6 +10,7 @@ const BASE = "https://irvineneurorehabilitation.com"
 const STATIC: [string, number, Freq][] = [
   ["/", 1.00, 'weekly'],
   ["/about", 0.70, 'monthly'],
+  ["/refer", 0.70, 'monthly'],
   ["/blog", 0.70, 'weekly'],
   ["/blog/adapting-your-home-for-greater-independence", 0.60, 'monthly'],
   ["/blog/aphasia-and-communication-after-stroke", 0.60, 'monthly'],

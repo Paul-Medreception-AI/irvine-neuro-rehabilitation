@@ -27,3 +27,9 @@ body { background-color: var(--color-cream); color: var(--color-ink); }
   animation-timeline: view();
   animation-range: entry 0% entry 35%;
 }
+
+/* Phones: the sticky call bar (components/MobileCallBar) is ~72px tall, so lift the MedReception
+   widget launcher above it. The launcher sets bottom:24px inline, hence !important. */
+@media (max-width: 1023px) {
+  #medreception-widget-host { bottom: 88px !important; }
+}

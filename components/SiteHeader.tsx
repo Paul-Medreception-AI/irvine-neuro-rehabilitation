@@ -24,7 +24,7 @@ const NAV: NavGroup[] = [
   { href: "/services", label: "Services", items: [...rows("/services", SERVICES)], footer: {"href":"/services","label":"All services"} },
   { href: "/conditions", label: "Conditions", items: [...rows("/conditions", CONDITIONS)], footer: {"href":"/conditions","label":"All conditions we treat"} },
   { href: "/about", label: "About", items: [...[{"href":"/team","label":"Our Team"},{"href":"/reviews","label":"Patient Reviews"},{"href":"/locations/southfield-mi","label":"Southfield, MI"}]] },
-  { href: "/new-patients", label: "Patients", items: [...[{"href":"/insurance","label":"Insurance & Billing"},{"href":"/telehealth","label":"Visiting Our Office"},{"href":"/faq","label":"FAQ"}]] },
+  { href: "/new-patients", label: "Patients", items: [...[{"href":"/refer","label":"Refer a Patient"},{"href":"/insurance","label":"Insurance & Billing"},{"href":"/telehealth","label":"Visiting Our Office"},{"href":"/faq","label":"FAQ"}]] },
   { href: "/blog", label: "Resources", items: [...[{"href":"/compare/holistic-vs-standard-rehabilitation","label":"Holistic vs Standard Rehabilitation Programs"},{"href":"/compare/individual-vs-group-therapy","label":"Individual vs Group Therapy Sessions: Which Fits Your Recovery?"},{"href":"/compare/occupational-therapy-vs-physical-therapy","label":"Occupational Therapy vs Physical Therapy: Which Is Right for You?"},{"href":"/compare/outpatient-vs-inpatient-neuro-rehabilitation","label":"Outpatient vs Inpatient Neuro Rehabilitation: What to Consider"},{"href":"/compare/recreational-therapy-vs-exercise-therapy","label":"Recreational Therapy vs Traditional Exercise Therapy"}]] },
   { href: "/contact", label: "Contact", items: [] },
 ]

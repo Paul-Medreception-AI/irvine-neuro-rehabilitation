@@ -3,6 +3,8 @@ import { Cormorant_Garamond, DM_Sans } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
 import SiteHeader from '../components/SiteHeader'
+import MobileCallBar from '../components/MobileCallBar'
+import ClickTracking from '../components/ClickTracking'
 
 import { GoogleAnalytics } from '@next/third-parties/google'
 const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ['300','400','500','600','700'], variable: '--font-cormorant' })
@@ -39,7 +41,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable}`}>
-      <body className="font-sans bg-[var(--color-cream)] text-[var(--color-ink)]">
+      <body className="font-sans bg-[var(--color-cream)] text-[var(--color-ink)] pb-[72px] lg:pb-0">
         <SiteHeader />
         <div id="content">{children}</div>
         <footer className="bg-[var(--color-ink)] text-white py-16">
@@ -69,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <li><a href="/team" className="hover:text-white transition-colors">Our Team</a></li>
                   <li><a href="/locations/southfield-mi" className="hover:text-white transition-colors">Our Southfield Campus</a></li>
                   <li><a href="/reviews" className="hover:text-white transition-colors">Patient Reviews</a></li>
+                  <li><a href="/refer" className="hover:text-white transition-colors">Refer a Patient</a></li>
                   <li><a href="/contact" className="hover:text-white transition-colors">Contact</a></li>
                 </ul>
               </div>
@@ -101,6 +104,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {/* site-credits:end */}
           </div>
         </footer>
+        <MobileCallBar />
+        <ClickTracking />
         {/* MedReception patient widget: callback, appointment request and the AI chat, filed on
             the practice's Studio board (qa-api lambdaWidget, client id irvine-neuro-rehabilitation). */}
         <Script src="https://widget.medreception.ai/embed.js" data-client-id="irvine-neuro-rehabilitation" strategy="afterInteractive" />
