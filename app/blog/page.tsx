@@ -18,6 +18,14 @@ export const metadata: Metadata = {
   twitter: { card: 'summary', title: TITLE, description: DESCRIPTION },
 }
 
+const COMPARE: [string, string][] = [
+  ["/compare/outpatient-vs-inpatient-neuro-rehabilitation", "Outpatient vs Inpatient Neuro Rehabilitation"],
+  ["/compare/occupational-therapy-vs-physical-therapy", "Occupational Therapy vs Physical Therapy"],
+  ["/compare/individual-vs-group-therapy", "Individual vs Group Therapy Sessions"],
+  ["/compare/holistic-vs-standard-rehabilitation", "Holistic vs Standard Rehabilitation Programs"],
+  ["/compare/recreational-therapy-vs-exercise-therapy", "Recreational Therapy vs Traditional Exercise Therapy"],
+]
+
 export default function BlogIndexPage() {
   const [featured, ...rest] = BLOG_POSTS
   return (
@@ -72,6 +80,19 @@ export default function BlogIndexPage() {
               ))}
             </div>
           ) : null}
+        </div>
+      </section>
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="font-cormorant text-4xl text-[var(--color-ink)]">Compare Your Options</h2>
+          <p className="text-[var(--color-muted)] mt-3">Side-by-side guides to the choices families weigh most often.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+            {COMPARE.map(([href, label]) => (
+              <a key={href} href={href} className="group rounded-2xl border border-[var(--color-border)] p-6 hover:border-[var(--color-primary)] hover:shadow-lg transition-all">
+                <h3 className="font-cormorant text-2xl text-[var(--color-ink)] group-hover:text-[var(--color-primary)] leading-snug">{label} →</h3>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
     </>

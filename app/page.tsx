@@ -23,13 +23,6 @@ export const metadata: Metadata = {
   },
 }
 
-const heroTrust = [
-  { title: 'Since 1986', sub: 'Established care' },
-  { title: 'Southfield, MI', sub: 'Local rehabilitation' },
-  { title: 'CARF Accredited', sub: 'State of Michigan licensed' },
-  { title: 'Personalized Care', sub: 'Individual goals' },
-]
-
 const conditions = [
   { name: 'Traumatic Brain Injury', slug: 'traumatic-brain-injury', body: 'Rehabilitation after a head injury from a fall, car crash or other trauma.' },
   { name: 'Stroke', slug: 'stroke', body: 'Rebuilding movement, speech and daily skills after a stroke.' },
@@ -116,26 +109,36 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(clinicLd) }} />
 
       <SplitHero src="/images/irvine/walker-hallway.jpg" alt="An Irvine staff member walking beside a client using a walker in a hallway">
-        <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-white/80 mb-5">Southfield, Michigan · Serving patients since 1986</p>
-        <h1 className="font-cormorant text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight leading-[1.05]">
-          Expert Brain Injury &amp; Neurological Rehabilitation in Michigan
+        <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-white/75">Southfield, Michigan · Established 1986</p>
+        <h1 className="font-cormorant text-5xl sm:text-6xl font-light tracking-tight leading-[1.05] mt-5 max-w-xl">
+          Brain Injury &amp; Neurological Rehabilitation
         </h1>
-        <p className="text-lg sm:text-xl text-white/90 mt-6 leading-relaxed max-w-xl">
-          Personalized rehabilitation for traumatic brain injury, stroke and other neurological conditions, helping each person regain independence, improve daily functioning and reach meaningful goals.
+        <p className="text-lg sm:text-xl text-white/85 mt-7 leading-relaxed max-w-lg">
+          Personalized care for brain injury, stroke, and neurological conditions, helping patients regain independence and improve quality of life.
         </p>
-        <div className="flex flex-wrap gap-4 mt-8">
+        <div className="flex flex-wrap gap-4 mt-10">
           <a href="#consultation" className="bg-white text-[var(--color-dark)] px-7 py-4 rounded-xl font-bold shadow-xl hover:-translate-y-0.5 transition-all">Request a Free Consultation</a>
-          <a href="tel:+12484152500" className="border-2 border-white text-white px-7 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all">Call (248) 415-2500</a>
+          <a href="tel:+12484152500" className="border-2 border-white/80 text-white px-7 py-4 rounded-xl font-semibold hover:bg-white/10 transition-all">Call (248) 415-2500</a>
         </div>
-        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-4 mt-10 pt-8 border-t border-white/15">
-          {heroTrust.map((t) => (
-            <li key={t.title}>
-              <p className="font-semibold text-white">{t.title}</p>
-              <p className="text-sm text-white/70">{t.sub}</p>
-            </li>
-          ))}
-        </ul>
       </SplitHero>
+
+      <section className="bg-white border-b border-[var(--color-border)]">
+        <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:divide-x md:divide-[var(--color-border)]">
+          {[
+            { title: 'CARF Accredited', body: 'Commission on Accreditation of Rehabilitation Facilities' },
+            { title: 'Licensed by the State of Michigan', body: 'Outpatient therapy and residential programs' },
+            { title: 'Serving Patients Since 1986', body: 'Focused on brain injury rehabilitation from the start' },
+          ].map((t) => (
+            <div key={t.title} className="flex items-start gap-4 md:px-8 first:md:pl-0">
+              <svg className="w-8 h-8 shrink-0 text-[var(--color-primary)]" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M12 3 4.5 6v5.25c0 4.5 3.2 8.2 7.5 9.75 4.3-1.55 7.5-5.25 7.5-9.75V6L12 3Z" /></svg>
+              <div>
+                <p className="font-cormorant text-2xl text-[var(--color-ink)] leading-tight">{t.title}</p>
+                <p className="text-sm text-[var(--color-muted)] mt-1">{t.body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-6">
@@ -272,12 +275,12 @@ export default function Home() {
           <div>
             <p className="text-sm uppercase tracking-widest text-white/70 font-semibold">Start Your Recovery Journey</p>
             <h2 className="font-cormorant text-4xl sm:text-5xl mt-2">Request a Free Consultation</h2>
-            <p className="text-white/90 leading-relaxed mt-6">There is no charge for a consultation. Send us a short message, or call, and tell us a little about what you or your loved one needs.</p>
+            <p className="text-white/90 leading-relaxed mt-6">There is no charge for a consultation. It takes place in person at our Lahser Road campus in Southfield and includes a tour. Send us a short message, or call, and tell us a little about what you or your loved one needs.</p>
             <h3 className="font-semibold text-lg mt-10">What happens next</h3>
             <ol className="mt-4 space-y-4">
               {[
-                'Our team will contact you to discuss your needs and available options.',
-                'If it helps, you can schedule a tour of our Southfield campus.',
+                'Our team will contact you to discuss your needs and set up a time for your consultation.',
+                'Meet our team in person at our Southfield campus and take a tour.',
                 'We design a care plan around your goals, and based upon your availability we should be able to see you within 7 days.',
               ].map((x, i) => (
                 <li key={x} className="flex gap-4"><span className="font-cormorant text-3xl leading-none text-white/50">{i + 1}</span><span className="text-white/85">{x}</span></li>

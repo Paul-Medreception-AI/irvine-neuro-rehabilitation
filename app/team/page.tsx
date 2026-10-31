@@ -74,7 +74,7 @@ export default function TeamPage() {
         <div className="max-w-2xl mx-auto px-6 animate-fade-up">
           <h2 className="font-cormorant text-4xl font-light">Talk With Our Team</h2>
           <p className="mt-4 text-white/80 leading-relaxed">
-            There is no charge for a consultation. Call us or send a message and we will set up a time to talk, or to tour the campus.
+            There is no charge for a consultation. Call us or send a message and we will set up a time for you to meet the team in person and tour the campus.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <a href="/contact" className="inline-block px-8 py-3 rounded-full bg-white text-[var(--color-dark)] font-semibold hover:bg-[var(--color-cream)] transition-colors">Request a Free Consultation</a>

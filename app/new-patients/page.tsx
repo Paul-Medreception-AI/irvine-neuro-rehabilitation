@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 }
 
 const steps = [
-  { n: '1', title: 'Schedule', text: 'Book online or call our office at (248) 415-2500 to set up your first visit. A free consultation is a good place to start if you have questions about your goals.' },
+  { n: '1', title: 'Schedule', text: 'Call our office at (248) 415-2500 or send us a message to set up your first visit. A free in-person consultation, with a tour of the campus, is a good place to start.' },
   { n: '2', title: 'Complete Paperwork', text: 'Intake forms can be completed before your visit or at your first appointment, whichever is easier for you.' },
   { n: '3', title: 'First Visit', text: 'Your therapist or clinician reviews your history, performs an examination and leaves time for your questions and concerns.' },
   { n: '4', title: 'Care Plan', text: 'Together we build a personalized plan around your needs, physical condition and goals, one you agree on before moving forward.' },

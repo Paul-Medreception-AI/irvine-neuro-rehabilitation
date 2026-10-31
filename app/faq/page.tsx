@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     q: 'What does the free consultation involve?',
-    a: 'The free consultation is a conversation about your story, your concerns and what you hope to achieve. We answer your questions and explain how our programs may fit your needs. It is a chance to learn about us and decide whether our approach feels right for you or your family member.',
+    a: 'The free consultation is an in-person visit at our Lahser Road campus in Southfield, and it includes a tour. We talk about your story, your concerns and what you hope to achieve, answer your questions and explain how our programs may fit your needs. There is no charge.',
   },
   {
     q: 'How do I schedule a consultation or appointment?',

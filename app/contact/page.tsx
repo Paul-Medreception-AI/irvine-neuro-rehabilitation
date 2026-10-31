@@ -85,7 +85,7 @@ export default function ContactPage() {
               </svg>
               <h3 className="font-cormorant text-2xl mb-2">Book an Appointment</h3>
               <p className="text-white/80 mb-6">
-                There is no charge for a consultation, and you are welcome to schedule a tour. We are accepting new patients.
+                There is no charge for a consultation. It is in person at our Southfield campus and includes a tour. We are accepting new patients.
               </p>
               <a href="#form" className="inline-block rounded-full bg-white px-6 py-3 font-medium text-[var(--color-primary)] hover:bg-[var(--color-light)] transition-colors">
                 Request a Free Consultation

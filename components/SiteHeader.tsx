@@ -17,15 +17,14 @@ const rows = (hub: string, list: Row[]): NavItem[] => list.map((r) => ({ href: h
 
 const NAME = "Irvine Neuro Rehabilitation"
 const LOGO: string | null = "/logo.png"
-const CTA = {"href":"/contact","label":"Request a Free Consultation"}
+const CTA = {"href":"/contact","label":"Free Consultation"}
 const PHONE: { href: string; label: string } | null = {"href":"tel:2484152500","label":"(248) 415-2500"}
 
 const NAV: NavGroup[] = [
   { href: "/services", label: "Services", items: [...rows("/services", SERVICES)], footer: {"href":"/services","label":"All services"} },
   { href: "/conditions", label: "Conditions", items: [...rows("/conditions", CONDITIONS)], footer: {"href":"/conditions","label":"All conditions we treat"} },
-  { href: "/about", label: "About", items: [...[{"href":"/team","label":"Our Team"},{"href":"/reviews","label":"Patient Reviews"},{"href":"/locations/southfield-mi","label":"Southfield, MI"}]] },
-  { href: "/new-patients", label: "Patients", items: [...[{"href":"/refer","label":"Refer a Patient"},{"href":"/insurance","label":"Insurance & Billing"},{"href":"/telehealth","label":"Visiting Our Office"},{"href":"/faq","label":"FAQ"}]] },
-  { href: "/blog", label: "Resources", items: [...[{"href":"/compare/holistic-vs-standard-rehabilitation","label":"Holistic vs Standard Rehabilitation Programs"},{"href":"/compare/individual-vs-group-therapy","label":"Individual vs Group Therapy Sessions: Which Fits Your Recovery?"},{"href":"/compare/occupational-therapy-vs-physical-therapy","label":"Occupational Therapy vs Physical Therapy: Which Is Right for You?"},{"href":"/compare/outpatient-vs-inpatient-neuro-rehabilitation","label":"Outpatient vs Inpatient Neuro Rehabilitation: What to Consider"},{"href":"/compare/recreational-therapy-vs-exercise-therapy","label":"Recreational Therapy vs Traditional Exercise Therapy"}]] },
+  { href: "/about", label: "About Us", items: [{"href":"/about","label":"Our Story"},{"href":"/team","label":"Our Team"},{"href":"/reviews","label":"Patient Reviews"},{"href":"/locations/southfield-mi","label":"Our Southfield Campus"}] },
+  { href: "/new-patients", label: "Patient Resources", items: [{"href":"/new-patients","label":"New Patients"},{"href":"/refer","label":"Refer a Patient"},{"href":"/insurance","label":"Insurance & Billing"},{"href":"/telehealth","label":"Visiting Our Office"},{"href":"/faq","label":"FAQ"},{"href":"/blog","label":"Health Articles"}] },
   { href: "/contact", label: "Contact", items: [] },
 ]
 
@@ -81,9 +80,6 @@ export default function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3 flex-shrink-0">
-          {PHONE ? (
-            <a href={PHONE.href} className="hidden 2xl:inline text-sm font-semibold text-[var(--color-primary)] whitespace-nowrap">{PHONE.label}</a>
-          ) : null}
           <a href={CTA.href} className="hidden sm:inline-block bg-[var(--color-accent)] hover:bg-[var(--color-accent-dark)] text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-colors whitespace-nowrap">
             {CTA.label}
           </a>

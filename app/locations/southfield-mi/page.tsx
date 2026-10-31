@@ -34,7 +34,7 @@ const campus = [
 const faqs = [
   { q: 'Where is the campus?', a: 'Our main rehabilitation location, the Lahser Campus, is at 25700 Lahser Road, Southfield, Michigan 48033.' },
   { q: 'Can I tour the campus before deciding?', a: 'Yes. Call (248) 415-2500 or send a message through our contact page to schedule a tour.' },
-  { q: 'Is there a charge for a consultation?', a: 'No. There is no charge for a consultation.' },
+  { q: 'Is there a charge for a consultation?', a: 'No. There is no charge for a consultation. It is in person here on our campus and includes a tour.' },
   { q: 'What are your office hours?', a: 'Our office is open Monday to Thursday, 9:00am to 5:00pm, and Friday, 9:00am to 12:00pm.' },
 ]
 
@@ -126,7 +126,7 @@ export default function Page() {
       <section className="bg-gradient-to-br from-[var(--color-dark)] to-[var(--color-primary)] text-white py-24 text-center">
         <div className="relative max-w-3xl mx-auto px-6">
           <h2 className="font-cormorant text-4xl mb-6">Schedule a Tour</h2>
-          <p className="text-white/90 mb-8">No charge for consultation. Call (248) 415-2500 or send us a message.</p>
+          <p className="text-white/90 mb-8">No charge for your in-person consultation and tour. Call (248) 415-2500 or send us a message.</p>
           <a href="/contact" className="inline-block rounded-full bg-white px-8 py-3 font-medium text-[var(--color-primary)] hover:bg-[var(--color-light)] transition-colors">Request a Free Consultation</a>
         </div>
       </section>
