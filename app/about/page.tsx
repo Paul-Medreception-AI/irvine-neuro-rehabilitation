@@ -3,6 +3,8 @@ import SplitHero from '@/components/SplitHero'
 import Image from 'next/image'
 import { focus } from '@/lib/imageFocus'
 import Link from 'next/link'
+import StaffVideo from '@/components/StaffVideo'
+import { STAFF_VIDEOS, VIDEO_DATE_NOTE } from '@/lib/data/videos'
 
 export const metadata: Metadata = {
   title: 'About Irvine Neuro Rehabilitation | Southfield, MI',
@@ -136,6 +138,14 @@ export default function AboutPage() {
               <li>CPAN, Coalition to Protect Auto No Fault</li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-[var(--color-cream)] py-20">
+        <div className="mx-auto max-w-4xl px-6">
+          <h2 className="font-cormorant text-4xl text-center text-[var(--color-primary)] mb-3">In Our Team&rsquo;s Words</h2>
+          <p className="text-center text-[var(--color-muted)] mb-10">{VIDEO_DATE_NOTE} <Link href="/team#videos" className="underline underline-offset-2 text-[var(--color-primary)]">More from our team</Link></p>
+          <StaffVideo video={STAFF_VIDEOS.megan} large />
         </div>
       </section>
 

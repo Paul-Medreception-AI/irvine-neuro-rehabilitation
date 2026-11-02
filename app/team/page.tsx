@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import SplitHero from '@/components/SplitHero'
 import Image from 'next/image'
 import { TEAM } from '@/lib/data/team'
+import StaffVideo from '@/components/StaffVideo'
+import { STAFF_VIDEOS, VIDEO_DATE_NOTE } from '@/lib/data/videos'
 
 export const metadata: Metadata = {
   title: 'Meet Our Team | Irvine Neuro Rehabilitation',
@@ -66,6 +68,16 @@ export default function TeamPage() {
                 </div>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="videos" className="bg-white py-24 scroll-mt-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="font-cormorant text-4xl text-center mb-4 text-[var(--color-primary)]">Hear From Our Team</h2>
+          <p className="text-center text-[var(--color-muted)] mb-14 max-w-2xl mx-auto">Members of our team talk about how care works at Irvine. {VIDEO_DATE_NOTE}</p>
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+            {[STAFF_VIDEOS.ruza, STAFF_VIDEOS.marsha, STAFF_VIDEOS.megan].map((v) => <StaffVideo key={v.src} video={v} />)}
           </div>
         </div>
       </section>

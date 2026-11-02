@@ -4,6 +4,10 @@
 // A photo not listed here is centred. Regenerate when photos change (optimize-client-site skill).
 const FOCUS: Record<string, string> = {
   "/images/irvine/aquatic-therapy.jpg": "69% 50%",
+  "/images/irvine/apartment-kitchen.jpg": "50% 55%",
+  "/images/irvine/pool-swim-lesson.jpg": "55% 45%",
+  "/images/irvine/pool-therapy.jpg": "68% 40%",
+  "/images/irvine/resident-lounge.jpg": "50% 30%",
   "/images/irvine/balance-training.jpg": "50% 0%",
   "/images/irvine/campus-awning.jpg": "50% 92%",
   "/images/irvine/campus-dusk.jpg": "47% 50%",

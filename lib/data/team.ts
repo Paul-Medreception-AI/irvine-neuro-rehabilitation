@@ -3,11 +3,15 @@
 // and headshots are as shown on the practice's own "Our Team" page (irvineneurorehabilitation.com/
 // our-team/). Roles for Dr. Ruza and Bill Thornton are from the practice's older team page; Gloria
 // Jackson's is from Studio. Credentials are expanded to their standard meaning only.
+// Artesia McNeal-Washington (added 2026-11-02 with the headshot she sent): name as on her NPI
+// filing; title as the practice's own transfer list in Studio has it (her NPI filing says
+// Administrator), so confirm with her if either changes.
 // People on the old website but NOT in Studio's current list (Karen Dawson, Milieu Hall, Melissa
 // Ingram) are left out until the practice confirms them.
 export type TeamMember = { name: string; credentials: string | null; role: string | null; photo: string | null }
 
 export const TEAM: TeamMember[] = [
+  { name: 'Artesia McNeal-Washington', credentials: null, role: 'Executive Director', photo: '/images/team/artesia-mcneal-washington.jpg' },
   { name: 'Megan Gillard', credentials: 'MPT', role: 'Clinical Director', photo: '/images/team/megan-gillard.jpg' },
   { name: 'Theodore Ruza', credentials: 'DO', role: 'Medical Director', photo: null },
   { name: 'Bill Thornton', credentials: null, role: 'Director of Physical Therapy', photo: null },

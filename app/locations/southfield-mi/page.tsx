@@ -78,15 +78,17 @@ export default function Page() {
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-14">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-14">
             {[
               ['/images/irvine/garden-activity.jpg', 'A staff member and a client in the garden'],
+              ['/images/irvine/pool-swim-lesson.jpg', 'Two swimmers with kickboards in the indoor pool'],
+              ['/images/irvine/apartment-kitchen.jpg', 'An apartment kitchen with a granite breakfast bar'],
               ['/images/irvine/aquatic-therapy.jpg', 'A client exercising in the pool with a foam noodle'],
               ['/images/irvine/two-staff.jpg', 'Two Irvine staff members'],
               ['/images/irvine/hands-on-therapy.jpg', 'A therapist providing hands-on therapy to a client'],
             ].map(([src, alt]) => (
               <div key={src} className="relative h-40 sm:h-52 rounded-xl overflow-hidden">
-                <Image src={src} alt={alt} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" style={{ objectPosition: focus(src) }} />
+                <Image src={src} alt={alt} fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" style={{ objectPosition: focus(src) }} />
               </div>
             ))}
           </div>

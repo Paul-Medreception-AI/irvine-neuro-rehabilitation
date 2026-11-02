@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import SplitHero from '../SplitHero'
 import type { Metadata } from 'next'
+import StaffVideo from '../StaffVideo'
+import { VIDEO_DATE_NOTE, type StaffVideo as StaffVideoData } from '@/lib/data/videos'
 
 export type FAQ = { q: string; a: string }
 export type RelatedLink = { href: string; label: string; eyebrow?: string; body?: string }
@@ -30,6 +32,8 @@ export type ServicePageContent = {
   heroImage?: { src: string; alt: string; width?: number; height?: number }
   ogImage?: string
   featuredVideo?: { videoId: string; title: string; heading?: string; subhead?: string }
+  /** One of the practice's own self-hosted staff interviews (lib/data/videos). */
+  staffVideo?: { video: StaffVideoData; heading: string }
   introHeading?: string
   intro?: string[]
   signsHeading?: string
@@ -152,6 +156,16 @@ export function ServicePageTemplate({ c }: { c: ServicePageContent }) {
             {c.featuredVideo.heading && <h2 className="text-3xl md:text-4xl font-semibold mb-3 text-[var(--color-ink)] text-center">{c.featuredVideo.heading}</h2>}
             {c.featuredVideo.subhead && <p className="text-center text-[var(--color-muted)] mb-8 max-w-2xl mx-auto">{c.featuredVideo.subhead}</p>}
             <Video videoId={c.featuredVideo.videoId} title={c.featuredVideo.title} />
+          </div>
+        </section>
+      )}
+
+      {c.staffVideo && (
+        <section className="bg-white py-16">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-3 text-[var(--color-ink)] text-center">{c.staffVideo.heading}</h2>
+            <p className="text-center text-[var(--color-muted)] mb-8 max-w-2xl mx-auto">{VIDEO_DATE_NOTE}</p>
+            <StaffVideo video={c.staffVideo.video} large />
           </div>
         </section>
       )}
