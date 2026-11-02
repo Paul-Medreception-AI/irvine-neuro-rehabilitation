@@ -89,7 +89,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="mt-12 pt-8 border-t border-white/10 text-sm text-white/70">
               <p>This website does not collect protected health information. Please do not send medical details through this website.</p>
               <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2">
-                <span>© {new Date().getFullYear()} Irvine Neuro Rehabilitation</span>
+                <span>© {new Date().getFullYear()} Irvine Neuro Rehabilitation, L.L.C.</span>
                 <span>|</span>
                 <a href="/privacy-sms" className="hover:text-white transition-colors">Privacy Policy</a>
                 <span>|</span>

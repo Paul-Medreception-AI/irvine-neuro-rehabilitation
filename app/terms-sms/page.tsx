@@ -189,7 +189,8 @@ export default function TermsSmsPage() {
               For any questions regarding these Terms of Service, please contact us at:
             </p>
             <div className="bg-[var(--color-cream)] border border-[var(--color-border)] rounded-lg p-6">
-              <p className="text-[var(--color-ink)] font-semibold mb-2">Irvine Neuro Rehabilitation</p>
+              <p className="text-[var(--color-ink)] font-semibold mb-2">Irvine Neuro Rehabilitation, L.L.C.</p>
+              <p className="text-[var(--color-muted)] mb-2">25700 Lahser Road, Southfield, MI 48033</p>
               <p className="text-[var(--color-muted)] mb-2">Phone: (248) 415-2500</p>
               <p className="text-[var(--color-muted)] mb-2">Email: artesiaw@irvineneurorehab.com</p>
               <p className="text-[var(--color-muted)]">Website: https://irvineneurorehabilitation.com</p>

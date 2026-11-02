@@ -12,7 +12,7 @@ export const SITE: {
   behavioralHealth: boolean
 } = {
   name: "Irvine Neuro Rehabilitation",
-  legalName: null,
+  legalName: "Irvine Neuro Rehabilitation, L.L.C.",
   phone: "(248) 415-2500",
   phoneHref: "tel:+12484152500",
   email: null,
