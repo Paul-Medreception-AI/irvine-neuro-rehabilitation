@@ -6,7 +6,7 @@
 
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
-import { SMS_CONSENT_MARKETING_TEXT, SMS_CONSENT_NON_MARKETING_TEXT } from '@/lib/sms-consent'
+import { SMS_CONSENT_NON_MARKETING_TEXT } from '@/lib/sms-consent'
 import { PHONE_PLACEHOLDER, SITE } from '@/lib/site'
 
 const FIELD =
@@ -35,11 +35,10 @@ export default function SmsConsentForm() {
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     const form = e.currentTarget
-    const { consent_non_marketing, consent_marketing, ...data } = Object.fromEntries(
+    const { consent_non_marketing, ...data } = Object.fromEntries(
       new FormData(form).entries(),
     ) as Record<string, string>
     const nonMarketing = consent_non_marketing === 'on'
-    const marketing = consent_marketing === 'on'
     setStatus({ kind: 'sending' })
     try {
       const res = await fetch('/api/sms-consent', {
@@ -47,13 +46,11 @@ export default function SmsConsentForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...data,
-          // Send back the sentence actually rendered on this page for each box ticked, so the
+          // Send back the sentence actually rendered on this page when the box is ticked, so the
           // stored record is what this person really saw rather than whatever the constant says
           // at read time. An unticked box sends no sentence: nothing was agreed to.
           consentNonMarketing: nonMarketing,
           consentNonMarketingText: nonMarketing ? SMS_CONSENT_NON_MARKETING_TEXT : undefined,
-          consentMarketing: marketing,
-          consentMarketingText: marketing ? SMS_CONSENT_MARKETING_TEXT : undefined,
           pagePath: window.location.pathname,
           timeElapsedMs: Date.now() - mountedAt.current,
         }),
@@ -114,10 +111,11 @@ export default function SmsConsentForm() {
         <input type="email" id="sms-email" name="email" autoComplete="email" className={FIELD} />
       </div>
 
-      {/* Each consent sentence is rendered in full next to its checkbox: a carrier reviewer
+      {/* The consent sentence is rendered in full next to its checkbox: a carrier reviewer
           checks that the wording is visible at the point of agreement, not buried in a link.
-          🔴 Neither box is `required` or pre-checked, and the form submits with both empty:
-          carriers refuse a form that forces consent (code 803). */}
+          🔴 The box is not `required` or pre-checked, and the form submits with it empty:
+          carriers refuse a form that forces consent (code 803). There is deliberately no
+          marketing box; lib/sms-consent.ts says why. */}
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-cream)] p-5 space-y-5">
         <label htmlFor="sms-consent-non-marketing" className="flex gap-3 items-start cursor-pointer">
           <input
@@ -128,17 +126,6 @@ export default function SmsConsentForm() {
           />
           <span className="text-sm text-[var(--color-ink)] leading-relaxed">
             {SMS_CONSENT_NON_MARKETING_TEXT}
-          </span>
-        </label>
-        <label htmlFor="sms-consent-marketing" className="flex gap-3 items-start cursor-pointer">
-          <input
-            type="checkbox"
-            id="sms-consent-marketing"
-            name="consent_marketing"
-            className="mt-1 w-5 h-5 shrink-0 accent-[var(--color-primary)]"
-          />
-          <span className="text-sm text-[var(--color-ink)] leading-relaxed">
-            {SMS_CONSENT_MARKETING_TEXT}
           </span>
         </label>
         <p className="text-sm text-[var(--color-muted)] leading-relaxed">

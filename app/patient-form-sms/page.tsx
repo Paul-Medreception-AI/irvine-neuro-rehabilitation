@@ -20,8 +20,9 @@ export const metadata: Metadata = {
 
 // The A2P 10DLC consent page, in the format carriers approved for Gables Pain (campaign CIJGQ83,
 // MNO_PROVISIONED 2026-09-24): the form is ON this page, not in a frame (an iframe opt-in got
-// Encompass's first campaign rejected: the reviewer saw no form), two separate optional boxes,
-// neither pre-checked, and the disclosures in the page text as well as beside the boxes.
+// Encompass's first campaign rejected: the reviewer saw no form), one optional box for
+// appointment and care messages, not pre-checked, and the disclosures in the page text as well
+// as beside the box. No marketing box: see lib/sms-consent.ts.
 // It posts to /api/sms-consent, which files the record on the practice's MedReception Studio
 // board with the exact sentence agreed to, the time, the IP and the device.
 //
@@ -45,10 +46,10 @@ export default function PatientFormSmsPage() {
       <section className="bg-[var(--color-cream)] py-16">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-[var(--color-ink)] leading-relaxed mb-8">
-            Enter your name and mobile number below, tick the box for each kind of text message
-            you would like to receive, and press <strong>Submit</strong>. Both boxes are optional.
-            If you leave them empty, we will not text you. Consent to receive text messages is not
-            a condition of receiving care. To send us a question instead, use our{' '}
+            Enter your name and mobile number below, tick the box if you would like to receive
+            text messages from us, and press <strong>Submit</strong>. The box is optional. If you
+            leave it empty, we will not text you. Consent to receive text messages is not a
+            condition of receiving care. To send us a question instead, use our{' '}
             <Link href="/contact" className="text-[var(--color-accent)] underline">
               contact page
             </Link>
@@ -62,11 +63,10 @@ export default function PatientFormSmsPage() {
           <div className="mt-10 text-sm text-[var(--color-muted)] leading-relaxed space-y-3">
             <h2 className="font-cormorant text-2xl text-[var(--color-ink)]">About our text messages</h2>
             <p>
-              If you tick the first box, {SITE.name} may text you about your appointments,
-              services, or account, such as appointment reminders, confirmations, care
-              instructions, and account notifications. If you tick the second box, we may also
-              text you marketing and promotional messages, such as special offers. Message
-              frequency varies. Message and data rates may apply.
+              If you tick the box, {SITE.name} may text you about your appointments, services, or
+              account, such as appointment reminders, confirmations, care instructions, and
+              account notifications. We do not send marketing or promotional text messages.
+              Message frequency varies. Message and data rates may apply.
             </p>
             <p>
               Reply <strong>STOP</strong> to any message to opt out at any time, or reply{' '}

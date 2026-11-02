@@ -87,13 +87,13 @@ export async function POST(request: NextRequest) {
   const name = clip(body.name, 120)
   const phone = toE164(clip(body.phone, 40))
   const ticked = (v: unknown) => v === true || v === 'true' || v === 'on'
+  // One box only: the site offers no marketing consent (lib/sms-consent.ts says why), so a
+  // consentMarketing field in a request is ignored rather than recorded as permission.
   const nonMarketing = ticked(body.consentNonMarketing)
-  const marketing = ticked(body.consentMarketing)
-  // The browser sends back the sentence it actually displayed for each ticked box, and we store
-  // THAT rather than re-reading our own constant, so a record always reflects what this patient
-  // really saw. 500, not more: Studio keeps each extra field clipped to 500 characters.
+  // The browser sends back the sentence it actually displayed when the box is ticked, and we
+  // store THAT rather than re-reading our own constant, so a record always reflects what this
+  // patient really saw. 500, not more: Studio keeps each extra field clipped to 500 characters.
   const nonMarketingText = nonMarketing ? clip(body.consentNonMarketingText, 500) : ''
-  const marketingText = marketing ? clip(body.consentMarketingText, 500) : ''
 
   if (!name) {
     return reply(request, { error: 'Please enter your name.' }, 400)
@@ -101,10 +101,10 @@ export async function POST(request: NextRequest) {
   if (!phone) {
     return reply(request, { error: 'Please enter a valid mobile number.' }, 400)
   }
-  // Both boxes are optional, so ticking neither is a valid submission: it records the contact
-  // with no permission to text. A tick WITHOUT its sentence is not: a consent we cannot quote is
-  // not evidence. The real form always sends both, so only a hand-built request lands here.
-  if ((nonMarketing && !nonMarketingText) || (marketing && !marketingText)) {
+  // The box is optional, so leaving it empty is a valid submission: it records the contact with
+  // no permission to text. A tick WITHOUT its sentence is not: a consent we cannot quote is not
+  // evidence. The real form always sends both, so only a hand-built request lands here.
+  if (nonMarketing && !nonMarketingText) {
     return reply(request, { error: 'We could not record your sign-up. ' + CALL_US }, 400)
   }
 
@@ -116,8 +116,6 @@ export async function POST(request: NextRequest) {
     // box the patient left empty as one they forgot to report.
     consent_non_marketing: nonMarketing ? 'Yes' : 'No',
     consent_non_marketing_text: nonMarketingText || undefined,
-    consent_marketing: marketing ? 'Yes' : 'No',
-    consent_marketing_text: marketingText || undefined,
     submitted_at: new Date().toISOString(),
     // Vercel sets x-forwarded-for; the first entry is the client.
     ip: (request.headers.get('x-forwarded-for') || '').split(',')[0].trim() || undefined,
@@ -144,9 +142,9 @@ export async function POST(request: NextRequest) {
     {
       success: true,
       message:
-        nonMarketing || marketing
+        nonMarketing
           ? 'You are signed up. Reply STOP to any message to opt out.'
-          : 'We have your details. You did not tick either box, so we will not text you.',
+          : 'We have your details. You did not tick the box, so we will not text you.',
     },
     200,
   )
