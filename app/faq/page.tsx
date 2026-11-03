@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'FAQ | Irvine Neuro Rehabilitation in Southfield, MI',
-  description: 'Answers to common questions about neuro rehabilitation, therapy programs, head injury recovery, consultations and what to expect at Irvine Neuro Rehabilitation.',
+  description: 'Answers about rehabilitation at Irvine Neuro Rehabilitation: therapy after hip, knee and shoulder surgery, brain injury and stroke care, consultations and what to expect.',
   alternates: { canonical: '/faq' },
   openGraph: {
     title: 'FAQ | Irvine Neuro Rehabilitation in Southfield, MI',
-    description: 'Answers to common questions about neuro rehabilitation, therapy programs, head injury recovery, consultations and what to expect at Irvine Neuro Rehabilitation.',
+    description: 'Answers about rehabilitation at Irvine Neuro Rehabilitation: therapy after hip, knee and shoulder surgery, brain injury and stroke care, consultations and what to expect.',
     url: 'https://irvineneurorehabilitation.com/faq',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary',
     title: 'FAQ | Irvine Neuro Rehabilitation in Southfield, MI',
-    description: 'Answers to common questions about neuro rehabilitation, therapy programs, head injury recovery, consultations and what to expect at Irvine Neuro Rehabilitation.',
+    description: 'Answers about rehabilitation at Irvine Neuro Rehabilitation: therapy after hip, knee and shoulder surgery, brain injury and stroke care, consultations and what to expect.',
   },
 }
 
@@ -46,8 +46,12 @@ const faqs = [
     a: 'Neuro rehabilitation is a form of care that helps people recover function after an injury or illness affecting the brain or nervous system. It can address movement, daily living skills, communication, thinking, mood and confidence. At Irvine Neuro Rehabilitation, programs are shaped around your needs, your physical condition and your personal goals rather than a one-size-fits-all plan.',
   },
   {
+    q: 'Do you treat patients after hip, knee or shoulder surgery?',
+    a: 'Yes. We treat patients after hip, knee and shoulder surgery, such as a joint replacement or repair. Therapy follows your surgeon\'s instructions and rebuilds motion, strength and confidence step by step. Call (248) 415-2500 to get started.',
+  },
+  {
     q: 'What services does Irvine Neuro Rehabilitation offer?',
-    a: 'We offer 17 programs, including residential rehabilitation, physical therapy, occupational therapy, speech and language pathology, recreational and pool (aquatic) therapy, nursing care, counseling, case management, a cognitive day group, respite care and semi-independent apartment living. We see outpatients for therapy, and we also have residential programs on our Southfield campus. There is no charge for a consultation.',
+    a: 'We offer 17 programs, including residential rehabilitation, physical therapy, occupational therapy, speech and language pathology, recreational and pool (aquatic) therapy, nursing care, counseling, case management, a cognitive day group, respite care and semi-independent apartment living. We also treat patients after hip, knee and shoulder surgery. We see outpatients for therapy, and we also have residential programs on our Southfield campus. There is no charge for a consultation.',
   },
   {
     q: 'What does the free consultation involve?',
@@ -56,10 +60,6 @@ const faqs = [
   {
     q: 'How do I schedule a consultation or appointment?',
     a: 'The simplest way is to call our office at (248) 415-2500 or use the contact form on our website. Tell us a little about your situation and which service interests you, and our team will follow up with next steps. If you are unsure which program fits, choose the free consultation option and we will help you sort it out.',
-  },
-  {
-    q: 'Are you accepting new patients?',
-    a: 'Availability can change, so we recommend calling the office at (248) 415-2500 to ask about current openings. Our team can tell you what to expect and how soon an initial conversation might be arranged. Please do not hesitate to reach out even if you are still in the early stages of deciding.',
   },
   {
     q: 'What insurance do you accept?',
