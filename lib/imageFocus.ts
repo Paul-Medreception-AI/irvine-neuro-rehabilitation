@@ -75,6 +75,7 @@ const FOCUS: Record<string, string> = {
   "/images/stock/head-injury-rehabilitation.jpg": "60% 50%",
   "/images/stock/hemiparesis.jpg": "36% 50%",
   "/images/stock/hub-blog.jpg": "84% 50%",
+  "/images/stock/hip-knee-shoulder-surgery.jpg": "55% 50%",
   "/images/stock/hub-conditions.jpg": "36% 50%",
   "/images/stock/hub-faq.jpg": "100% 50%",
   "/images/stock/hub-insurance.jpg": "64% 50%",

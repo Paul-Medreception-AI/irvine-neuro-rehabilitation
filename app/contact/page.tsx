@@ -66,7 +66,7 @@ export default function ContactPage() {
                 (248) 415-2500
               </a>
               <p className="text-[var(--color-muted)] mt-2">Fax (248) 415-2510</p>
-              <p className="text-sm text-[var(--color-muted)] mt-4">Referring a patient? Fax the referral, or email it to Gloria Jackson, Office Manager, at <a href="mailto:gloria@irvineneurorehab.com" className="underline text-[var(--color-primary)]">gloria@irvineneurorehab.com</a>.</p>
+              <p className="text-sm text-[var(--color-muted)] mt-4">Referring a patient? Fax the referral, or email it to Gloria Jackson, who handles intake, at <a href="mailto:gloria@irvineneurorehab.com" className="underline text-[var(--color-primary)]">gloria@irvineneurorehab.com</a>.</p>
             </div>
 
             <div className="animate-fade-up bg-[var(--color-light)] rounded-2xl p-8">

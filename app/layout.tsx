@@ -10,7 +10,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ['300','400','500','600','700'], variable: '--font-cormorant' })
 const dmSans = DM_Sans({ subsets: ['latin'], weight: ['300','400','500','600'], variable: '--font-dm-sans' })
 
-const siteTitle = 'Irvine Neuro Rehabilitation | Brain Injury Rehab in Southfield, MI'
+const siteTitle = 'Irvine Neuro Rehabilitation | Rehabilitation in Southfield, MI'
 const siteDescription = 'Since 1986, Irvine Neuro Rehabilitation has served patients and families with compassion and understanding. Our holistic programs are shaped around your needs and physical condition, never a one-size-fits-all plan.'
 
 
@@ -49,7 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div>
                 <a href="/" className="inline-block" aria-label="Irvine Neuro Rehabilitation, home"><img src="/logo-white.png" alt="Irvine Neuro Rehabilitation" className="h-[66px] w-auto max-w-full" /></a>
-                <p className="mt-4 text-white/70 text-sm">Neuro rehabilitation and residential care in Southfield, Michigan since 1986. Licensed by the State of Michigan. Our residential Brain Injury Specialty Program is CARF accredited.</p>
+                <p className="mt-4 text-white/70 text-sm">Rehabilitation, physical therapy and residential care in Southfield, Michigan since 1986. Licensed by the State of Michigan. Our residential Brain Injury Specialty Program is CARF accredited.</p>
                 <a href="https://www.carf.org" target="_blank" rel="noopener noreferrer" aria-label="CARF accredited, visit carf.org" className="inline-block mt-4"><img src="/images/carf-seal.png" alt="CARF Accredited seal" width={56} height={56} className="w-14 h-14" /></a>
                 <div className="flex items-center gap-4 mt-6">
                   <a href="https://www.facebook.com/IrvineManor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white/70 hover:text-white transition-colors">

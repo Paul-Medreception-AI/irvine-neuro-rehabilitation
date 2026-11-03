@@ -7,7 +7,7 @@
 // filing; title as the practice's own transfer list in Studio has it (her NPI filing says
 // Administrator), so confirm with her if either changes.
 // People on the old website but NOT in Studio's current list (Karen Dawson, Milieu Hall, Melissa
-// Ingram) are left out until the practice confirms them.
+// Ingram) are gone: Artesia confirmed 2026-11-03 they are no longer with Irvine ("no please remove").
 export type TeamMember = { name: string; credentials: string | null; role: string | null; photo: string | null }
 
 export const TEAM: TeamMember[] = [
@@ -15,7 +15,7 @@ export const TEAM: TeamMember[] = [
   { name: 'Megan Gillard', credentials: 'MPT', role: 'Clinical Director', photo: '/images/team/megan-gillard.jpg' },
   { name: 'Theodore Ruza', credentials: 'DO', role: 'Medical Director', photo: null },
   { name: 'Bill Thornton', credentials: null, role: 'Director of Physical Therapy', photo: null },
-  { name: 'Gloria Jackson', credentials: null, role: 'Office Manager', photo: '/images/team/gloria-jackson.jpg' },
+  { name: 'Gloria Jackson', credentials: null, role: 'Intake and Therapy Scheduling', photo: '/images/team/gloria-jackson.jpg' },
   { name: 'Christina Betz', credentials: 'PTA', role: 'Physical Therapist Assistant', photo: '/images/team/christina-betz.jpg' },
   { name: 'Cynthia Bantom', credentials: 'OTR', role: 'Registered Occupational Therapist', photo: '/images/team/cynthia-bantom.jpg' },
   { name: 'Delta Scott', credentials: 'PTA', role: 'Physical Therapist Assistant', photo: '/images/team/delta-scott.jpg' },

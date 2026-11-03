@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     q: 'How do I send a referral?',
-    a: 'Please fax referrals to (248) 415-2510, or email them to Gloria Jackson, our Office Manager, at gloria@irvineneurorehab.com.',
+    a: 'Please fax referrals to (248) 415-2510, or email them to Gloria Jackson, who handles intake, at gloria@irvineneurorehab.com.',
   },
   {
     q: 'Can I tour the campus?',
@@ -91,7 +91,7 @@ const faqs = [
   },
   {
     q: 'What does physical therapy focus on?',
-    a: 'Physical therapy focuses on preventing impairments and disabilities related to movement, function and health. It can address issues such as strength, balance, mobility and coordination. Each plan targets your specific physical condition and is adjusted as your abilities change.',
+    a: 'Physical therapy focuses on preventing impairments and disabilities related to movement, function and health. It can address issues such as strength, balance, mobility and coordination, including recovery after hip, knee and shoulder surgery. Each plan targets your specific physical condition and is adjusted as your abilities change.',
   },
   {
     q: 'What is recreational therapy?',

@@ -57,7 +57,7 @@ export default function ReferPage() {
           <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-cream)] p-8">
             <h2 className="font-cormorant text-3xl text-[var(--color-primary)]">Email</h2>
             <p className="mt-3"><a href="mailto:gloria@irvineneurorehab.com?subject=Patient%20referral" className="text-lg font-semibold text-[var(--color-ink)] underline underline-offset-2 break-all">gloria@irvineneurorehab.com</a></p>
-            <p className="mt-2 text-sm text-[var(--color-muted)]">Gloria Jackson, Office Manager.</p>
+            <p className="mt-2 text-sm text-[var(--color-muted)]">Gloria Jackson, intake and therapy scheduling.</p>
           </div>
           <div className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-cream)] p-8">
             <h2 className="font-cormorant text-3xl text-[var(--color-primary)]">Phone</h2>

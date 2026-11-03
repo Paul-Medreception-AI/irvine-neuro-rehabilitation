@@ -1045,6 +1045,17 @@
       "pexels_url": "https://www.pexels.com/photo/an-elderly-woman-in-white-jacket-using-her-mobile-phone-6838559/",
       "width": 2000,
       "height": 1050
+    },
+    {
+      "page": "conditions:hip-knee-shoulder-surgery",
+      "file": "public/images/stock/hip-knee-shoulder-surgery.jpg",
+      "source": "pexels",
+      "alt": "A physical therapist guides a patient through a hip and leg exercise on a treatment table",
+      "pexels_id": 20860592,
+      "photographer": "https://www.pexels.com/@funkcines-terapijos-centras-927573878",
+      "pexels_url": "https://www.pexels.com/photo/physiotherapist-massaging-leg-20860592/",
+      "width": 2000,
+      "height": 1050
     }
   ]
 }

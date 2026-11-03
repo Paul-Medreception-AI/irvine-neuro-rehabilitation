@@ -6,28 +6,28 @@ import { focus } from '@/lib/imageFocus'
 import { TEAM, TESTIMONIALS } from '@/lib/data/team'
 
 export const metadata: Metadata = {
-  title: 'Brain Injury & Neuro Rehab in Southfield, MI | Irvine Rehab',
-  description: 'Irvine Neuro Rehabilitation has served patients since 1986. Explore personalized brain injury and neurological rehabilitation in Southfield, Michigan.',
+  title: 'Rehabilitation & Physical Therapy in Southfield, MI | Irvine',
+  description: 'Rehabilitation in Southfield, Michigan since 1986: physical therapy after hip, knee and shoulder surgery, plus care for stroke, brain injury and neurological conditions.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'Brain Injury & Neuro Rehab in Southfield, MI | Irvine Rehab',
-    description: 'Irvine Neuro Rehabilitation has served patients since 1986. Explore personalized brain injury and neurological rehabilitation in Southfield, Michigan.',
+    title: 'Rehabilitation & Physical Therapy in Southfield, MI | Irvine',
+    description: 'Rehabilitation in Southfield, Michigan since 1986: physical therapy after hip, knee and shoulder surgery, plus care for stroke, brain injury and neurological conditions.',
     url: 'https://irvineneurorehabilitation.com/',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },
   twitter: {
     card: 'summary',
-    title: 'Brain Injury & Neuro Rehab in Southfield, MI | Irvine Rehab',
-    description: 'Irvine Neuro Rehabilitation has served patients since 1986. Explore personalized brain injury and neurological rehabilitation in Southfield, Michigan.',
+    title: 'Rehabilitation & Physical Therapy in Southfield, MI | Irvine',
+    description: 'Rehabilitation in Southfield, Michigan since 1986: physical therapy after hip, knee and shoulder surgery, plus care for stroke, brain injury and neurological conditions.',
   },
 }
 
 const conditions = [
-  { name: 'Traumatic Brain Injury', slug: 'traumatic-brain-injury', body: 'Rehabilitation after a head injury from a fall, car crash or other trauma.' },
+  { name: 'Hip, Knee and Shoulder Surgery', slug: 'hip-knee-shoulder-surgery', body: 'Rebuilding motion and strength after a joint replacement or repair.' },
   { name: 'Stroke', slug: 'stroke', body: 'Rebuilding movement, speech and daily skills after a stroke.' },
+  { name: 'Traumatic Brain Injury', slug: 'traumatic-brain-injury', body: 'Rehabilitation after a head injury from a fall, car crash or other trauma.' },
   { name: 'Acquired Brain Injury', slug: 'acquired-brain-injury', body: 'Care after brain injury from illness, infection or other causes.' },
-  { name: 'Anoxic Brain Injury', slug: 'anoxic-brain-injury', body: 'Rehabilitation after the brain is deprived of oxygen.' },
   { name: 'Concussion', slug: 'concussion', body: 'Support when symptoms after a concussion affect daily life.' },
   { name: 'Spinal Cord Injury', slug: 'spinal-cord-injury', body: 'Building strength, mobility and independence after injury.' },
   { name: 'Aphasia', slug: 'aphasia', body: 'Speech and language therapy for communication after brain injury or stroke.' },
@@ -36,7 +36,7 @@ const conditions = [
 
 // The core programs, each shown with Irvine's own photograph. All 17 programs are listed below.
 const programs = [
-  { name: 'Physical Therapy', href: '/services/physical-therapy', image: '/images/irvine/balance-training.jpg', alt: 'A client practicing balance on a balance trainer in the Irvine therapy gym', body: 'Focused on the prevention of impairments and disabilities related to movement, function and health.' },
+  { name: 'Physical Therapy', href: '/services/physical-therapy', image: '/images/irvine/balance-training.jpg', alt: 'A client practicing balance on a balance trainer in the Irvine therapy gym', body: 'Focused on the prevention of impairments and disabilities related to movement, function and health, including recovery after hip, knee and shoulder surgery.' },
   { name: 'Occupational Therapy', href: '/services/occupational-therapy', image: '/images/irvine/pulley-therapy.jpg', alt: 'A therapist working with a client in a wheelchair on an overhead pulley exercise', body: 'Dedicated to helping you independently complete the daily activities you need to, want to and are expected to do.' },
   { name: 'Speech and Language Pathology', href: '/services/speech-language-pathology', image: '/images/irvine/staff-with-client.jpg', alt: 'An Irvine staff member smiling beside a client', body: 'Support for communication, swallowing and thinking skills after a brain injury or neurological condition.' },
   { name: 'Head Injury Rehabilitation', href: '/services/head-injury-rehabilitation', image: '/images/irvine/puzzle-activity.jpg', alt: 'A client working on a jigsaw puzzle during a cognitive activity', body: 'Cognitive rehabilitation and care for people with a known or suspected brain injury, the work Irvine was founded on.' },
@@ -66,7 +66,7 @@ const allPrograms = [
 
 // Every line here is a practice fact: its own website, its Studio records or the 2026-10-30 call.
 const reasons = [
-  { title: 'Focused on brain injury since 1986', body: 'Irvine began with a closed head injury program and has grown into a full service rehabilitation organization for patients and their families.' },
+  { title: 'Serving Southfield since 1986', body: 'Irvine began with a closed head injury program and has grown into a full service rehabilitation organization for patients and their families.' },
   { title: 'CARF accredited and state licensed', body: 'Our residential Brain Injury Specialty Program is accredited by CARF, the Commission on Accreditation of Rehabilitation Facilities, and Irvine is licensed by the State of Michigan.' },
   { title: 'One team under one roof', body: 'Physical, occupational and speech therapy, recreational and pool therapy, nursing, counseling and case management work together on one plan.' },
   { title: 'Outpatient and residential care', body: 'Outpatient therapy and residential programs on the same Southfield campus, so care can change as needs change.' },
@@ -94,7 +94,7 @@ const clinicLd = {
   telephone: '+1-248-415-2500',
   faxNumber: '+1-248-415-2510',
   foundingDate: '1986',
-  medicalSpecialty: ['PhysicalTherapy', 'SpeechPathology'],
+  medicalSpecialty: ['Physiotherapy', 'Musculoskeletal', 'Neurologic', 'SpeechPathology', 'Psychiatric'],
   address: { '@type': 'PostalAddress', streetAddress: '25700 Lahser Road', addressLocality: 'Southfield', addressRegion: 'MI', postalCode: '48033', addressCountry: 'US' },
   openingHoursSpecification: [
     { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'], opens: '09:00', closes: '17:00' },
@@ -111,10 +111,10 @@ export default function Home() {
       <SplitHero src="/images/irvine/walker-hallway.jpg" alt="An Irvine staff member walking beside a client using a walker in a hallway">
         <p className="text-xs sm:text-sm uppercase tracking-[0.2em] text-white/75">Southfield, Michigan · Established 1986</p>
         <h1 className="font-cormorant text-5xl sm:text-6xl font-light tracking-tight leading-[1.05] mt-5 max-w-xl">
-          Brain Injury &amp; Neurological Rehabilitation
+          Rehabilitation &amp; Physical Therapy
         </h1>
         <p className="text-lg sm:text-xl text-white/85 mt-7 leading-relaxed max-w-lg">
-          Personalized care for brain injury, stroke, and neurological conditions, helping patients regain independence and improve quality of life.
+          Personalized care after hip, knee and shoulder surgery, injury, stroke and brain injury, helping patients regain independence and improve quality of life.
         </p>
         <div className="flex flex-wrap gap-4 mt-10">
           <a href="#consultation" className="bg-white text-[var(--color-dark)] px-7 py-4 rounded-xl font-bold shadow-xl hover:-translate-y-0.5 transition-all">Request a Free Consultation</a>
@@ -142,8 +142,8 @@ export default function Home() {
             <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[var(--color-light)] text-[var(--color-primary)]" aria-hidden="true">
               <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 21s-7.5-4.6-7.5-10.5A4.5 4.5 0 0112 7.6a4.5 4.5 0 017.5 2.9C19.5 16.4 12 21 12 21z" /></svg>
             </span>
-            <p className="font-cormorant text-2xl text-[var(--color-ink)] leading-tight mt-4">Specialized Brain Injury Care</p>
-            <p className="text-sm text-[var(--color-muted)] mt-1">Personalized rehabilitation programs focused on independence and recovery.</p>
+            <p className="font-cormorant text-2xl text-[var(--color-ink)] leading-tight mt-4">Orthopedic and Neuro Rehab</p>
+            <p className="text-sm text-[var(--color-muted)] mt-1">Rehabilitation after joint surgery, injury, stroke and brain injury.</p>
           </div>
         </div>
       </section>
@@ -153,7 +153,7 @@ export default function Home() {
           <div className="flex flex-wrap items-end justify-between gap-4 mb-10">
             <div>
               <p className="text-sm uppercase tracking-widest text-[var(--color-primary)] font-semibold">Conditions We Treat</p>
-              <h2 className="font-cormorant text-4xl sm:text-5xl text-[var(--color-ink)] mt-2">Brain Injury, Stroke and Neurological Conditions</h2>
+              <h2 className="font-cormorant text-4xl sm:text-5xl text-[var(--color-ink)] mt-2">Surgery, Stroke, Brain Injury and More</h2>
             </div>
             <a href="/conditions" className="text-[var(--color-primary)] font-semibold hover:underline">All conditions we treat →</a>
           </div>
