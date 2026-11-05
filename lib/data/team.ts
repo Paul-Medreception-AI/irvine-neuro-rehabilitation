@@ -12,7 +12,7 @@ export type TeamMember = { name: string; credentials: string | null; role: strin
 
 export const TEAM: TeamMember[] = [
   { name: 'Artesia McNeal-Washington', credentials: null, role: 'Executive Director', photo: '/images/team/artesia-mcneal-washington.jpg' },
-  { name: 'Megan Gillard', credentials: 'MPT', role: 'Clinical Director', photo: '/images/team/megan-gillard.jpg' },
+  { name: 'Megan Gilliard', credentials: 'MPT', role: 'Clinical Director', photo: '/images/team/megan-gilliard.jpg' },
   { name: 'Theodore Ruza', credentials: 'DO', role: 'Medical Director', photo: null },
   { name: 'Bill Thornton', credentials: null, role: 'Director of Physical Therapy', photo: null },
   { name: 'Gloria Jackson', credentials: null, role: 'Intake and Therapy Scheduling', photo: '/images/team/gloria-jackson.jpg' },

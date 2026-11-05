@@ -7,8 +7,8 @@
 // "no occurrences of COVID within the inpatient setting" would read as a claim about today.
 //
 // Names and credentials are checked against the NPI registry: Theodore J. Ruza, DO and Marsha
-// Carr, MA, CCC-SLP. Megan is captioned by first name only: her original slate says "Megan
-// Gordon" while the practice's team list has Megan Gillard, and nothing yet says which is right.
+// Carr, MA, CCC-SLP. Megan's slate says "Megan Gordon"; Artesia confirmed 2026-11-05 that her name is
+// Megan Gilliard (asked with the slate's spelling in front of her), so she is captioned with it.
 // The original files carried a spoken name slate before the first answer; it is trimmed off.
 export type StaffVideo = {
   src: string
@@ -34,11 +34,11 @@ export const STAFF_VIDEOS = {
   megan: {
     src: '/videos/megan.mp4',
     poster: '/videos/megan.jpg',
-    name: 'Megan',
-    role: 'Longtime member of the Irvine team',
+    name: 'Megan Gilliard, MPT',
+    role: 'Clinical Director',
     title: 'A place where clients are accepted',
     summary:
-      'Megan on the leadership behind Irvine, and on a community where clients are cared for, welcomed and treated like family.',
+      'Megan Gilliard on the leadership behind Irvine, and on a community where clients are cared for, welcomed and treated like family.',
   },
   marsha: {
     src: '/videos/marsha-carr.mp4',
