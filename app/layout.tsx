@@ -17,6 +17,7 @@ const siteDescription = 'Since 1986, Irvine Neuro Rehabilitation has served pati
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 
 export const metadata: Metadata = {
+  verification: { google: 'CD8xRi7kLa6I4aDk3_CWfq2cx_KFfPkIsxQGCrp3Uz0' },
   title: siteTitle,
   description: siteDescription,
   metadataBase: new URL('https://irvineneurorehabilitation.com'),
