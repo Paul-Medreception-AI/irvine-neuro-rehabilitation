@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Understanding Spasticity and Movement Challenges',
     description: 'Learn what spasticity is, who it affects, how it changes movement, and how rehabilitation, therapy and medical care can help people move with more ease.',
-    url: 'https://irvineneurorehabilitation.com/blog/understanding-spasticity-and-movement-challenges',
+    url: 'https://www.irvineneurorehabilitation.com/blog/understanding-spasticity-and-movement-challenges',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

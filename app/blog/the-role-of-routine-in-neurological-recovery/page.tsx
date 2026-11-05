@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'The Role of Routine in Neurological Recovery',
     description: 'Learn how daily structure, sleep, and consistent practice can support brain and nervous system recovery, with practical steps for patients and families.',
-    url: 'https://irvineneurorehabilitation.com/blog/the-role-of-routine-in-neurological-recovery',
+    url: 'https://www.irvineneurorehabilitation.com/blog/the-role-of-routine-in-neurological-recovery',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

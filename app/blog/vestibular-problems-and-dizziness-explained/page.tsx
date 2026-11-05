@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Vestibular Problems and Dizziness Explained',
     description: 'Learn what causes vestibular problems and dizziness, common symptoms, how they are evaluated, and how rehabilitation may help you regain balance.',
-    url: 'https://irvineneurorehabilitation.com/blog/vestibular-problems-and-dizziness-explained',
+    url: 'https://www.irvineneurorehabilitation.com/blog/vestibular-problems-and-dizziness-explained',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

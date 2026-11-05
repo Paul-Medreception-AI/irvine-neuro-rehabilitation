@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Preparing for Your First Rehabilitation Consultation',
     description: 'Learn what to bring, what to expect and which questions to ask before a first rehabilitation consultation so you can get the most from your visit.',
-    url: 'https://irvineneurorehabilitation.com/blog/preparing-for-your-first-rehabilitation-consultation',
+    url: 'https://www.irvineneurorehabilitation.com/blog/preparing-for-your-first-rehabilitation-consultation',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

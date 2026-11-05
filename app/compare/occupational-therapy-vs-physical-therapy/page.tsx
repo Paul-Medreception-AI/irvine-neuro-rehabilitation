@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Occupational Therapy vs Physical Therapy | Compare',
     description: 'Compare occupational therapy and physical therapy: goals, methods, side effects, cost factors and who each suits best, so you can choose with confidence.',
-    url: 'https://irvineneurorehabilitation.com/compare/occupational-therapy-vs-physical-therapy',
+    url: 'https://www.irvineneurorehabilitation.com/compare/occupational-therapy-vs-physical-therapy',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Holistic vs Standard Rehabilitation Programs',
     description: 'Compare holistic and standard rehabilitation programs: approach, side effects, cost factors, time commitment and who each is best for.',
-    url: 'https://irvineneurorehabilitation.com/compare/holistic-vs-standard-rehabilitation',
+    url: 'https://www.irvineneurorehabilitation.com/compare/holistic-vs-standard-rehabilitation',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

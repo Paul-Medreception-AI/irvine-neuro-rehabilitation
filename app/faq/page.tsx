@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'FAQ | Irvine Neuro Rehabilitation in Southfield, MI',
     description: 'Answers about rehabilitation at Irvine Neuro Rehabilitation: therapy after hip, knee and shoulder surgery, brain injury and stroke care, consultations and what to expect.',
-    url: 'https://irvineneurorehabilitation.com/faq',
+    url: 'https://www.irvineneurorehabilitation.com/faq',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

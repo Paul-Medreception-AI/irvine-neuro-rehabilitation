@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Returning to Daily Routines After Injury',
     description: 'Practical, evidence-based guidance for rebuilding daily routines after an injury, from pacing and sleep to work, mood, and when to seek professional help.',
-    url: 'https://irvineneurorehabilitation.com/blog/returning-to-daily-routines-after-injury',
+    url: 'https://www.irvineneurorehabilitation.com/blog/returning-to-daily-routines-after-injury',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Planning Long-Term Recovery With Your Family',
     description: 'Learn how families can build a realistic, supportive long-term recovery plan after a brain injury or neurological event, with practical steps and tips.',
-    url: 'https://irvineneurorehabilitation.com/blog/planning-long-term-recovery-with-your-family',
+    url: 'https://www.irvineneurorehabilitation.com/blog/planning-long-term-recovery-with-your-family',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

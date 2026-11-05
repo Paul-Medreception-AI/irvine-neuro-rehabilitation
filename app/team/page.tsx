@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Meet Our Team | Irvine Neuro Rehabilitation',
     description: 'Meet the physical therapists, occupational therapists, counselors and staff at Irvine Neuro Rehabilitation in Southfield, MI.',
-    url: 'https://irvineneurorehabilitation.com/team',
+    url: 'https://www.irvineneurorehabilitation.com/team',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

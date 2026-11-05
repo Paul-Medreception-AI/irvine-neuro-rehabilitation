@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'What a Free Rehabilitation Consultation Includes',
     description: 'Learn what typically happens in a rehabilitation consultation, what to bring, and which questions to ask before starting therapy in Southfield, MI.',
-    url: 'https://irvineneurorehabilitation.com/blog/what-a-free-rehabilitation-consultation-includes',
+    url: 'https://www.irvineneurorehabilitation.com/blog/what-a-free-rehabilitation-consultation-includes',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

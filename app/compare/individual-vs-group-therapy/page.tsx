@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Individual vs Group Therapy: Which Fits Your Recovery?',
     description: 'Compare individual and group therapy sessions side by side: effectiveness, cost, time commitment and who each format suits best during recovery.',
-    url: 'https://irvineneurorehabilitation.com/compare/individual-vs-group-therapy',
+    url: 'https://www.irvineneurorehabilitation.com/compare/individual-vs-group-therapy',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

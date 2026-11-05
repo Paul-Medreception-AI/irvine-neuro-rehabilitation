@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Emotional Adjustment After a Brain Injury',
     description: 'Learn why mood, anxiety and identity shift after a brain injury, what research shows, and practical steps that support emotional recovery for you and your family.',
-    url: 'https://irvineneurorehabilitation.com/blog/emotional-adjustment-after-a-brain-injury',
+    url: 'https://www.irvineneurorehabilitation.com/blog/emotional-adjustment-after-a-brain-injury',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

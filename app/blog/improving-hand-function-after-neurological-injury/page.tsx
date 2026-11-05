@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Improving Hand Function After Neurological Injury',
     description: 'Learn how occupational therapy, repetition, and practical strategies can help improve hand function after stroke, brain injury, or other neurological conditions.',
-    url: 'https://irvineneurorehabilitation.com/blog/improving-hand-function-after-neurological-injury',
+    url: 'https://www.irvineneurorehabilitation.com/blog/improving-hand-function-after-neurological-injury',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

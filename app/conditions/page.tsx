@@ -8,7 +8,7 @@ import { CONDITIONS } from '../../lib/data/conditions'
 
 const TITLE = "Conditions We Treat | Irvine Neuro Rehabilitation"
 const DESCRIPTION = "Conditions treated at Irvine Neuro Rehabilitation include recovery after hip, knee and shoulder surgery, Stroke, Traumatic Brain Injury, Concussion, and more."
-const URL = "https://irvineneurorehabilitation.com/conditions"
+const URL = "https://www.irvineneurorehabilitation.com/conditions"
 const HEADING = "Conditions We Treat"
 const SUBHEADING = "Learn about the conditions we help patients manage, and what care for each one looks like."
 const CTA = {"href":"/contact","label":"Request a Free Consultation"}

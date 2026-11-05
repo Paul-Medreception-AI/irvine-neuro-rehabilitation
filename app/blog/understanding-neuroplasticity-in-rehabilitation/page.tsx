@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Understanding Neuroplasticity in Rehabilitation',
     description: 'Learn how neuroplasticity helps the brain adapt after injury or illness, and what it means for rehabilitation, therapy and recovery.',
-    url: 'https://irvineneurorehabilitation.com/blog/understanding-neuroplasticity-in-rehabilitation',
+    url: 'https://www.irvineneurorehabilitation.com/blog/understanding-neuroplasticity-in-rehabilitation',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

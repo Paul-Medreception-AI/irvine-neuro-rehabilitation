@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Insurance & Billing | Irvine Neuro Rehabilitation',
     description: 'Insurance at Irvine Neuro Rehabilitation, Southfield MI: Medicare, BCBS of Michigan, Blue Care Network, UnitedHealthcare, auto and workers comp. (248) 415-2500.',
-    url: 'https://irvineneurorehabilitation.com/insurance',
+    url: 'https://www.irvineneurorehabilitation.com/insurance',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

@@ -4,7 +4,7 @@ import SplitHero from '@/components/SplitHero'
 export const metadata: Metadata = {
   title: 'Terms and Conditions - SMS | Irvine Neuro Rehabilitation',
   description: 'Irvine Neuro Rehabilitation Terms and Conditions, including SMS messaging terms and compliance.',
-  alternates: { canonical: 'https://irvineneurorehabilitation.com/terms-sms' },
+  alternates: { canonical: 'https://www.irvineneurorehabilitation.com/terms-sms' },
 }
 
 export default function TermsSmsPage() {
@@ -36,7 +36,7 @@ export default function TermsSmsPage() {
               1. Program Description:
             </h3>
             <p className="text-[var(--color-muted)] mb-6">
-              This messaging program sends appointment confirmation and reminder messages to customers who have booked an appointment with Irvine Neuro Rehabilitation through our website at https://irvineneurorehabilitation.com, or via our scheduling forms, and have explicitly opted in to receive SMS notifications. Opt-in is collected via web forms with a dedicated checkbox for SMS consent. Messages include scheduling confirmations, appointment reminders, rescheduling updates, and customer support communications.
+              This messaging program sends appointment confirmation and reminder messages to customers who have booked an appointment with Irvine Neuro Rehabilitation through our website at https://www.irvineneurorehabilitation.com, or via our scheduling forms, and have explicitly opted in to receive SMS notifications. Opt-in is collected via web forms with a dedicated checkbox for SMS consent. Messages include scheduling confirmations, appointment reminders, rescheduling updates, and customer support communications.
             </p>
 
             <h3 className="font-cormorant text-2xl text-[var(--color-ink)] mt-10 mb-4">
@@ -85,7 +85,7 @@ export default function TermsSmsPage() {
               8. Privacy Policy:
             </h3>
             <p className="text-[var(--color-muted)] mb-6">
-              For privacy-related inquiries, please refer to our <a href="/privacy-sms" className="text-[var(--color-primary)] underline">Privacy Policy</a> at https://irvineneurorehabilitation.com/privacy-sms
+              For privacy-related inquiries, please refer to our <a href="/privacy-sms" className="text-[var(--color-primary)] underline">Privacy Policy</a> at https://www.irvineneurorehabilitation.com/privacy-sms
             </p>
             <p className="text-[var(--color-muted)] mb-6">
               We comply with all applicable laws and regulations, including the Telephone Consumer Protection Act (TCPA) and CTIA guidelines, regarding the use of SMS communications.
@@ -193,7 +193,7 @@ export default function TermsSmsPage() {
               <p className="text-[var(--color-muted)] mb-2">25700 Lahser Road, Southfield, MI 48033</p>
               <p className="text-[var(--color-muted)] mb-2">Phone: (248) 415-2500</p>
               <p className="text-[var(--color-muted)] mb-2">Email: artesiaw@irvineneurorehab.com</p>
-              <p className="text-[var(--color-muted)]">Website: https://irvineneurorehabilitation.com</p>
+              <p className="text-[var(--color-muted)]">Website: https://www.irvineneurorehabilitation.com</p>
             </div>
 
             <p className="text-[var(--color-muted)] mt-8">

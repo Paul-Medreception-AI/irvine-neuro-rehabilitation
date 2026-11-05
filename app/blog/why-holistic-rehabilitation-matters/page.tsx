@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Why Holistic Rehabilitation Matters',
     description: 'Learn why rehabilitation that addresses movement, communication, thinking, and emotional health together can support recovery and daily life.',
-    url: 'https://irvineneurorehabilitation.com/blog/why-holistic-rehabilitation-matters',
+    url: 'https://www.irvineneurorehabilitation.com/blog/why-holistic-rehabilitation-matters',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

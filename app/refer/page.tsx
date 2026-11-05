@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Refer a Patient | Irvine Neuro Rehabilitation, Southfield MI',
     description: 'How physicians, case managers and discharge planners refer a patient to Irvine Neuro Rehabilitation in Southfield, MI.',
-    url: 'https://irvineneurorehabilitation.com/refer',
+    url: 'https://www.irvineneurorehabilitation.com/refer',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

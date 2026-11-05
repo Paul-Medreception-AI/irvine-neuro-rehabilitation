@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Outpatient vs Inpatient Neuro Rehabilitation Guide',
     description: 'Compare outpatient and inpatient neuro rehabilitation: intensity, cost factors, time commitment and who each setting suits best, from Irvine Neuro Rehabilitation.',
-    url: 'https://irvineneurorehabilitation.com/compare/outpatient-vs-inpatient-neuro-rehabilitation',
+    url: 'https://www.irvineneurorehabilitation.com/compare/outpatient-vs-inpatient-neuro-rehabilitation',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

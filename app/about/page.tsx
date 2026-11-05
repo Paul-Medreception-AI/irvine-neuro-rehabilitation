@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Irvine Neuro Rehabilitation | Southfield, MI',
     description: 'Learn about Irvine Neuro Rehabilitation in Southfield, MI: personalized, holistic rehabilitation focused on your goals, serving patients since 1986.',
-    url: 'https://irvineneurorehabilitation.com/about',
+    url: 'https://www.irvineneurorehabilitation.com/about',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Questions to Ask When Choosing a Rehabilitation Provider',
     description: 'A practical guide to the questions that help you evaluate a rehabilitation provider, from team makeup and goal setting to communication and follow-through.',
-    url: 'https://irvineneurorehabilitation.com/blog/questions-to-ask-when-choosing-a-rehabilitation-provider',
+    url: 'https://www.irvineneurorehabilitation.com/blog/questions-to-ask-when-choosing-a-rehabilitation-provider',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Multiple Sclerosis and Rehabilitation Goals',
     description: 'Learn how rehabilitation can support people living with multiple sclerosis, and how to set realistic, meaningful goals for movement, thinking, speech, and daily life.',
-    url: 'https://irvineneurorehabilitation.com/blog/multiple-sclerosis-and-rehabilitation-goals',
+    url: 'https://www.irvineneurorehabilitation.com/blog/multiple-sclerosis-and-rehabilitation-goals',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

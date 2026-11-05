@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Visiting Our Office | Irvine Neuro Rehabilitation',
     description: 'Learn what to expect when you visit Irvine Neuro Rehabilitation in Southfield, MI, and how to reach the office by phone to arrange your first appointment.',
-    url: 'https://irvineneurorehabilitation.com/telehealth',
+    url: 'https://www.irvineneurorehabilitation.com/telehealth',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

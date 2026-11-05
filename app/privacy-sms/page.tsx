@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Privacy Policy | Irvine Neuro Rehabilitation',
   description: 'Irvine Neuro Rehabilitation - Privacy Policy, including SMS, TCPA and HIPAA disclosures.',
-  alternates: { canonical: 'https://irvineneurorehabilitation.com/privacy-sms' },
+  alternates: { canonical: 'https://www.irvineneurorehabilitation.com/privacy-sms' },
 }
 
 export default function PrivacySmsPage() {
@@ -258,7 +258,7 @@ export default function PrivacySmsPage() {
             <p className="text-[var(--color-muted)] mb-2">25700 Lahser Road, Southfield, MI 48033</p>
             <p className="text-[var(--color-muted)] mb-2">Phone: (248) 415-2500</p>
             <p className="text-[var(--color-muted)] mb-2">Email: artesiaw@irvineneurorehab.com</p>
-            <p className="text-[var(--color-muted)]">Website: https://irvineneurorehabilitation.com</p>
+            <p className="text-[var(--color-muted)]">Website: https://www.irvineneurorehabilitation.com</p>
           </div>
           <p className="text-[var(--color-ink)] mb-4 leading-relaxed">
             To file a HIPAA complaint, you may also contact:

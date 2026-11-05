@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Cognitive Challenges After Brain Injury | Irvine Neuro',
     description: 'Learn how brain injury can affect memory, attention, and planning, why it happens, and practical strategies and rehabilitation options that can help.',
-    url: 'https://irvineneurorehabilitation.com/blog/cognitive-challenges-after-brain-injury',
+    url: 'https://www.irvineneurorehabilitation.com/blog/cognitive-challenges-after-brain-injury',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

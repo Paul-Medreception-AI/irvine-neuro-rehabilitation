@@ -6,7 +6,7 @@ import { SERVICES as DATA_0 } from '../lib/data/services'
 import { CONDITIONS as DATA_1 } from '../lib/data/conditions'
 
 type Freq = 'daily' | 'weekly' | 'monthly' | 'yearly'
-const BASE = "https://irvineneurorehabilitation.com"
+const BASE = "https://www.irvineneurorehabilitation.com"
 const STATIC: [string, number, Freq][] = [
   ["/", 1.00, 'weekly'],
   ["/about", 0.70, 'monthly'],

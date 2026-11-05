@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Balance and Fall Prevention After Neurological Conditions',
     description: 'Learn why balance problems follow stroke, brain injury and other neurological conditions, and practical steps to reduce fall risk at home and in daily life.',
-    url: 'https://irvineneurorehabilitation.com/blog/balance-and-fall-prevention-after-neurological-conditions',
+    url: 'https://www.irvineneurorehabilitation.com/blog/balance-and-fall-prevention-after-neurological-conditions',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

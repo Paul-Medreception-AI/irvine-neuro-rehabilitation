@@ -8,7 +8,7 @@ import { SERVICES } from '../../lib/data/services'
 
 const TITLE = "Services | Irvine Neuro Rehabilitation"
 const DESCRIPTION = "Irvine Neuro Rehabilitation offers Occupational Therapy, Physical Therapy, Recreational Therapy, Head Injury Rehabilitation, and more."
-const URL = "https://irvineneurorehabilitation.com/services"
+const URL = "https://www.irvineneurorehabilitation.com/services"
 const HEADING = "Our Services"
 const SUBHEADING = "Explore the care we offer. Choose a service to see what it involves and what to expect."
 const CTA = {"href":"/contact","label":"Request a Free Consultation"}

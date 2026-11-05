@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'What Is Recreational Therapy and Who Can Benefit?',
     description: 'Learn what recreational therapy is, how it supports recovery after neurological injury or illness, and who may benefit from this form of rehabilitation.',
-    url: 'https://irvineneurorehabilitation.com/blog/what-is-recreational-therapy-and-who-can-benefit',
+    url: 'https://www.irvineneurorehabilitation.com/blog/what-is-recreational-therapy-and-who-can-benefit',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

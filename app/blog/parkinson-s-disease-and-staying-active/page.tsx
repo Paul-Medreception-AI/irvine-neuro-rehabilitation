@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Parkinson's Disease and Staying Active",
     description: "Learn how exercise, movement and therapy support daily life with Parkinson's disease, plus practical tips for staying active safely.",
-    url: 'https://irvineneurorehabilitation.com/blog/parkinson-s-disease-and-staying-active',
+    url: 'https://www.irvineneurorehabilitation.com/blog/parkinson-s-disease-and-staying-active',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

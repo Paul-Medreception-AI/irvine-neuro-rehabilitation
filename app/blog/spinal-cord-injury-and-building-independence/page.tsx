@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Spinal Cord Injury and Building Independence',
     description: 'Learn how rehabilitation, occupational therapy, and emotional support can help people rebuild daily independence after a spinal cord injury.',
-    url: 'https://irvineneurorehabilitation.com/blog/spinal-cord-injury-and-building-independence',
+    url: 'https://www.irvineneurorehabilitation.com/blog/spinal-cord-injury-and-building-independence',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

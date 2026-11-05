@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Why One-Size-Fits-All Rehabilitation Falls Short',
     description: 'Learn why individualized rehabilitation outperforms generic programs, and how personal goals, history and team-based care shape better recovery.',
-    url: 'https://irvineneurorehabilitation.com/blog/why-one-size-fits-all-rehabilitation-falls-short',
+    url: 'https://www.irvineneurorehabilitation.com/blog/why-one-size-fits-all-rehabilitation-falls-short',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

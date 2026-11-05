@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Neuro Rehabilitation in Southfield, MI | Irvine Neuro Rehab',
     description: 'Our Lahser Road campus in Southfield, MI: a CARF-accredited residential brain injury program plus outpatient PT, OT and speech therapy. (248) 415-2500.',
-    url: 'https://irvineneurorehabilitation.com/locations/southfield-mi',
+    url: 'https://www.irvineneurorehabilitation.com/locations/southfield-mi',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

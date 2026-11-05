@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Walking and Gait Retraining Basics | Irvine Neuro Rehab',
     description: 'Learn how gait retraining works, who may benefit, and practical steps for safer, steadier walking after a neurological injury or illness.',
-    url: 'https://irvineneurorehabilitation.com/blog/walking-and-gait-retraining-basics',
+    url: 'https://www.irvineneurorehabilitation.com/blog/walking-and-gait-retraining-basics',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

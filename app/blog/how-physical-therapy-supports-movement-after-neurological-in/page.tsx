@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Physical Therapy and Movement After Neurological Injury',
     description: 'Learn how physical therapy helps rebuild strength, balance and movement after stroke, brain injury or other neurological conditions, and what to expect.',
-    url: 'https://irvineneurorehabilitation.com/blog/how-physical-therapy-supports-movement-after-neurological-in',
+    url: 'https://www.irvineneurorehabilitation.com/blog/how-physical-therapy-supports-movement-after-neurological-in',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

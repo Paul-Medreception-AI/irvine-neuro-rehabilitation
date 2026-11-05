@@ -17,10 +17,10 @@ const siteDescription = 'Since 1986, Irvine Neuro Rehabilitation has served pati
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 
 export const metadata: Metadata = {
-  verification: { google: 'CD8xRi7kLa6I4aDk3_CWfq2cx_KFfPkIsxQGCrp3Uz0' },
+  verification: { google: ['vgSnFONGzL77cJ50s0rPMRxjGhN88ftiOZQxmdSdvpU', 'CD8xRi7kLa6I4aDk3_CWfq2cx_KFfPkIsxQGCrp3Uz0'] },
   title: siteTitle,
   description: siteDescription,
-  metadataBase: new URL('https://irvineneurorehabilitation.com'),
+  metadataBase: new URL('https://www.irvineneurorehabilitation.com'),
   icons: {
     icon: [{ url: '/favicon.ico' }, { url: '/favicon.png', type: 'image/png' }],
     apple: '/favicon.png',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: siteTitle,
     description: siteDescription,
-    url: 'https://irvineneurorehabilitation.com',
+    url: 'https://www.irvineneurorehabilitation.com',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

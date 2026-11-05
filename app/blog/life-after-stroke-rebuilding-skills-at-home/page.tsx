@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Life After Stroke: Rebuilding Skills at Home',
     description: 'Practical, evidence-based ways to support stroke recovery at home, from daily routines and safety to speech, movement and emotional health.',
-    url: 'https://irvineneurorehabilitation.com/blog/life-after-stroke-rebuilding-skills-at-home',
+    url: 'https://www.irvineneurorehabilitation.com/blog/life-after-stroke-rebuilding-skills-at-home',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

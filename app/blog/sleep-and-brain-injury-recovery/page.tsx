@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sleep and Brain Injury Recovery | Irvine Neuro Rehabilitation',
     description: 'Learn why sleep is so important after a brain injury, how injury disrupts rest, and practical steps that may help support recovery and daily functioning.',
-    url: 'https://irvineneurorehabilitation.com/blog/sleep-and-brain-injury-recovery',
+    url: 'https://www.irvineneurorehabilitation.com/blog/sleep-and-brain-injury-recovery',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

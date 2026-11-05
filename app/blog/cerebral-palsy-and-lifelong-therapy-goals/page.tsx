@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Cerebral Palsy and Lifelong Therapy Goals',
     description: 'Learn how therapy goals for cerebral palsy change across childhood, adulthood and aging, and how to plan ahead for movement, communication and independence.',
-    url: 'https://irvineneurorehabilitation.com/blog/cerebral-palsy-and-lifelong-therapy-goals',
+    url: 'https://www.irvineneurorehabilitation.com/blog/cerebral-palsy-and-lifelong-therapy-goals',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

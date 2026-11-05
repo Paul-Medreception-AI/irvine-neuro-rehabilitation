@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Staying Motivated Through a Long Recovery',
     description: 'Practical, evidence-informed ways to keep your motivation going through a long recovery, from setting small goals to building support and handling setbacks.',
-    url: 'https://irvineneurorehabilitation.com/blog/staying-motivated-through-a-long-recovery',
+    url: 'https://www.irvineneurorehabilitation.com/blog/staying-motivated-through-a-long-recovery',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

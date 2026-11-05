@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Caregiver Self-Care During a Loved One's Recovery",
     description: "Caring for someone in recovery is demanding. Learn practical self-care strategies to protect your health, manage stress, and avoid caregiver burnout.",
-    url: 'https://irvineneurorehabilitation.com/blog/caregiver-self-care-during-a-loved-one-s-recovery',
+    url: 'https://www.irvineneurorehabilitation.com/blog/caregiver-self-care-during-a-loved-one-s-recovery',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

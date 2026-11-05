@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Concussion Recovery: When to Seek Rehab Support',
     description: 'Learn the signs that concussion symptoms need more than rest, and how rehabilitation support can help with recovery of thinking, speech, mood and daily function.',
-    url: 'https://irvineneurorehabilitation.com/blog/concussion-recovery-when-to-seek-rehabilitation-support',
+    url: 'https://www.irvineneurorehabilitation.com/blog/concussion-recovery-when-to-seek-rehabilitation-support',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

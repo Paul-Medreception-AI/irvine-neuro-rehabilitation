@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Understanding Traumatic Brain Injury Recovery',
     description: 'Learn how traumatic brain injury recovery works, what affects healing, and how rehabilitation, therapy and support can help you or a loved one move forward.',
-    url: 'https://irvineneurorehabilitation.com/blog/understanding-traumatic-brain-injury-recovery',
+    url: 'https://www.irvineneurorehabilitation.com/blog/understanding-traumatic-brain-injury-recovery',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

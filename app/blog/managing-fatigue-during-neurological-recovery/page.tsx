@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Managing Fatigue During Neurological Recovery',
     description: 'Learn why fatigue is so common after brain injury, stroke, and other neurological conditions, and practical strategies to manage energy during recovery.',
-    url: 'https://irvineneurorehabilitation.com/blog/managing-fatigue-during-neurological-recovery',
+    url: 'https://www.irvineneurorehabilitation.com/blog/managing-fatigue-during-neurological-recovery',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

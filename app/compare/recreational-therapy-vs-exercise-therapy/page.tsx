@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Recreational Therapy vs Exercise Therapy | Compare',
     description: 'Compare recreational therapy and traditional exercise therapy: goals, side effects, cost factors, time commitment and who each approach suits best.',
-    url: 'https://irvineneurorehabilitation.com/compare/recreational-therapy-vs-exercise-therapy',
+    url: 'https://www.irvineneurorehabilitation.com/compare/recreational-therapy-vs-exercise-therapy',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

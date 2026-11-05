@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Adapting Your Home for Greater Independence',
     description: 'Practical home modification ideas for people recovering from neurological injury or illness, to support safety, confidence and daily independence.',
-    url: 'https://irvineneurorehabilitation.com/blog/adapting-your-home-for-greater-independence',
+    url: 'https://www.irvineneurorehabilitation.com/blog/adapting-your-home-for-greater-independence',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

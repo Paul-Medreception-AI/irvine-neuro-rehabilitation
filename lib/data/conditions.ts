@@ -1,6 +1,6 @@
 import type { ConditionPageContent } from '@/components/templates/ConditionPageTemplate'
 
-const BASE = {"siteUrl":"https://irvineneurorehabilitation.com","siteName":"Irvine Neuro Rehabilitation","ctaLabel":"Schedule an Appointment","ctaHref":"/contact","hubLabel":"Conditions","hubHref":"/conditions"};
+const BASE = {"siteUrl":"https://www.irvineneurorehabilitation.com","siteName":"Irvine Neuro Rehabilitation","ctaLabel":"Schedule an Appointment","ctaHref":"/contact","hubLabel":"Conditions","hubHref":"/conditions"};
 
 export const CONDITIONS: ConditionPageContent[] = [
   {

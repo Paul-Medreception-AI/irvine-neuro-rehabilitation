@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How Families Can Support a Loved One in Rehabilitation',
     description: 'Practical, compassionate ways families can support a loved one through rehabilitation, from communication and routines to caregiver self-care.',
-    url: 'https://irvineneurorehabilitation.com/blog/how-families-can-support-a-loved-one-in-rehabilitation',
+    url: 'https://www.irvineneurorehabilitation.com/blog/how-families-can-support-a-loved-one-in-rehabilitation',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

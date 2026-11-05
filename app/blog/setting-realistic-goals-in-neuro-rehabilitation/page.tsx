@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Setting Realistic Goals in Neuro Rehabilitation',
     description: 'Learn how to set realistic, meaningful goals during neuro rehabilitation, from SMART goals to measuring progress and adjusting your plan over time.',
-    url: 'https://irvineneurorehabilitation.com/blog/setting-realistic-goals-in-neuro-rehabilitation',
+    url: 'https://www.irvineneurorehabilitation.com/blog/setting-realistic-goals-in-neuro-rehabilitation',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

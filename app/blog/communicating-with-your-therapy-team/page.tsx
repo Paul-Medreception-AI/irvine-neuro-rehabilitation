@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Communicating With Your Therapy Team',
     description: 'Practical ways to talk openly with your therapy team, ask better questions, share progress and concerns, and get more from neuro rehabilitation.',
-    url: 'https://irvineneurorehabilitation.com/blog/communicating-with-your-therapy-team',
+    url: 'https://www.irvineneurorehabilitation.com/blog/communicating-with-your-therapy-team',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

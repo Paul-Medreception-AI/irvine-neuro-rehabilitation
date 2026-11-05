@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Using Recreation to Rebuild Confidence After Injury',
     description: 'Learn how recreation and meaningful leisure activities can help rebuild confidence, motivation, and independence during neurological recovery.',
-    url: 'https://irvineneurorehabilitation.com/blog/using-recreation-to-rebuild-confidence',
+    url: 'https://www.irvineneurorehabilitation.com/blog/using-recreation-to-rebuild-confidence',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Safe Return to Community Activities | Irvine Neuro Rehab',
     description: 'How to return to work, driving, shopping and social life after a brain injury or neurological illness, with practical pacing tips and safety planning.',
-    url: 'https://irvineneurorehabilitation.com/blog/safe-return-to-community-activities',
+    url: 'https://www.irvineneurorehabilitation.com/blog/safe-return-to-community-activities',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

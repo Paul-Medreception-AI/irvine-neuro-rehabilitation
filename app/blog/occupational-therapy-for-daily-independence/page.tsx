@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Occupational Therapy for Daily Independence',
     description: 'Learn how occupational therapy helps people rebuild skills for dressing, cooking, working and daily living after injury, illness or neurological change.',
-    url: 'https://irvineneurorehabilitation.com/blog/occupational-therapy-for-daily-independence',
+    url: 'https://www.irvineneurorehabilitation.com/blog/occupational-therapy-for-daily-independence',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

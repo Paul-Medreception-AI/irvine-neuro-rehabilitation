@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Aphasia and Communication After Stroke',
     description: 'Learn what aphasia is, how it affects speech and understanding after stroke, and practical ways families can support communication during recovery.',
-    url: 'https://irvineneurorehabilitation.com/blog/aphasia-and-communication-after-stroke',
+    url: 'https://www.irvineneurorehabilitation.com/blog/aphasia-and-communication-after-stroke',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

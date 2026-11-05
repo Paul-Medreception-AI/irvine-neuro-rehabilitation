@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Making Therapy Part of Everyday Life',
     description: 'Practical, evidence-based ways to carry therapy goals into daily routines at home, work and in the community so progress lasts beyond each session.',
-    url: 'https://irvineneurorehabilitation.com/blog/making-therapy-part-of-everyday-life',
+    url: 'https://www.irvineneurorehabilitation.com/blog/making-therapy-part-of-everyday-life',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

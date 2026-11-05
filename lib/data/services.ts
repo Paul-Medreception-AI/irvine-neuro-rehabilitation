@@ -1,7 +1,7 @@
 import type { ServicePageContent } from '@/components/templates/ServicePageTemplate'
 import { STAFF_VIDEOS } from '@/lib/data/videos'
 
-const BASE = {"siteUrl":"https://irvineneurorehabilitation.com","siteName":"Irvine Neuro Rehabilitation","ctaLabel":"Book an Appointment","ctaHref":"/contact","hubLabel":"Services","hubHref":"/services"};
+const BASE = {"siteUrl":"https://www.irvineneurorehabilitation.com","siteName":"Irvine Neuro Rehabilitation","ctaLabel":"Book an Appointment","ctaHref":"/contact","hubLabel":"Services","hubHref":"/services"};
 
 export const SERVICES: ServicePageContent[] = [
   {

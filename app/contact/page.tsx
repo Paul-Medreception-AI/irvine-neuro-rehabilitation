@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Irvine Neuro Rehabilitation | Southfield, MI',
     description: 'Contact Irvine Neuro Rehabilitation in Southfield, MI. Call (248) 415-2500 or send a message to ask a question or request a free consultation.',
-    url: 'https://irvineneurorehabilitation.com/contact',
+    url: 'https://www.irvineneurorehabilitation.com/contact',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },

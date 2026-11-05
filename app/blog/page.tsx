@@ -8,7 +8,7 @@ import { BLOG_POSTS } from '../../lib/data/blog'
 
 const TITLE = "Health Articles | Irvine Neuro Rehabilitation"
 const DESCRIPTION = "Patient education from Irvine Neuro Rehabilitation: What to Expect From Neuro Rehabilitation After a Brain Injury, Occupational Therapy for Daily Independence, "
-const URL = "https://irvineneurorehabilitation.com/blog"
+const URL = "https://www.irvineneurorehabilitation.com/blog"
 
 export const metadata: Metadata = {
   title: TITLE,

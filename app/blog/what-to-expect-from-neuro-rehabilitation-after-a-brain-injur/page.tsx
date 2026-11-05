@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'What to Expect From Neuro Rehabilitation After Brain Injury',
     description: 'Learn what neuro rehabilitation involves after a brain injury, from evaluation and therapy goals to family support, recovery timelines and next steps.',
-    url: 'https://irvineneurorehabilitation.com/blog/what-to-expect-from-neuro-rehabilitation-after-a-brain-injur',
+    url: 'https://www.irvineneurorehabilitation.com/blog/what-to-expect-from-neuro-rehabilitation-after-a-brain-injur',
     siteName: 'Irvine Neuro Rehabilitation',
     type: 'website',
   },
